@@ -87,11 +87,11 @@ def create_app(config_class=Config):
 
     # ------------------ Routes ------------------ #
 
-    @app.route("/")
-    @app.route("/api")
-    @app.route("/api/")
-    @app.route("/api/index")
-    @app.route("/api/index.py")
+    @app.route("/", methods=["GET", "POST"])
+    @app.route("/api", methods=["GET", "POST"])
+    @app.route("/api/", methods=["GET", "POST"])
+    @app.route("/api/index", methods=["GET", "POST"])
+    @app.route("/api/index.py", methods=["GET", "POST"])
     def index():
         if "user_id" in session:
             if session.get("role") == "student" and session.get("student_id"):
