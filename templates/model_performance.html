@@ -1,0 +1,218 @@
+{% extends "base.html" %}
+
+{% block title %}Machine Learning Model Diagnostics & Evaluation - EduVision AI{% endblock %}
+
+{% block content %}
+<div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
+  <div>
+    <h2 class="h3 fw-bold mb-1 d-flex align-items-center gap-2">
+      <i class="bi bi-cpu text-primary"></i> Machine Learning Model Performance & Diagnostics
+    </h2>
+    <p class="text-secondary small mb-0">Dynamic evaluation metrics across 5 candidate models, confusion matrix, feature importance weights, and selection criteria.</p>
+  </div>
+  <div>
+    <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 fs-6">
+      <i class="bi bi-check-circle-fill me-1"></i> Active Model: {{ metrics.selected_model }}
+    </span>
+  </div>
+</div>
+
+<!-- Dataset & Pipeline Specifications Grid -->
+<div class="row g-3 mb-4">
+  <div class="col-sm-6 col-lg-3">
+    <div class="metric-card">
+      <div class="metric-label">Dataset Population</div>
+      <div class="metric-value">{{ metrics.dataset_size }}</div>
+      <div class="small text-muted mt-1">Anonymized Engineering Records</div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="metric-card">
+      <div class="metric-label">Train / Test Partition</div>
+      <div class="metric-value">{{ metrics.train_records }} / {{ metrics.test_records }}</div>
+      <div class="small text-muted mt-1">80% Train / 20% Stratified Test</div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="metric-card">
+      <div class="metric-label">Input Features</div>
+      <div class="metric-value">{{ metrics.feature_count }}</div>
+      <div class="small text-muted mt-1">Academic, Behavioral & Encoded</div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="metric-card">
+      <div class="metric-label">Target Classes</div>
+      <div class="metric-value">{{ metrics.target_classes|length }}</div>
+      <div class="small text-muted mt-1">{{ metrics.target_classes|join(' | ') }}</div>
+    </div>
+  </div>
+</div>
+
+<!-- Model Selection Criterion Alert Banner -->
+<div class="alert alert-info border-0 shadow-sm rounded-3 p-3 mb-4 d-flex align-items-center gap-3">
+  <div class="p-3 bg-white rounded-3 text-info shadow-sm">
+    <i class="bi bi-award-fill fs-3"></i>
+  </div>
+  <div>
+    <h3 class="h6 fw-bold mb-1 text-dark">Selection Decision: {{ metrics.selected_model }}</h3>
+    <p class="small mb-0 text-secondary">
+      Candidate models were benchmarked on a stratified 20% held-out test partition. 
+      <strong>{{ metrics.selected_model }}</strong> was automatically selected as optimal based on 
+      <strong>{{ metrics.selection_criterion }}</strong>, ensuring balanced multi-class precision and high sensitivity for the critical 'Low' at-risk minority cohort.
+    </p>
+  </div>
+</div>
+
+<!-- Multi-Model Comparison Table -->
+<div class="card-table-wrapper mb-4">
+  <div class="p-3 border-bottom d-flex justify-content-between align-items-center">
+    <h3 class="h6 fw-bold mb-0 text-primary d-flex align-items-center gap-2">
+      <i class="bi bi-table"></i> Multi-Classifier Benchmark Comparison
+    </h3>
+    <span class="badge bg-light text-muted border">Evaluated on 250 Held-Out Samples</span>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-custom">
+      <thead>
+        <tr>
+          <th>Algorithm Candidate</th>
+          <th>Test Accuracy</th>
+          <th>Precision (Weighted)</th>
+          <th>Recall (Weighted)</th>
+          <th>F1-Score (Weighted)</th>
+          <th>Decision Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for m in metrics.comparison_table %}
+        <tr class="{% if m.is_selected %}table-success-subtle bg-success-subtle bg-opacity-25{% endif %}">
+          <td class="fw-bold">
+            {{ m.model }}
+            {% if m.is_selected %}
+              <span class="badge bg-success ms-1 small"><i class="bi bi-check-lg"></i> Selected</span>
+            {% endif %}
+          </td>
+          <td>{{ (m.accuracy * 100)|round(2) }}%</td>
+          <td>{{ (m.precision * 100)|round(2) }}%</td>
+          <td>{{ (m.recall * 100)|round(2) }}%</td>
+          <td class="fw-bold text-primary">{{ (m.f1_score * 100)|round(2) }}%</td>
+          <td>
+            {% if m.is_selected %}
+              <span class="badge bg-success-subtle text-success border border-success-subtle">
+                Deployed Pipeline
+              </span>
+            {% else %}
+              <span class="text-muted small">Evaluated</span>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Charts Row: Confusion Matrix Heatmap & Feature Importance Bar Chart -->
+<div class="row g-4 mb-4">
+  <!-- Chart 1: Confusion Matrix -->
+  <div class="col-lg-6">
+    <div class="chart-card">
+      <div class="card-header-clean">
+        <h3 class="chart-title">
+          <i class="bi bi-grid-3x3 me-2 text-primary"></i> Multi-Class Confusion Matrix
+        </h3>
+        <span class="badge bg-light text-muted border">{{ metrics.selected_model }}</span>
+      </div>
+      <div id="chart-confusion-matrix" style="height: 380px;"></div>
+      <div class="small text-muted text-center mt-2">
+        Diagonal cells indicate correctly predicted instances across High, Average, and Low categories.
+      </div>
+    </div>
+  </div>
+
+  <!-- Chart 2: Feature Importance Weights -->
+  <div class="col-lg-6">
+    <div class="chart-card">
+      <div class="card-header-clean">
+        <h3 class="chart-title">
+          <i class="bi bi-bar-chart-steps me-2 text-indigo"></i> Key Model Indicators (Feature Weights)
+        </h3>
+        <span class="badge bg-light text-muted border">Explainability</span>
+      </div>
+      <div id="chart-feature-importance" style="height: 380px;"></div>
+      <div class="small text-muted text-center mt-2">
+        Relative importance contribution from tree-based Gini impurity reduction.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Model Benchmark Bar Chart -->
+<div class="chart-card mb-4">
+  <div class="card-header-clean">
+    <h3 class="chart-title">
+      <i class="bi bi-bar-chart-fill me-2 text-success"></i> Model Benchmark Metric Comparison
+    </h3>
+    <span class="badge bg-light text-muted border">Comparative Analysis</span>
+  </div>
+  <div id="chart-model-comparison" style="height: 320px;"></div>
+</div>
+
+<!-- Class Imbalance & Preprocessing Documentation Card -->
+<div class="card border-0 shadow-sm rounded-3 mb-4">
+  <div class="card-header bg-white border-bottom p-3">
+    <h3 class="h6 fw-bold mb-0 text-primary">
+      <i class="bi bi-info-circle me-2"></i> Class Imbalance Handling & Preprocessing Pipeline
+    </h3>
+  </div>
+  <div class="card-body p-4">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <h4 class="h6 fw-bold">Class Distribution</h4>
+        <div class="d-flex gap-3 mb-3">
+          {% for cls_name, cls_cnt in metrics.class_distribution.items() %}
+          <div class="p-3 bg-light rounded text-center flex-grow-1 border">
+            <div class="small text-muted">{{ cls_name }}</div>
+            <div class="fw-bold fs-4">{{ cls_cnt }}</div>
+            <div class="small text-muted">{{ ((cls_cnt / metrics.dataset_size) * 100)|round(1) }}%</div>
+          </div>
+          {% endfor %}
+        </div>
+        <p class="small text-muted">
+          As in real-world academic grading, 'Average' forms the bulk cohort, while 'Low' represents an urgent ~8% minority.
+          To mitigate bias without synthetic artifact distortion, models utilize <code>class_weight="balanced"</code> to penalize misclassifications proportionally.
+        </p>
+      </div>
+
+      <div class="col-md-6">
+        <h4 class="h6 fw-bold">Target Leakage Prevention & Pipeline</h4>
+        <ul class="small text-muted mb-0">
+          <li class="mb-2"><strong>Zero Target Leakage:</strong> <code>final_exam_score</code> is strictly excluded from all training and inference feature sets.</li>
+          <li class="mb-2"><strong>Numerical Preprocessing:</strong> Handled via <code>SimpleImputer(strategy='median')</code> followed by <code>StandardScaler()</code>.</li>
+          <li class="mb-2"><strong>Categorical Preprocessing:</strong> Handled via <code>SimpleImputer(strategy='most_frequent')</code> followed by <code>OneHotEncoder(handle_unknown='ignore')</code>.</li>
+          <li><strong>Pipeline Serialization:</strong> The complete transformer + classifier is serialized using <code>joblib</code> into <code>models/student_performance_model.pkl</code>.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  {% if charts.confusion_matrix %}
+    renderPlotlyChart("chart-confusion-matrix", {{ charts.confusion_matrix|safe }});
+  {% endif %}
+
+  {% if charts.feature_importance %}
+    renderPlotlyChart("chart-feature-importance", {{ charts.feature_importance|safe }});
+  {% endif %}
+
+  {% if charts.model_comparison_chart %}
+    renderPlotlyChart("chart-model-comparison", {{ charts.model_comparison_chart|safe }});
+  {% endif %}
+});
+</script>
+{% endblock %}
