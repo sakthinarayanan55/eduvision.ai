@@ -1,0 +1,411 @@
+{
+  "dataset_size": 1250,
+  "train_records": 1000,
+  "test_records": 250,
+  "feature_count": 30,
+  "target_classes": [
+    "High",
+    "Average",
+    "Low"
+  ],
+  "class_distribution": {
+    "Average": 762,
+    "High": 390,
+    "Low": 98
+  },
+  "selected_model": "Random Forest",
+  "selection_criterion": "Highest Test Weighted F1-Score",
+  "comparison_table": [
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.772,
+      "precision": 0.7941,
+      "recall": 0.772,
+      "f1_score": 0.7749,
+      "is_selected": false
+    },
+    {
+      "model": "Decision Tree",
+      "accuracy": 0.784,
+      "precision": 0.8011,
+      "recall": 0.784,
+      "f1_score": 0.7868,
+      "is_selected": false
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.804,
+      "precision": 0.8224,
+      "recall": 0.804,
+      "f1_score": 0.8062,
+      "is_selected": true
+    },
+    {
+      "model": "Gradient Boosting",
+      "accuracy": 0.804,
+      "precision": 0.8053,
+      "recall": 0.804,
+      "f1_score": 0.8043,
+      "is_selected": false
+    },
+    {
+      "model": "Support Vector Machine",
+      "accuracy": 0.764,
+      "precision": 0.7915,
+      "recall": 0.764,
+      "f1_score": 0.7669,
+      "is_selected": false
+    }
+  ],
+  "models_evaluation": {
+    "Logistic Regression": {
+      "accuracy": 0.772,
+      "precision_macro": 0.7207,
+      "recall_macro": 0.8169,
+      "f1_macro": 0.7547,
+      "precision_weighted": 0.7941,
+      "recall_weighted": 0.772,
+      "f1_weighted": 0.7749,
+      "confusion_matrix": [
+        [
+          64,
+          14,
+          0
+        ],
+        [
+          29,
+          111,
+          12
+        ],
+        [
+          0,
+          2,
+          18
+        ]
+      ],
+      "classes": [
+        "High",
+        "Average",
+        "Low"
+      ],
+      "per_class": {
+        "High": {
+          "precision": 0.6882,
+          "recall": 0.8205,
+          "f1_score": 0.7485,
+          "support": 78
+        },
+        "Average": {
+          "precision": 0.874,
+          "recall": 0.7303,
+          "f1_score": 0.7957,
+          "support": 152
+        },
+        "Low": {
+          "precision": 0.6,
+          "recall": 0.9,
+          "f1_score": 0.72,
+          "support": 20
+        }
+      }
+    },
+    "Decision Tree": {
+      "accuracy": 0.784,
+      "precision_macro": 0.729,
+      "recall_macro": 0.8214,
+      "f1_macro": 0.763,
+      "precision_weighted": 0.8011,
+      "recall_weighted": 0.784,
+      "f1_weighted": 0.7868,
+      "confusion_matrix": [
+        [
+          63,
+          15,
+          0
+        ],
+        [
+          25,
+          115,
+          12
+        ],
+        [
+          0,
+          2,
+          18
+        ]
+      ],
+      "classes": [
+        "High",
+        "Average",
+        "Low"
+      ],
+      "per_class": {
+        "High": {
+          "precision": 0.7159,
+          "recall": 0.8077,
+          "f1_score": 0.759,
+          "support": 78
+        },
+        "Average": {
+          "precision": 0.8712,
+          "recall": 0.7566,
+          "f1_score": 0.8099,
+          "support": 152
+        },
+        "Low": {
+          "precision": 0.6,
+          "recall": 0.9,
+          "f1_score": 0.72,
+          "support": 20
+        }
+      }
+    },
+    "Random Forest": {
+      "accuracy": 0.804,
+      "precision_macro": 0.7625,
+      "recall_macro": 0.8531,
+      "f1_macro": 0.7964,
+      "precision_weighted": 0.8224,
+      "recall_weighted": 0.804,
+      "f1_weighted": 0.8062,
+      "confusion_matrix": [
+        [
+          66,
+          12,
+          0
+        ],
+        [
+          27,
+          116,
+          9
+        ],
+        [
+          0,
+          1,
+          19
+        ]
+      ],
+      "classes": [
+        "High",
+        "Average",
+        "Low"
+      ],
+      "per_class": {
+        "High": {
+          "precision": 0.7097,
+          "recall": 0.8462,
+          "f1_score": 0.7719,
+          "support": 78
+        },
+        "Average": {
+          "precision": 0.8992,
+          "recall": 0.7632,
+          "f1_score": 0.8256,
+          "support": 152
+        },
+        "Low": {
+          "precision": 0.6786,
+          "recall": 0.95,
+          "f1_score": 0.7917,
+          "support": 20
+        }
+      }
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.804,
+      "precision_macro": 0.7761,
+      "recall_macro": 0.8075,
+      "f1_macro": 0.7905,
+      "precision_weighted": 0.8053,
+      "recall_weighted": 0.804,
+      "f1_weighted": 0.8043,
+      "confusion_matrix": [
+        [
+          58,
+          20,
+          0
+        ],
+        [
+          20,
+          126,
+          6
+        ],
+        [
+          0,
+          3,
+          17
+        ]
+      ],
+      "classes": [
+        "High",
+        "Average",
+        "Low"
+      ],
+      "per_class": {
+        "High": {
+          "precision": 0.7436,
+          "recall": 0.7436,
+          "f1_score": 0.7436,
+          "support": 78
+        },
+        "Average": {
+          "precision": 0.8456,
+          "recall": 0.8289,
+          "f1_score": 0.8372,
+          "support": 152
+        },
+        "Low": {
+          "precision": 0.7391,
+          "recall": 0.85,
+          "f1_score": 0.7907,
+          "support": 20
+        }
+      }
+    },
+    "Support Vector Machine": {
+      "accuracy": 0.764,
+      "precision_macro": 0.7152,
+      "recall_macro": 0.827,
+      "f1_macro": 0.752,
+      "precision_weighted": 0.7915,
+      "recall_weighted": 0.764,
+      "f1_weighted": 0.7669,
+      "confusion_matrix": [
+        [
+          64,
+          14,
+          0
+        ],
+        [
+          31,
+          108,
+          13
+        ],
+        [
+          0,
+          1,
+          19
+        ]
+      ],
+      "classes": [
+        "High",
+        "Average",
+        "Low"
+      ],
+      "per_class": {
+        "High": {
+          "precision": 0.6737,
+          "recall": 0.8205,
+          "f1_score": 0.7399,
+          "support": 78
+        },
+        "Average": {
+          "precision": 0.878,
+          "recall": 0.7105,
+          "f1_score": 0.7855,
+          "support": 152
+        },
+        "Low": {
+          "precision": 0.5938,
+          "recall": 0.95,
+          "f1_score": 0.7308,
+          "support": 20
+        }
+      }
+    }
+  },
+  "feature_importances": [
+    {
+      "feature": "internal_exam_2",
+      "importance": 0.1254
+    },
+    {
+      "feature": "project_score",
+      "importance": 0.1186
+    },
+    {
+      "feature": "backlogs",
+      "importance": 0.1071
+    },
+    {
+      "feature": "previous_semester_percentage",
+      "importance": 0.0903
+    },
+    {
+      "feature": "lab_score",
+      "importance": 0.0886
+    },
+    {
+      "feature": "midterm_score",
+      "importance": 0.0812
+    },
+    {
+      "feature": "previous_failures",
+      "importance": 0.0727
+    },
+    {
+      "feature": "internal_exam_1",
+      "importance": 0.0587
+    },
+    {
+      "feature": "technical_skill_score",
+      "importance": 0.0571
+    },
+    {
+      "feature": "assignment_average",
+      "importance": 0.0399
+    },
+    {
+      "feature": "aptitude_score",
+      "importance": 0.0261
+    },
+    {
+      "feature": "attendance_percentage",
+      "importance": 0.0232
+    },
+    {
+      "feature": "coding_skill_score",
+      "importance": 0.0208
+    },
+    {
+      "feature": "class_participation",
+      "importance": 0.0173
+    },
+    {
+      "feature": "study_hours_per_day",
+      "importance": 0.0166
+    }
+  ],
+  "all_feature_names": [
+    "semester",
+    "age",
+    "attendance_percentage",
+    "study_hours_per_day",
+    "previous_semester_percentage",
+    "internal_exam_1",
+    "internal_exam_2",
+    "assignment_average",
+    "lab_score",
+    "technical_skill_score",
+    "coding_skill_score",
+    "communication_skill_score",
+    "aptitude_score",
+    "backlogs",
+    "previous_failures",
+    "class_participation",
+    "extracurricular_score",
+    "project_score",
+    "midterm_score",
+    "department_Artificial Intelligence and Data Science",
+    "department_Artificial Intelligence and Machine Learning",
+    "department_Civil Engineering",
+    "department_Computer Science and Engineering",
+    "department_Electrical and Electronics Engineering",
+    "department_Electronics and Communication Engineering",
+    "department_Information Technology",
+    "department_Mechanical Engineering",
+    "gender_Female",
+    "gender_Male",
+    "gender_Other"
+  ]
+}

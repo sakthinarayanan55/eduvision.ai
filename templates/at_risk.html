@@ -1,0 +1,224 @@
+{% extends "base.html" %}
+
+{% block title %}Students Requiring Academic Attention (At-Risk Queue) - EduVision AI{% endblock %}
+
+{% block content %}
+<div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
+  <div>
+    <h2 class="h3 fw-bold mb-1 text-danger d-flex align-items-center gap-2">
+      <i class="bi bi-shield-exclamation"></i> Students Requiring Academic Attention
+    </h2>
+    <p class="text-secondary small mb-0">Priority queue for students identified with significant risk indicators, low predicted outcomes, or critical attendance deficits.</p>
+  </div>
+  <a href="{{ url_for('interventions') }}" class="btn btn-outline-primary">
+    <i class="bi bi-journal-check me-1"></i> View Intervention Records
+  </a>
+</div>
+
+<!-- Filter Ribbon -->
+<div class="card border-0 shadow-sm rounded-3 mb-4">
+  <div class="card-body p-3">
+    <form method="GET" action="{{ url_for('at_risk') }}" class="row g-2 align-items-end">
+      <div class="col-md-5">
+        <label class="form-label small fw-semibold text-muted">Filter by Department</label>
+        <select class="form-select form-select-sm" name="department">
+          <option value="">All Departments</option>
+          {% for dept in departments %}
+            <option value="{{ dept }}" {% if current_dept == dept %}selected{% endif %}>{{ dept }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label small fw-semibold text-muted">Risk Tier</label>
+        <select class="form-select form-select-sm" name="risk_level">
+          <option value="HIGH RISK" {% if current_risk == 'HIGH RISK' %}selected{% endif %}>High Risk Only</option>
+          <option value="MEDIUM RISK" {% if current_risk == 'MEDIUM RISK' %}selected{% endif %}>Medium Risk Only</option>
+          <option value="ALL" {% if current_risk == 'ALL' %}selected{% endif %}>High & Medium Risk (All Attention)</option>
+        </select>
+      </div>
+
+      <div class="col-md-3 d-flex gap-2">
+        <button type="submit" class="btn btn-sm btn-danger w-100">
+          <i class="bi bi-filter me-1"></i> Apply Filter
+        </button>
+        <a href="{{ url_for('at_risk') }}" class="btn btn-sm btn-outline-secondary">Reset</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- At-Risk Queue Table -->
+<div class="card-table-wrapper mb-4">
+  <div class="p-3 border-bottom d-flex justify-content-between align-items-center">
+    <span class="fw-bold small text-muted text-uppercase">
+      Total Identified in Attention Queue: {{ students|length }} Students
+    </span>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-custom">
+      <thead>
+        <tr>
+          <th>Student ID</th>
+          <th>Student Name</th>
+          <th>Department</th>
+          <th>Sem</th>
+          <th>Predicted Outcome</th>
+          <th>Risk Tier</th>
+          <th>Attendance</th>
+          <th>Standing Arrears</th>
+          <th>Intervention Status</th>
+          <th class="text-end">Quick Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for s in students %}
+        <tr>
+          <td>
+            <a href="{{ url_for('student_detail', student_id=s.student_id) }}" class="fw-bold text-primary text-decoration-none">
+              {{ s.student_id }}
+            </a>
+          </td>
+          <td>
+            <div class="fw-semibold text-dark">{{ s.name or 'Student ' ~ s.student_id }}</div>
+            <div class="text-secondary" style="font-size: 0.72rem;">{{ s.parent_email or '' }}</div>
+          </td>
+          <td><span class="small text-secondary">{{ s.department }}</span></td>
+          <td>Sem {{ s.semester }}</td>
+          <td>
+            {% if s.latest_prediction == 'High' %}
+              <span class="badge badge-perf-high">High</span>
+            {% elif s.latest_prediction == 'Average' %}
+              <span class="badge badge-perf-avg">Average</span>
+            {% else %}
+              <span class="badge badge-perf-low">Low</span>
+            {% endif %}
+          </td>
+          <td>
+            {% if s.latest_risk_level == 'HIGH RISK' %}
+              <span class="badge badge-risk badge-risk-high"><i class="bi bi-exclamation-octagon-fill"></i> HIGH RISK</span>
+            {% elif s.latest_risk_level == 'MEDIUM RISK' %}
+              <span class="badge badge-risk badge-risk-medium"><i class="bi bi-exclamation-triangle"></i> MEDIUM</span>
+            {% else %}
+              <span class="badge badge-risk badge-risk-low"><i class="bi bi-check-circle"></i> LOW</span>
+            {% endif %}
+          </td>
+          <td>
+            <span class="{% if s.attendance_percentage < 75 %}text-danger fw-bold{% else %}text-muted{% endif %}">
+              {{ s.attendance_percentage }}%
+            </span>
+          </td>
+          <td>
+            {% if s.backlogs > 0 %}
+              <span class="badge bg-danger-subtle text-danger border border-danger-subtle">{{ s.backlogs }} Arrear(s)</span>
+            {% else %}
+              <span class="badge bg-success-subtle text-success border border-success-subtle">All Clear</span>
+            {% endif %}
+          </td>
+          <td>
+            {% if s.interventions %}
+              {% set latest_interv = s.interventions[0] %}
+              {% if latest_interv.status == 'Completed' %}
+                <span class="badge bg-success-subtle text-success border border-success-subtle">
+                  <i class="bi bi-check-circle me-1"></i> Completed
+                </span>
+              {% elif latest_interv.status == 'In Progress' %}
+                <span class="badge bg-warning-subtle text-warning border border-warning-subtle">
+                  <i class="bi bi-arrow-repeat me-1"></i> In Progress
+                </span>
+              {% else %}
+                <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle">
+                  <i class="bi bi-hourglass me-1"></i> Pending
+                </span>
+              {% endif %}
+            {% else %}
+              <span class="badge bg-light text-muted border">None Logged</span>
+            {% endif %}
+          </td>
+          <td class="text-end">
+            <div class="d-inline-flex gap-1">
+              <a href="{{ url_for('download_student_report', student_id=s.student_id) }}" class="btn btn-sm btn-outline-interactive" title="Download Report">
+                <i class="bi bi-download"></i>
+              </a>
+              <a href="{{ url_for('student_detail', student_id=s.student_id) }}" class="btn btn-sm btn-outline-primary" title="View Profile">
+                <i class="bi bi-search"></i>
+              </a>
+              {% if session.get('role') in ['admin', 'faculty'] %}
+              <button type="button" class="btn btn-sm btn-outline-success" onclick="openInterventionModal('{{ s.student_id }}', '{{ s.latest_risk_level }}')" title="Add Intervention">
+                <i class="bi bi-shield-plus"></i>
+              </button>
+              {% endif %}
+            </div>
+          </td>
+        </tr>
+        {% else %}
+        <tr>
+          <td colspan="9" class="text-center py-4 text-muted">
+            <i class="bi bi-shield-check text-success fs-3 d-block mb-1"></i>
+            No students matching the filtered risk criteria.
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Modal for Quick Intervention Logging -->
+<div class="modal fade" id="quickInterventionModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form method="POST" action="{{ url_for('interventions') }}">
+        <input type="hidden" name="student_id" id="modal_student_id">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="modal_title">Log Early Intervention</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">Intervention Recommendation</label>
+            <textarea class="form-control" name="recommendation" id="modal_recom" rows="2" required placeholder="Describe target intervention..."></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Faculty Advisory Note</label>
+            <textarea class="form-control" name="faculty_note" rows="2" placeholder="Specific notes from student meeting..."></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Action Taken</label>
+            <input type="text" class="form-control" name="action_taken" placeholder="e.g. Assigned remedial study plan">
+          </div>
+          <div class="row g-2">
+            <div class="col-6">
+              <label class="form-label">Status</label>
+              <select class="form-select" name="status">
+                <option value="In Progress">In Progress</option>
+                <option value="Pending">Pending</option>
+                <option value="Completed">Completed</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <label class="form-label">Follow-up Date</label>
+              <input type="date" class="form-control" name="follow_up_date">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Intervention</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+function openInterventionModal(studentId, riskLevel) {
+  document.getElementById('modal_student_id').value = studentId;
+  document.getElementById('modal_title').innerText = 'Log Early Intervention: ' + studentId;
+  document.getElementById('modal_recom').value = 'Mandatory attendance monitoring, remedial coursework review, and weekly mentor check-ins.';
+  var myModal = new bootstrap.Modal(document.getElementById('quickInterventionModal'));
+  myModal.show();
+}
+</script>
+{% endblock %}

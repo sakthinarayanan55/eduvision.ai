@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+
+{% block title %}Login - Engineering Student Performance Prediction & Early Intervention{% endblock %}
+
+{% block auth_content %}
+<div class="login-bg p-3 min-vh-100 d-flex align-items-center justify-content-center" style="background: radial-gradient(circle at top, #1e293b 0%, #0b1329 100%);">
+  <div class="container" style="max-width: 480px;">
+    <div class="card p-4 shadow-lg border" style="background: var(--bg-card); border-radius: 18px; border: 1.5px solid var(--border-subtle) !important; box-shadow: 0 25px 50px -12px rgba(11, 19, 41, 0.25) !important;">
+      <div class="text-center mb-4">
+        <div class="login-brand-icon mb-3">
+          <i class="bi bi-mortarboard-fill"></i>
+        </div>
+        <h3 class="fw-bold mb-1 login-brand-title">EduVision AI</h3>
+        <p class="text-secondary small fw-semibold">AI-Powered Engineering Student Analytics & Early Intervention Portal</p>
+      </div>
+
+      <!-- Flash messages in auth container -->
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          {% for category, message in messages %}
+            <div class="alert alert-{{ category }} alert-dismissible fade show small py-2 mb-3" role="alert">
+              {{ message }}
+              <button type="button" class="btn-close py-2" data-bs-dismiss="alert"></button>
+            </div>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+
+      <!-- Login Role Selector Tabs -->
+      <div class="d-flex p-1 mb-4 rounded-3" style="background: #c8d9ea; border: 1.5px solid var(--border-subtle);">
+        <button type="button" class="btn btn-sm w-50 fw-bold rounded-2 py-2" id="tabStaff" onclick="setLoginMode('staff')">
+          <i class="bi bi-shield-lock me-1"></i> Faculty / Admin
+        </button>
+        <button type="button" class="btn btn-sm w-50 fw-bold rounded-2 py-2" id="tabStudent" onclick="setLoginMode('student')">
+          <i class="bi bi-person-badge me-1"></i> Student Portal
+        </button>
+      </div>
+
+      <form method="POST" action="{{ url_for('login') }}">
+        <div class="mb-3">
+          <label for="username" class="form-label fw-semibold text-dark" id="lblUsername">Unique ID / Username</label>
+          <div class="input-group">
+            <span class="input-group-text bg-light border-end-0 text-secondary"><i class="bi bi-person"></i></span>
+            <input type="text" class="form-control border-start-0" id="username" name="username" placeholder="Enter username or Student ID" required autofocus>
+          </div>
+          <div class="form-text small text-muted" id="hintUsername">Enter your institutional credential</div>
+        </div>
+
+        <div class="mb-4">
+          <label for="password" class="form-label fw-semibold text-dark">Password</label>
+          <div class="input-group">
+            <span class="input-group-text bg-light border-end-0 text-secondary"><i class="bi bi-lock"></i></span>
+            <input type="password" class="form-control border-start-0" id="password" name="password" placeholder="Enter password" required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary-gradient w-100 py-2 mb-3">
+          <i class="bi bi-box-arrow-in-right me-1"></i> Sign In to Academic Portal
+        </button>
+      </form>
+
+      <!-- Quick Demo Credentials Section -->
+      <div class="mt-3 pt-3 border-top">
+        <div class="text-center text-muted small fw-semibold mb-2">1-Click Quick Demo Sign In:</div>
+        <div class="d-grid gap-2">
+          <button type="button" class="btn btn-outline-secondary btn-sm py-1 d-flex justify-content-between align-items-center" onclick="fillCreds('admin', 'admin123', 'staff')">
+            <span><i class="bi bi-shield-lock-fill text-primary me-1"></i> Admin Portal</span>
+            <code class="text-primary fw-semibold">admin / admin123</code>
+          </button>
+          <button type="button" class="btn btn-outline-secondary btn-sm py-1 d-flex justify-content-between align-items-center" onclick="fillCreds('faculty', 'faculty123', 'staff')">
+            <span><i class="bi bi-person-badge-fill text-success me-1"></i> Faculty Mentor</span>
+            <code class="text-success fw-semibold">faculty / faculty123</code>
+          </button>
+          <button type="button" class="btn btn-outline-secondary btn-sm py-1 d-flex justify-content-between align-items-center" onclick="fillCreds('ENG0001', 'student123', 'student')">
+            <span><i class="bi bi-mortarboard-fill text-primary me-1"></i> Student (Unique ID)</span>
+            <code class="text-primary fw-semibold">ENG0001 / student123</code>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function setLoginMode(mode) {
+  const tabStaff = document.getElementById('tabStaff');
+  const tabStudent = document.getElementById('tabStudent');
+  const lbl = document.getElementById('lblUsername');
+  const inp = document.getElementById('username');
+  const hint = document.getElementById('hintUsername');
+
+  if (mode === 'student') {
+    tabStudent.className = 'btn btn-sm w-50 fw-semibold rounded-2 py-2 btn-primary-gradient text-white';
+    tabStaff.className = 'btn btn-sm w-50 fw-semibold rounded-2 py-2 text-secondary';
+    lbl.innerText = 'Unique Student ID';
+    inp.placeholder = 'e.g. ENG0001, ENG0002...';
+    hint.innerText = 'Enter your unique Student ID to view your isolated academic report.';
+  } else {
+    tabStaff.className = 'btn btn-sm w-50 fw-semibold rounded-2 py-2 btn-primary-gradient text-white';
+    tabStudent.className = 'btn btn-sm w-50 fw-semibold rounded-2 py-2 text-secondary';
+    lbl.innerText = 'Username / Staff ID';
+    inp.placeholder = 'e.g. admin, faculty...';
+    hint.innerText = 'Institutional faculty or administrator access credentials.';
+  }
+}
+
+function fillCreds(u, p, mode) {
+  setLoginMode(mode);
+  document.getElementById('username').value = u;
+  document.getElementById('password').value = p;
+}
+
+// Default to staff mode styling on load
+document.addEventListener('DOMContentLoaded', () => setLoginMode('staff'));
+</script>
+{% endblock %}

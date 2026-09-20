@@ -1,0 +1,1251 @@
+student_id,department,semester,age,gender,attendance_percentage,study_hours_per_day,previous_semester_percentage,internal_exam_1,internal_exam_2,assignment_average,lab_score,technical_skill_score,coding_skill_score,communication_skill_score,aptitude_score,backlogs,previous_failures,class_participation,extracurricular_score,project_score,midterm_score,final_exam_score,performance_category
+ENG0001,Electronics and Communication Engineering,8,21,Female,84.6,4.4,74.4,71.0,62.6,78.7,76.2,73.6,62.3,75.2,77.1,0,0,8,58.6,76.5,67.5,71.6,Average
+ENG0002,Computer Science and Engineering,3,22,Female,83.1,4.0,76.2,71.1,63.0,74.6,73.5,73.6,86.8,61.8,70.2,0,0,7,23.4,75.4,65.7,73.4,Average
+ENG0003,Electronics and Communication Engineering,4,21,Male,75.1,4.2,83.0,76.0,65.5,69.8,79.4,73.4,80.6,74.1,89.8,0,0,6,55.4,79.0,67.7,76.3,High
+ENG0004,Electrical and Electronics Engineering,6,20,Male,81.0,4.1,74.8,72.7,61.6,77.3,78.0,76.4,70.6,64.2,74.9,0,0,7,37.1,77.2,66.6,71.9,Average
+ENG0005,Artificial Intelligence and Data Science,7,19,Male,71.3,5.2,71.4,64.4,55.2,70.7,69.5,65.8,64.8,66.8,63.2,0,0,6,93.9,69.8,57.7,67.9,Average
+ENG0006,Information Technology,6,20,Female,70.4,3.1,79.0,73.4,65.2,68.5,77.4,70.3,82.4,71.4,84.6,0,0,6,38.1,76.2,66.0,67.4,Average
+ENG0007,Artificial Intelligence and Data Science,7,21,Male,81.4,4.4,78.6,75.9,69.6,72.9,76.7,77.7,90.2,57.6,83.6,0,0,7,68.7,79.9,75.5,76.9,High
+ENG0008,Computer Science and Engineering,5,20,Male,60.7,3.5,70.2,66.0,55.6,61.5,72.0,69.0,88.2,68.7,81.1,0,0,4,83.8,70.8,59.3,63.4,Average
+ENG0009,Computer Science and Engineering,5,22,Female,85.2,5.8,71.8,67.9,65.5,82.6,77.2,70.4,77.1,80.0,69.0,0,0,8,45.3,74.2,65.7,71.2,Average
+ENG0010,Computer Science and Engineering,5,21,Male,74.3,4.7,77.2,73.8,69.7,84.7,80.8,72.7,76.7,79.5,65.8,0,1,8,82.7,77.7,73.3,69.5,Average
+ENG0011,Electronics and Communication Engineering,4,20,Male,76.0,5.5,77.5,74.5,64.3,79.2,81.1,75.9,73.7,79.6,78.6,0,0,7,66.2,79.7,70.5,72.9,Average
+ENG0012,Mechanical Engineering,5,22,Female,76.2,4.1,70.0,69.4,56.8,71.9,73.0,61.1,55.9,79.8,72.4,0,1,6,41.1,69.9,60.0,66.6,Average
+ENG0013,Mechanical Engineering,6,22,Female,82.7,5.0,65.5,64.4,56.2,70.0,70.8,65.5,54.3,78.5,66.3,0,0,7,91.3,67.8,63.9,70.3,Average
+ENG0014,Electronics and Communication Engineering,4,20,Female,85.5,4.6,74.5,71.2,67.5,78.9,74.8,74.8,60.0,62.3,69.5,0,1,8,48.1,76.9,68.3,74.8,High
+ENG0015,Artificial Intelligence and Data Science,8,23,Female,70.3,5.1,72.1,69.0,59.5,80.5,77.3,76.1,76.4,67.7,75.6,0,0,7,92.7,76.0,60.6,69.1,Average
+ENG0016,Artificial Intelligence and Machine Learning,3,21,Female,71.9,5.5,73.4,67.8,60.4,73.9,71.2,66.0,72.8,87.8,70.3,0,0,7,88.3,71.9,66.7,68.8,Average
+ENG0017,Artificial Intelligence and Machine Learning,6,21,Male,71.5,2.8,73.9,70.5,52.9,62.0,72.7,72.0,94.3,78.4,79.7,0,0,5,29.7,72.9,65.3,62.1,Average
+ENG0018,Mechanical Engineering,6,20,Male,67.5,2.8,62.4,63.8,51.8,64.7,65.1,55.1,51.7,90.5,69.4,0,0,5,78.8,65.2,57.0,64.0,Average
+ENG0019,Mechanical Engineering,7,22,Male,69.6,3.5,67.2,64.0,52.0,71.1,71.7,63.8,54.1,64.1,62.8,0,0,6,40.9,70.0,55.4,58.4,Average
+ENG0020,Electronics and Communication Engineering,5,21,Male,82.3,4.2,76.9,74.5,67.2,78.6,77.2,76.9,68.9,63.7,78.2,0,0,7,28.0,78.5,70.4,70.7,Average
+ENG0021,Electrical and Electronics Engineering,4,20,Male,70.2,5.0,79.9,77.6,69.0,78.4,77.5,76.8,68.1,80.2,75.7,0,0,7,34.0,79.1,71.6,73.9,Average
+ENG0022,Computer Science and Engineering,7,19,Male,79.2,3.9,73.3,68.8,61.1,67.6,71.3,67.6,78.8,71.1,76.2,0,0,6,56.1,72.4,65.2,67.3,Average
+ENG0023,Computer Science and Engineering,3,23,Male,92.4,6.5,75.5,67.0,65.7,86.6,74.8,73.7,62.5,66.7,59.8,0,0,9,32.3,75.2,68.9,72.8,Average
+ENG0024,Mechanical Engineering,5,20,Female,64.4,4.3,76.2,74.3,66.8,67.9,72.3,71.8,80.1,68.6,82.9,0,0,5,79.1,75.3,67.8,67.0,Average
+ENG0025,Civil Engineering,3,21,Female,68.8,4.0,66.1,63.1,54.3,72.6,68.7,60.1,48.1,62.8,58.3,2,2,6,64.0,66.6,58.7,58.1,Low
+ENG0026,Mechanical Engineering,3,22,Female,86.5,6.4,83.7,77.4,68.5,86.0,82.7,82.3,64.0,64.0,72.9,0,0,8,80.2,81.7,69.0,74.6,High
+ENG0027,Electrical and Electronics Engineering,7,20,Male,83.3,4.2,76.4,73.7,59.7,75.2,73.9,68.0,74.6,48.3,79.1,0,0,7,87.4,75.3,64.3,70.5,Average
+ENG0028,Information Technology,3,20,Male,79.1,3.5,83.1,82.4,70.7,69.6,77.6,79.2,98.0,84.6,96.8,0,0,6,69.0,81.7,74.5,75.8,High
+ENG0029,Civil Engineering,7,21,Male,86.9,5.0,78.2,75.4,70.8,82.3,80.2,76.7,66.7,80.2,72.2,0,0,8,56.6,79.7,76.3,75.8,High
+ENG0030,Civil Engineering,5,19,Male,78.4,2.9,75.7,71.1,61.2,68.7,75.1,64.5,66.2,66.1,75.4,0,0,6,51.4,73.6,65.2,67.1,Average
+ENG0031,Computer Science and Engineering,6,19,Female,73.9,4.6,80.9,75.0,60.5,69.2,76.8,73.3,82.7,50.8,80.6,0,0,6,57.2,77.7,69.3,69.5,Average
+ENG0032,Electronics and Communication Engineering,4,21,Female,76.2,4.5,62.6,60.1,51.4,65.7,65.2,62.7,46.4,73.1,62.5,0,0,6,42.3,64.1,59.1,63.7,Average
+ENG0033,Artificial Intelligence and Data Science,4,21,Male,66.7,3.7,74.9,69.4,59.8,68.6,72.7,62.8,77.0,59.5,82.4,0,0,5,77.5,72.0,63.8,67.2,Average
+ENG0034,Electrical and Electronics Engineering,6,22,Other,72.0,4.0,62.4,58.9,55.9,72.5,68.1,59.0,54.3,77.8,58.2,1,1,7,94.3,66.7,55.3,58.0,Average
+ENG0035,Mechanical Engineering,5,20,Male,79.3,3.8,75.1,68.5,57.7,74.5,74.3,65.0,64.9,68.0,77.2,0,0,7,80.7,73.1,64.3,67.1,Average
+ENG0036,Electrical and Electronics Engineering,3,20,Male,82.6,5.6,86.5,84.4,77.4,87.4,84.6,86.3,72.2,67.5,87.3,0,0,8,72.3,85.6,82.3,86.8,High
+ENG0037,Computer Science and Engineering,7,22,Male,61.7,3.4,76.7,76.0,65.2,68.9,74.9,73.1,84.7,72.6,77.9,0,0,5,89.9,75.2,67.4,75.4,High
+ENG0038,Artificial Intelligence and Machine Learning,6,19,Male,82.9,4.7,68.6,69.2,53.8,70.3,70.8,69.0,74.2,80.9,72.7,1,1,7,26.2,71.4,62.9,55.7,Low
+ENG0039,Mechanical Engineering,4,22,Male,65.6,4.6,76.0,75.8,65.4,75.3,74.2,74.7,74.7,70.6,73.3,0,0,6,89.1,76.4,71.5,73.5,Average
+ENG0040,Civil Engineering,5,19,Male,76.0,5.1,61.9,58.7,51.4,77.4,70.2,64.6,45.0,70.6,50.0,0,1,8,30.7,67.7,55.0,65.9,Average
+ENG0041,Electrical and Electronics Engineering,3,20,Male,80.9,3.8,76.7,73.0,66.9,75.8,74.7,69.2,77.9,58.3,83.7,0,0,7,81.1,77.2,66.6,73.0,Average
+ENG0042,Artificial Intelligence and Data Science,5,21,Male,74.5,4.4,66.0,60.1,55.9,72.0,68.8,63.0,61.0,84.4,62.5,0,0,6,47.8,66.7,61.9,58.3,Average
+ENG0043,Civil Engineering,5,22,Female,58.1,3.3,74.1,67.4,51.8,61.8,68.0,64.8,75.4,80.9,77.1,0,0,4,49.3,70.4,63.4,66.8,Average
+ENG0044,Information Technology,6,20,Female,61.5,3.3,63.8,58.1,41.7,58.4,65.3,56.7,71.7,71.0,60.1,0,0,4,24.3,63.2,50.1,55.4,Low
+ENG0045,Artificial Intelligence and Machine Learning,4,21,Male,61.0,3.2,62.2,56.6,46.8,65.2,62.3,56.1,66.7,66.5,63.3,1,1,5,66.3,62.7,54.7,50.5,Low
+ENG0046,Electrical and Electronics Engineering,3,22,Female,63.2,4.9,62.7,62.6,52.9,67.2,67.5,58.2,58.2,86.8,63.1,0,1,6,29.0,64.7,58.1,56.5,Average
+ENG0047,Mechanical Engineering,5,20,Male,75.4,3.6,57.8,54.9,44.4,71.1,64.8,58.9,44.5,71.6,43.8,2,2,7,27.6,62.2,49.5,50.7,Low
+ENG0048,Information Technology,4,20,Female,85.0,4.8,65.7,63.4,52.3,80.2,69.7,63.9,67.9,63.4,60.0,1,2,8,86.3,68.6,55.7,62.0,Average
+ENG0049,Electronics and Communication Engineering,7,22,Male,80.8,5.6,74.2,74.0,71.2,82.3,75.6,74.8,55.3,85.7,71.6,0,0,8,94.1,77.1,69.7,74.4,High
+ENG0050,Mechanical Engineering,5,20,Female,70.5,5.0,67.9,68.8,57.7,77.9,74.9,67.8,59.1,57.5,63.8,0,0,7,62.2,71.9,66.9,72.9,Average
+ENG0051,Computer Science and Engineering,6,20,Male,75.5,4.1,82.7,79.3,71.0,79.5,78.8,71.5,86.3,65.0,82.7,0,0,7,42.7,78.8,73.3,74.1,High
+ENG0052,Artificial Intelligence and Machine Learning,5,20,Male,89.7,6.3,76.8,73.3,65.0,82.7,76.8,74.7,68.6,70.7,63.8,0,0,9,89.2,76.6,69.0,74.0,High
+ENG0053,Mechanical Engineering,6,20,Male,70.7,4.3,69.9,64.9,57.8,71.2,72.1,62.6,62.7,67.1,70.5,2,2,6,30.7,70.5,58.3,56.0,Low
+ENG0054,Mechanical Engineering,3,21,Other,82.1,5.1,85.2,81.8,81.0,88.1,85.7,81.7,68.0,75.0,81.0,0,0,8,38.1,85.1,85.2,83.7,High
+ENG0055,Artificial Intelligence and Data Science,8,20,Male,71.0,3.6,54.2,51.7,42.5,65.2,63.0,49.7,58.3,55.2,41.5,4,4,6,67.8,57.8,48.4,39.9,Low
+ENG0056,Mechanical Engineering,3,21,Male,69.0,5.8,70.6,65.2,55.8,76.5,73.6,63.3,58.2,70.9,60.3,0,0,7,92.6,70.6,58.9,63.2,Average
+ENG0057,Civil Engineering,6,20,Male,69.8,5.2,79.8,76.6,69.6,74.5,77.9,72.3,67.8,82.8,87.6,0,0,6,29.1,77.8,70.7,74.7,High
+ENG0058,Information Technology,7,22,Female,63.4,3.6,72.4,69.5,51.6,64.8,67.8,67.4,79.9,67.5,72.0,0,0,5,42.3,69.9,61.1,64.2,Average
+ENG0059,Mechanical Engineering,7,21,Female,80.4,5.5,83.3,77.4,70.6,82.5,81.4,81.2,66.3,70.4,87.2,0,1,8,47.6,82.1,73.6,79.2,High
+ENG0060,Mechanical Engineering,5,20,Female,73.7,5.7,87.3,83.7,79.9,86.9,86.2,86.4,74.0,78.0,90.2,0,0,8,53.0,86.1,79.0,80.5,High
+ENG0061,Electronics and Communication Engineering,5,19,Male,80.0,5.7,86.0,80.0,74.8,85.8,81.4,85.2,68.2,63.0,83.6,0,0,8,83.1,85.0,74.9,79.4,High
+ENG0062,Electrical and Electronics Engineering,3,19,Female,82.2,6.0,71.2,67.6,59.7,78.6,74.0,68.0,67.2,76.3,63.8,0,0,8,22.5,74.3,60.2,72.7,Average
+ENG0063,Artificial Intelligence and Machine Learning,3,21,Male,72.8,3.8,79.0,77.6,64.6,74.5,74.8,72.4,84.8,69.6,75.4,0,0,6,38.8,76.9,73.9,76.0,High
+ENG0064,Computer Science and Engineering,7,21,Male,73.1,4.7,84.2,78.2,71.2,77.0,80.2,81.2,85.5,82.5,91.8,0,0,6,35.4,82.2,77.7,75.6,High
+ENG0065,Artificial Intelligence and Data Science,7,20,Male,85.8,6.2,79.1,77.5,69.3,83.5,80.6,80.2,85.1,78.1,81.1,0,0,8,43.8,80.8,76.3,76.0,High
+ENG0066,Artificial Intelligence and Machine Learning,3,20,Male,76.1,5.8,83.1,79.7,68.7,80.4,79.8,72.7,82.3,68.1,78.3,0,0,7,34.1,80.5,77.1,77.2,High
+ENG0067,Artificial Intelligence and Data Science,5,21,Male,84.4,5.9,79.9,77.1,68.4,82.5,80.8,79.9,88.9,52.0,86.7,0,0,8,29.5,81.7,74.2,79.9,High
+ENG0068,Computer Science and Engineering,4,22,Male,71.7,4.8,66.5,63.2,55.1,72.6,68.8,65.0,60.2,75.5,57.2,1,1,7,48.5,66.6,63.0,60.6,Average
+ENG0069,Computer Science and Engineering,5,19,Female,84.5,5.0,69.9,69.9,57.7,74.9,70.5,67.5,76.4,73.2,65.7,0,0,7,42.3,71.8,62.2,70.2,Average
+ENG0070,Artificial Intelligence and Data Science,4,19,Male,79.8,4.1,78.6,80.0,73.3,80.3,81.3,76.7,86.5,77.6,82.5,0,0,7,53.3,80.1,77.5,71.6,Average
+ENG0071,Mechanical Engineering,5,21,Male,77.3,5.0,68.0,65.7,56.8,75.6,70.3,64.8,52.9,61.1,62.3,0,0,7,20.4,71.3,57.3,64.1,Average
+ENG0072,Artificial Intelligence and Data Science,5,21,Male,75.0,4.8,78.1,70.0,59.9,74.1,74.6,74.9,78.5,68.5,80.7,0,0,7,20.1,75.5,66.0,72.8,Average
+ENG0073,Computer Science and Engineering,4,19,Female,65.8,3.4,67.3,67.8,58.2,71.6,69.4,59.2,72.0,74.6,67.8,0,1,6,25.0,68.6,63.3,59.4,Average
+ENG0074,Electrical and Electronics Engineering,5,19,Male,71.5,4.2,66.4,61.4,55.1,73.3,70.3,61.0,57.7,91.0,60.9,1,1,7,32.5,66.7,57.7,62.8,Average
+ENG0075,Computer Science and Engineering,7,20,Male,80.9,4.8,75.7,76.9,68.0,80.3,75.7,69.0,79.3,75.3,69.2,0,0,8,32.0,76.9,68.6,72.4,Average
+ENG0076,Information Technology,7,19,Female,85.4,5.3,84.1,80.4,79.1,89.8,83.2,78.7,81.1,61.1,85.4,0,0,9,46.0,83.5,80.4,79.8,High
+ENG0077,Computer Science and Engineering,5,21,Male,81.4,4.8,76.2,72.7,67.2,81.0,77.6,73.8,67.5,76.4,73.1,0,0,8,54.7,75.1,73.8,76.8,High
+ENG0078,Mechanical Engineering,5,20,Male,65.3,3.5,64.2,61.2,50.9,57.3,67.2,54.9,68.7,64.7,75.9,0,0,4,71.6,64.9,57.8,50.1,Low
+ENG0079,Mechanical Engineering,3,20,Male,82.0,5.4,69.1,62.4,57.6,76.0,71.7,68.2,58.3,64.2,60.4,0,0,7,46.2,69.9,56.9,59.8,Average
+ENG0080,Computer Science and Engineering,5,21,Female,68.2,4.4,71.8,69.8,55.6,67.5,74.1,65.7,82.0,65.6,70.7,0,0,5,38.1,71.9,64.4,67.5,Average
+ENG0081,Electrical and Electronics Engineering,5,19,Female,82.9,4.2,88.4,80.2,72.9,82.9,82.5,80.5,73.5,75.9,93.7,0,0,8,88.2,84.7,75.6,82.5,High
+ENG0082,Artificial Intelligence and Machine Learning,3,21,Male,86.4,6.3,89.0,83.1,74.8,86.5,85.7,82.3,85.5,67.1,85.3,0,0,8,47.7,86.2,75.4,80.5,High
+ENG0083,Artificial Intelligence and Data Science,7,20,Female,85.2,4.9,84.1,79.2,76.0,82.8,83.9,78.2,83.4,68.4,86.6,0,0,8,48.4,82.4,76.3,76.5,High
+ENG0084,Computer Science and Engineering,3,20,Male,74.7,5.5,89.6,84.9,83.2,80.9,81.8,86.2,98.0,74.3,95.2,0,0,7,46.1,86.3,83.0,83.6,High
+ENG0085,Artificial Intelligence and Data Science,3,22,Female,80.7,4.5,83.2,85.2,80.6,79.0,84.4,84.9,94.3,77.5,85.9,0,0,7,78.6,84.1,83.5,79.8,High
+ENG0086,Computer Science and Engineering,7,21,Male,75.1,5.1,65.8,65.8,59.5,82.5,75.7,64.7,64.0,82.5,61.1,0,0,8,61.0,71.1,62.1,62.3,Average
+ENG0087,Computer Science and Engineering,7,23,Female,89.7,4.7,77.3,74.7,71.6,82.5,77.1,75.2,83.1,60.2,72.7,0,0,8,32.2,76.7,73.7,74.9,High
+ENG0088,Civil Engineering,5,19,Male,71.0,4.9,76.9,76.1,70.9,79.2,77.8,79.8,68.3,57.6,83.4,0,1,7,63.3,79.6,72.4,72.4,Average
+ENG0089,Electrical and Electronics Engineering,5,21,Male,84.1,4.6,83.5,81.2,73.1,77.8,79.5,82.5,76.4,72.1,87.7,0,0,7,35.4,82.5,77.9,81.4,High
+ENG0090,Information Technology,4,22,Male,73.6,3.0,69.7,65.0,51.1,66.3,66.3,65.3,67.1,66.4,65.0,0,0,6,20.1,68.3,59.9,66.6,Average
+ENG0091,Artificial Intelligence and Data Science,5,20,Male,83.4,4.4,82.6,80.1,70.3,83.7,81.6,74.0,92.2,89.3,84.4,0,0,8,58.5,81.2,75.3,80.0,High
+ENG0092,Electronics and Communication Engineering,8,21,Female,71.0,4.4,63.7,64.3,57.5,74.3,69.9,66.3,51.3,52.2,60.1,0,0,7,82.9,67.4,57.0,59.0,Average
+ENG0093,Civil Engineering,7,21,Female,68.3,5.2,61.6,59.3,48.1,72.6,68.4,57.9,54.5,71.6,51.0,1,1,6,61.2,65.4,52.0,56.3,Average
+ENG0094,Information Technology,5,21,Male,73.8,5.3,69.9,64.8,60.0,81.9,70.8,68.4,61.7,74.3,62.5,0,0,8,33.5,70.5,66.2,66.6,Average
+ENG0095,Civil Engineering,6,20,Male,71.9,2.8,69.4,71.7,56.7,65.7,71.6,67.7,68.0,55.9,75.8,0,0,6,64.8,71.5,67.1,62.8,Average
+ENG0096,Artificial Intelligence and Machine Learning,3,20,Female,76.9,4.0,74.2,74.1,62.8,75.3,73.0,74.9,81.1,66.4,73.0,0,0,7,52.6,75.0,70.2,71.0,Average
+ENG0097,Mechanical Engineering,6,20,Female,74.1,4.2,74.0,72.3,65.5,79.5,73.5,74.3,69.0,79.6,73.0,0,0,7,59.1,75.4,65.4,71.6,Average
+ENG0098,Electronics and Communication Engineering,8,21,Male,73.9,3.5,75.6,74.0,66.6,66.7,75.3,69.3,68.8,66.6,76.0,0,0,6,50.7,74.5,71.5,68.8,Average
+ENG0099,Computer Science and Engineering,3,20,Female,84.0,5.4,72.5,71.7,68.5,83.9,78.5,69.7,77.2,60.1,60.1,0,0,8,61.5,74.9,70.1,72.6,Average
+ENG0100,Information Technology,7,21,Female,76.5,4.7,74.4,69.8,67.8,83.7,77.8,69.4,70.8,66.4,67.6,0,0,8,65.6,76.7,66.8,71.3,Average
+ENG0101,Information Technology,4,22,Female,70.3,4.7,79.7,76.2,62.1,71.5,74.4,69.5,85.1,79.0,80.0,0,0,6,51.4,77.0,65.3,67.2,Average
+ENG0102,Civil Engineering,3,20,Male,77.3,3.7,71.0,70.9,58.3,67.0,73.2,66.2,71.4,76.5,70.4,0,1,6,49.2,71.5,64.9,65.2,Average
+ENG0103,Electronics and Communication Engineering,7,20,Other,78.7,4.6,81.2,74.0,63.8,75.1,77.7,77.9,66.7,73.8,84.1,0,0,7,76.4,79.1,71.3,73.8,Average
+ENG0104,Electrical and Electronics Engineering,3,21,Female,79.6,5.4,69.0,66.2,53.6,74.5,72.3,62.3,52.7,70.4,68.4,0,0,7,25.8,69.7,61.5,68.6,Average
+ENG0105,Mechanical Engineering,6,20,Female,77.6,4.1,72.4,70.3,63.2,74.9,71.3,69.6,54.8,68.5,63.2,0,0,7,38.3,72.4,67.2,69.0,Average
+ENG0106,Computer Science and Engineering,6,20,Female,67.8,3.8,71.9,64.9,59.0,74.9,73.2,63.0,77.8,75.4,63.1,1,1,7,43.5,70.1,63.2,64.6,Average
+ENG0107,Civil Engineering,3,21,Female,65.7,3.9,74.1,71.4,57.4,68.0,69.9,71.2,72.7,63.3,68.1,0,0,5,70.8,71.9,63.4,69.7,Average
+ENG0108,Artificial Intelligence and Machine Learning,4,21,Female,73.2,4.6,72.6,65.7,52.1,72.6,72.3,69.8,77.2,48.5,69.9,0,1,6,63.7,71.6,59.6,64.0,Average
+ENG0109,Computer Science and Engineering,5,19,Female,75.5,5.7,76.9,67.9,66.4,80.1,78.0,74.5,74.0,77.5,73.2,0,0,7,90.3,75.4,63.8,70.9,Average
+ENG0110,Electronics and Communication Engineering,3,20,Male,67.0,3.2,61.9,59.7,47.2,66.4,64.2,62.6,50.0,77.0,56.6,0,0,6,62.3,65.6,55.9,59.2,Average
+ENG0111,Electrical and Electronics Engineering,3,21,Male,77.8,4.3,69.3,67.1,59.6,69.9,70.2,69.1,63.6,77.9,69.0,0,0,6,82.9,69.8,62.2,64.7,Average
+ENG0112,Artificial Intelligence and Data Science,5,20,Male,85.2,5.1,74.4,69.8,66.3,82.5,76.9,69.6,67.4,72.0,71.9,0,1,8,62.8,75.3,65.2,75.3,High
+ENG0113,Electronics and Communication Engineering,3,21,Female,64.3,5.0,69.7,65.8,57.9,70.0,69.8,60.0,55.4,82.5,70.0,0,0,6,77.0,68.6,59.1,62.1,Average
+ENG0114,Electrical and Electronics Engineering,5,21,Other,65.8,4.5,63.8,63.1,48.7,69.6,67.5,56.3,47.6,80.7,57.0,1,1,6,76.3,65.6,52.9,54.0,Low
+ENG0115,Mechanical Engineering,5,22,Male,76.8,4.7,68.1,68.2,62.0,73.2,72.1,63.0,55.2,66.5,63.9,0,0,7,53.2,69.8,63.2,71.1,Average
+ENG0116,Electronics and Communication Engineering,7,22,Male,81.1,5.5,80.1,77.8,74.4,85.8,82.5,82.4,71.0,70.2,75.0,0,0,8,50.8,81.9,75.3,77.4,High
+ENG0117,Mechanical Engineering,4,20,Male,79.6,5.9,74.7,69.4,61.6,85.2,79.5,75.3,57.3,60.4,66.1,0,0,8,20.8,76.8,68.1,74.1,High
+ENG0118,Artificial Intelligence and Data Science,3,21,Male,68.1,4.8,76.5,74.6,60.4,71.5,73.3,64.9,79.2,75.2,78.3,0,0,6,63.3,73.5,66.4,70.6,Average
+ENG0119,Electrical and Electronics Engineering,5,20,Female,61.7,2.6,75.4,76.6,57.4,61.4,73.1,63.9,78.1,78.7,92.6,0,0,4,73.6,73.3,63.5,66.2,Average
+ENG0120,Electronics and Communication Engineering,3,21,Female,78.7,4.9,71.3,69.2,62.6,82.1,76.6,69.9,53.0,72.1,66.1,0,0,8,85.9,74.7,66.4,69.9,Average
+ENG0121,Civil Engineering,8,20,Female,76.4,5.3,68.1,60.9,57.0,75.5,71.8,62.3,50.9,76.7,59.1,0,0,7,44.4,68.2,55.3,62.6,Average
+ENG0122,Information Technology,3,23,Female,72.9,5.7,86.8,83.5,74.3,87.2,82.4,79.4,90.9,88.4,81.3,0,0,8,76.8,84.6,82.1,80.1,High
+ENG0123,Computer Science and Engineering,3,21,Female,78.5,4.5,71.2,71.2,57.9,77.2,73.8,71.0,69.4,70.7,73.8,0,0,7,87.8,74.4,63.5,69.8,Average
+ENG0124,Electrical and Electronics Engineering,3,20,Female,64.6,4.1,62.2,61.9,49.2,64.7,66.1,56.6,56.5,77.4,59.2,0,0,5,50.6,65.3,57.0,63.6,Average
+ENG0125,Information Technology,6,20,Female,75.7,3.3,71.1,71.7,57.8,67.0,70.6,72.1,74.9,70.6,81.0,0,0,6,55.1,72.7,65.7,70.6,Average
+ENG0126,Electronics and Communication Engineering,5,20,Male,78.2,3.1,70.3,68.2,53.8,67.8,70.8,67.2,55.5,61.7,68.1,1,1,6,52.2,69.2,59.2,59.4,Average
+ENG0127,Mechanical Engineering,4,21,Female,75.4,4.9,70.7,67.6,59.1,77.2,75.6,70.6,60.3,49.1,63.8,0,0,7,63.3,74.3,63.9,64.2,Average
+ENG0128,Electrical and Electronics Engineering,3,19,Female,76.0,3.9,74.7,72.0,63.7,64.7,69.3,64.6,66.7,69.0,81.5,0,0,5,69.9,72.2,68.3,65.9,Average
+ENG0129,Computer Science and Engineering,7,22,Female,80.7,5.9,69.8,64.3,57.0,77.4,71.7,66.1,62.8,68.9,53.7,0,1,8,53.3,69.7,60.9,65.5,Average
+ENG0130,Artificial Intelligence and Data Science,8,21,Female,60.3,3.4,71.7,69.2,58.2,64.2,69.6,65.7,83.0,84.0,71.2,0,1,5,28.1,70.0,63.5,68.5,Average
+ENG0131,Computer Science and Engineering,3,19,Female,61.4,3.1,74.8,72.0,58.0,61.3,69.4,65.2,86.4,67.7,85.0,0,0,4,24.3,70.9,67.1,71.7,Average
+ENG0132,Civil Engineering,4,21,Male,73.4,3.7,64.1,61.9,49.2,72.9,71.2,60.4,51.1,66.7,57.5,1,1,7,68.6,66.8,52.0,58.7,Average
+ENG0133,Computer Science and Engineering,5,21,Female,79.8,5.2,83.2,78.3,69.8,81.4,80.1,77.7,78.8,87.3,76.7,0,0,7,64.7,80.6,70.7,74.3,High
+ENG0134,Artificial Intelligence and Machine Learning,6,21,Female,77.1,4.5,73.6,73.9,57.3,67.5,73.5,73.8,85.4,56.5,74.2,0,1,6,26.5,74.7,68.1,66.8,Average
+ENG0135,Electronics and Communication Engineering,6,20,Male,83.4,4.9,76.9,72.6,67.3,77.9,75.3,71.7,71.3,75.0,68.8,0,0,7,65.3,75.4,72.1,69.0,Average
+ENG0136,Electrical and Electronics Engineering,4,21,Male,74.5,4.1,71.0,63.9,55.5,71.2,68.8,65.9,59.5,65.2,61.2,0,0,7,60.6,70.2,60.9,63.3,Average
+ENG0137,Computer Science and Engineering,4,19,Male,57.9,3.5,76.8,72.8,60.4,64.4,70.6,65.9,84.6,53.6,80.8,0,0,5,37.8,73.8,63.4,68.8,Average
+ENG0138,Computer Science and Engineering,6,21,Male,89.4,6.2,79.9,77.2,71.5,86.4,79.6,76.6,87.1,56.7,81.9,0,0,8,24.5,81.2,75.9,76.6,High
+ENG0139,Electrical and Electronics Engineering,5,21,Other,82.6,5.5,78.8,76.6,72.2,84.7,80.1,77.6,67.3,54.5,71.9,0,0,8,62.6,80.1,76.8,74.9,High
+ENG0140,Civil Engineering,6,20,Male,70.0,4.2,75.1,74.1,58.1,66.5,74.2,70.5,73.2,71.2,84.6,0,0,5,64.8,75.1,68.6,73.4,Average
+ENG0141,Artificial Intelligence and Machine Learning,5,20,Male,57.9,2.3,71.6,67.2,52.3,61.1,71.1,66.2,74.8,63.0,79.6,1,2,4,94.8,70.4,61.5,62.8,Average
+ENG0142,Information Technology,7,19,Male,76.7,4.4,67.3,64.9,51.2,69.4,70.2,61.7,79.3,70.8,66.2,0,0,6,74.7,68.6,58.7,63.0,Average
+ENG0143,Information Technology,5,21,Female,82.5,5.1,75.2,76.6,65.1,74.0,73.8,68.3,82.2,69.3,75.6,0,0,7,84.3,76.0,73.0,70.3,Average
+ENG0144,Computer Science and Engineering,6,22,Female,71.3,5.8,85.3,83.9,79.3,82.1,85.2,85.0,89.8,80.2,86.2,0,0,7,32.7,84.9,78.0,80.4,High
+ENG0145,Artificial Intelligence and Data Science,5,20,Female,72.2,2.6,75.2,71.6,60.7,64.5,73.4,63.1,86.0,70.2,75.5,0,0,5,90.7,71.7,64.5,68.3,Average
+ENG0146,Civil Engineering,5,19,Male,85.6,6.1,79.5,80.6,73.2,88.3,83.1,78.4,68.5,82.4,77.2,0,0,9,54.4,82.0,75.0,78.8,High
+ENG0147,Electronics and Communication Engineering,5,23,Male,70.6,5.5,85.9,79.7,69.6,81.5,80.7,80.4,73.4,76.1,82.5,0,0,7,70.7,82.5,74.7,76.2,High
+ENG0148,Artificial Intelligence and Data Science,7,19,Female,76.6,2.8,73.3,68.4,52.2,66.4,69.9,64.8,84.5,70.7,71.3,0,0,6,51.3,71.3,59.3,58.8,Average
+ENG0149,Computer Science and Engineering,8,19,Male,86.4,4.4,82.6,77.7,66.5,81.4,78.3,73.3,90.1,73.9,85.7,0,0,8,81.5,79.8,75.2,75.1,High
+ENG0150,Information Technology,4,20,Male,83.1,5.2,86.0,84.9,74.3,81.8,83.7,80.7,87.9,70.1,96.9,0,0,8,77.3,85.6,76.5,80.4,High
+ENG0151,Civil Engineering,4,21,Male,80.9,5.1,78.8,76.5,69.7,85.2,78.1,73.8,60.0,53.0,75.9,0,0,8,55.2,78.9,75.5,78.2,High
+ENG0152,Information Technology,3,22,Male,76.7,4.5,68.1,59.5,53.7,77.9,69.7,60.5,68.4,62.2,56.2,0,0,8,88.7,68.2,55.2,67.0,Average
+ENG0153,Electronics and Communication Engineering,8,21,Female,79.4,4.8,85.2,79.9,76.1,82.9,80.5,82.3,72.8,82.7,85.7,0,0,8,83.4,82.4,77.2,79.2,High
+ENG0154,Mechanical Engineering,5,21,Male,64.0,4.4,66.0,64.8,50.3,64.2,68.5,61.9,57.1,74.9,58.2,0,1,5,38.2,65.8,58.9,60.7,Average
+ENG0155,Artificial Intelligence and Data Science,5,20,Female,73.2,2.2,69.7,70.0,56.2,60.5,68.8,62.3,86.4,72.1,72.6,1,1,5,67.6,69.3,60.7,62.7,Average
+ENG0156,Artificial Intelligence and Data Science,6,20,Female,81.8,5.5,68.0,62.0,55.2,80.4,74.3,69.8,67.2,84.2,59.2,1,1,8,59.6,70.4,57.3,63.2,Average
+ENG0157,Electrical and Electronics Engineering,4,21,Male,92.5,5.9,82.6,81.3,72.1,88.5,82.4,75.9,77.1,78.6,85.2,0,0,9,66.1,82.9,74.6,71.2,Average
+ENG0158,Computer Science and Engineering,3,21,Male,70.3,3.0,60.8,58.8,47.7,65.9,64.0,55.9,56.8,59.0,58.1,0,0,6,76.8,63.0,51.5,59.9,Average
+ENG0159,Information Technology,8,19,Male,73.2,4.4,76.7,69.9,65.1,80.4,77.0,72.2,80.0,81.5,72.8,0,0,8,87.4,75.4,68.5,70.4,Average
+ENG0160,Information Technology,7,21,Female,74.9,3.8,70.1,62.6,50.5,72.0,71.5,64.6,67.3,73.1,67.4,0,0,7,88.5,68.9,55.7,61.8,Average
+ENG0161,Artificial Intelligence and Data Science,3,22,Female,86.8,4.4,76.1,72.6,60.2,78.3,74.5,75.9,72.9,73.6,74.4,0,0,8,85.2,75.6,63.8,74.6,High
+ENG0162,Electronics and Communication Engineering,6,20,Female,82.0,6.0,72.4,71.5,66.4,80.7,77.1,71.5,59.8,51.7,67.4,0,1,8,51.6,75.4,69.0,75.5,High
+ENG0163,Artificial Intelligence and Machine Learning,6,21,Female,80.6,3.6,68.4,63.9,48.9,71.0,68.9,62.2,65.8,62.5,60.9,1,1,6,37.1,67.7,53.7,60.4,Average
+ENG0164,Electronics and Communication Engineering,8,20,Male,70.6,4.2,79.2,72.1,66.2,80.8,77.6,77.0,59.6,63.5,73.7,0,0,7,87.0,78.2,67.8,75.0,High
+ENG0165,Artificial Intelligence and Machine Learning,5,20,Male,64.7,3.7,71.3,66.9,54.7,67.3,70.2,70.5,84.2,60.7,76.0,2,2,6,32.1,71.6,64.5,58.5,Low
+ENG0166,Electrical and Electronics Engineering,3,20,Male,83.6,5.0,73.2,70.8,58.4,73.1,74.5,73.7,64.7,51.1,71.2,0,0,7,52.4,73.9,66.9,73.7,Average
+ENG0167,Electrical and Electronics Engineering,4,21,Male,80.9,3.5,82.5,81.2,72.0,75.2,78.3,76.1,71.2,80.0,92.1,0,0,7,46.1,80.3,79.8,77.1,High
+ENG0168,Electronics and Communication Engineering,5,21,Male,85.2,4.4,83.6,81.2,78.0,77.2,81.7,79.8,81.3,71.5,90.3,0,0,7,83.1,82.3,75.8,79.9,High
+ENG0169,Artificial Intelligence and Data Science,5,20,Male,76.2,5.3,78.3,75.7,67.8,80.5,81.1,73.1,88.4,74.4,82.9,0,0,7,83.4,79.0,70.6,70.9,Average
+ENG0170,Computer Science and Engineering,6,19,Male,84.3,6.2,74.7,73.8,68.2,82.8,75.7,73.9,80.5,78.4,76.4,0,0,8,67.4,77.0,71.1,72.5,Average
+ENG0171,Computer Science and Engineering,4,20,Male,76.2,3.2,81.1,78.5,70.3,70.7,77.5,74.5,93.2,53.9,86.0,0,0,6,52.6,78.0,72.7,71.5,Average
+ENG0172,Mechanical Engineering,6,20,Male,78.7,3.8,72.7,68.9,59.5,74.8,73.9,75.1,63.5,70.3,76.2,0,0,7,67.9,75.4,62.9,71.1,Average
+ENG0173,Artificial Intelligence and Machine Learning,4,20,Female,84.9,5.3,74.3,68.7,60.0,75.7,75.8,65.9,77.8,87.5,71.4,0,0,7,25.0,74.2,68.1,68.4,Average
+ENG0174,Electronics and Communication Engineering,6,21,Female,69.9,3.7,61.9,62.5,53.4,65.3,66.2,63.6,60.0,84.3,67.1,1,2,6,23.7,65.9,60.7,58.0,Average
+ENG0175,Electronics and Communication Engineering,4,21,Male,80.2,5.6,69.6,66.3,60.2,77.2,70.8,68.9,60.7,77.2,62.8,0,0,7,29.7,72.1,64.7,63.9,Average
+ENG0176,Computer Science and Engineering,7,21,Female,76.3,6.1,71.7,71.4,61.1,80.8,74.3,71.2,70.5,80.1,69.3,0,0,8,31.0,75.2,67.4,68.7,Average
+ENG0177,Information Technology,4,21,Female,87.1,4.6,69.0,61.1,56.2,78.3,69.2,63.9,71.6,69.9,56.2,0,0,8,27.8,69.0,58.0,63.8,Average
+ENG0178,Computer Science and Engineering,6,20,Male,58.5,3.1,66.2,61.8,51.4,62.6,63.6,60.3,73.2,75.2,68.2,2,2,5,67.3,64.7,56.0,50.6,Low
+ENG0179,Electronics and Communication Engineering,4,21,Female,74.0,5.4,71.8,70.4,64.8,77.8,77.2,72.6,58.8,89.8,75.7,0,0,7,81.5,75.3,71.6,68.5,Average
+ENG0180,Mechanical Engineering,8,22,Male,87.8,5.2,75.3,70.4,69.0,79.8,75.3,67.8,58.2,64.6,76.9,0,0,8,73.1,75.6,71.6,73.0,Average
+ENG0181,Computer Science and Engineering,5,21,Male,77.7,3.5,83.2,80.5,68.6,69.1,76.1,79.6,86.8,72.3,90.8,0,0,6,92.0,80.4,77.4,75.0,High
+ENG0182,Civil Engineering,3,19,Male,60.0,3.5,67.0,62.3,46.2,59.5,67.8,57.7,61.3,84.9,67.0,1,1,4,94.7,65.8,54.1,61.1,Average
+ENG0183,Electrical and Electronics Engineering,5,22,Female,78.7,6.4,85.4,82.4,77.5,84.7,82.9,82.7,69.2,82.1,83.2,0,1,8,73.3,84.4,79.3,78.3,High
+ENG0184,Artificial Intelligence and Machine Learning,6,20,Female,66.7,4.0,79.3,80.5,69.3,75.9,79.3,72.9,83.4,88.9,88.3,0,1,6,45.6,79.0,73.6,73.2,Average
+ENG0185,Computer Science and Engineering,6,21,Male,72.6,2.9,75.9,70.3,60.2,62.9,73.1,62.6,90.2,62.6,77.3,2,2,5,31.2,71.5,65.6,66.1,Low
+ENG0186,Computer Science and Engineering,8,19,Male,76.5,3.8,76.0,71.8,66.2,76.1,73.5,67.6,80.3,79.2,73.5,0,0,7,67.0,74.7,67.0,72.0,Average
+ENG0187,Artificial Intelligence and Data Science,7,23,Male,79.2,3.2,76.6,74.5,69.0,70.8,77.5,74.4,81.2,82.9,80.0,0,0,6,85.5,77.6,68.8,73.4,Average
+ENG0188,Computer Science and Engineering,5,20,Female,67.7,4.3,74.5,71.5,60.0,68.1,74.4,66.9,81.7,84.4,78.6,0,0,5,28.0,73.2,63.7,69.1,Average
+ENG0189,Artificial Intelligence and Machine Learning,4,20,Male,73.3,4.8,88.0,81.4,77.8,80.1,82.8,80.0,97.1,58.4,93.8,0,0,7,85.6,84.5,78.4,77.5,High
+ENG0190,Artificial Intelligence and Machine Learning,3,20,Male,82.8,3.7,78.4,71.7,59.7,71.5,78.3,75.1,88.7,71.0,78.4,0,0,7,60.5,76.8,62.3,69.4,Average
+ENG0191,Computer Science and Engineering,3,20,Female,74.5,4.8,74.3,71.2,56.1,68.9,71.6,71.1,73.3,63.4,73.3,0,0,6,47.9,73.6,61.7,59.7,Average
+ENG0192,Artificial Intelligence and Machine Learning,3,19,Male,76.9,4.8,66.2,57.2,55.3,81.5,68.9,58.9,51.8,55.6,52.9,0,0,8,83.2,66.7,53.9,64.4,Average
+ENG0193,Computer Science and Engineering,6,20,Female,73.4,5.1,71.7,70.8,66.5,79.9,74.4,66.5,69.5,69.1,61.3,0,0,8,29.1,73.6,72.5,68.9,Average
+ENG0194,Electrical and Electronics Engineering,7,21,Male,84.0,5.3,77.1,77.4,72.0,79.4,78.5,73.6,63.9,57.1,79.3,0,0,8,36.2,78.7,71.7,68.7,Average
+ENG0195,Artificial Intelligence and Data Science,4,23,Female,67.2,3.2,71.2,66.3,52.2,62.5,67.5,64.5,85.1,69.7,80.0,0,1,5,53.9,69.5,56.4,64.4,Average
+ENG0196,Information Technology,7,22,Male,73.2,4.1,77.5,75.3,69.2,73.7,76.7,70.9,87.2,70.1,82.2,0,0,6,66.4,77.0,72.3,73.8,Average
+ENG0197,Electrical and Electronics Engineering,5,19,Male,62.1,2.8,66.3,62.6,48.0,63.9,68.0,60.3,64.8,73.4,70.2,0,0,5,22.8,66.7,55.9,53.5,Low
+ENG0198,Artificial Intelligence and Machine Learning,6,19,Male,72.1,3.1,86.0,83.2,67.9,67.5,79.5,81.0,98.0,56.6,90.2,0,0,5,67.1,81.0,76.0,83.8,High
+ENG0199,Civil Engineering,4,21,Male,90.8,6.2,88.5,80.9,81.6,87.5,86.8,81.3,72.6,76.2,88.5,0,0,9,34.9,85.4,80.6,85.6,High
+ENG0200,Civil Engineering,5,23,Male,77.1,4.9,76.4,71.4,64.0,71.3,73.9,65.5,61.5,70.5,75.5,0,0,6,61.4,73.4,70.4,77.2,High
+ENG0201,Artificial Intelligence and Machine Learning,5,20,Female,70.4,5.0,79.1,78.7,65.7,76.9,80.3,79.6,91.2,72.9,85.2,0,0,6,59.6,80.4,69.2,72.7,Average
+ENG0202,Mechanical Engineering,3,20,Male,69.5,4.9,78.6,74.7,67.0,74.0,76.0,77.9,78.7,61.1,86.5,0,0,6,79.9,79.3,70.9,75.3,High
+ENG0203,Information Technology,7,21,Other,78.2,4.5,69.9,67.3,54.7,68.1,73.8,68.2,79.3,79.3,75.2,0,0,6,61.9,72.2,61.0,65.0,Average
+ENG0204,Electronics and Communication Engineering,5,21,Male,77.1,5.5,80.3,76.0,70.2,86.4,80.6,72.6,57.8,65.9,70.7,0,0,8,62.7,79.5,76.2,74.8,High
+ENG0205,Artificial Intelligence and Machine Learning,6,19,Female,76.8,4.1,80.2,76.4,64.2,70.5,77.7,75.8,93.3,82.2,84.8,0,0,6,90.2,79.2,68.8,74.0,High
+ENG0206,Information Technology,3,19,Female,73.6,2.6,73.1,69.9,57.0,64.0,69.6,66.7,75.1,61.7,77.0,0,0,5,76.7,70.6,65.8,69.9,Average
+ENG0207,Electrical and Electronics Engineering,7,20,Male,70.1,4.0,72.8,70.5,62.7,73.7,73.8,74.2,70.1,57.6,70.2,0,0,6,80.6,75.1,64.6,70.1,Average
+ENG0208,Information Technology,5,21,Female,76.0,6.4,83.2,82.1,80.8,88.8,85.2,80.4,88.1,57.4,80.1,0,0,8,54.5,84.3,84.0,76.5,High
+ENG0209,Artificial Intelligence and Machine Learning,5,21,Female,65.9,3.4,74.0,67.1,60.6,68.2,72.4,65.5,73.1,60.5,72.7,0,0,6,62.2,71.9,67.4,67.5,Average
+ENG0210,Artificial Intelligence and Data Science,5,23,Female,63.7,2.8,60.5,57.8,43.3,62.3,66.5,54.6,74.9,83.9,63.6,0,0,5,41.5,63.1,52.4,55.0,Low
+ENG0211,Electronics and Communication Engineering,8,19,Male,80.3,4.9,80.3,73.1,63.7,82.6,76.2,71.8,59.6,50.9,72.8,0,0,8,43.7,77.9,70.6,72.4,Average
+ENG0212,Computer Science and Engineering,3,21,Male,81.4,4.7,79.5,71.3,65.3,79.7,79.1,71.9,74.8,85.3,70.1,0,0,7,89.9,76.9,71.6,66.7,Average
+ENG0213,Civil Engineering,3,20,Female,73.9,5.4,82.5,76.6,66.2,82.3,78.8,75.7,74.7,72.5,81.1,0,0,7,44.1,79.7,71.1,73.4,Average
+ENG0214,Computer Science and Engineering,5,20,Female,63.3,4.2,66.2,62.0,49.8,69.4,70.9,62.3,71.1,74.0,62.0,0,1,6,66.2,68.3,55.2,59.1,Average
+ENG0215,Artificial Intelligence and Machine Learning,3,20,Male,72.9,3.6,73.4,67.7,56.3,72.8,71.9,69.8,71.5,68.2,72.3,0,0,6,86.2,71.7,58.2,66.1,Average
+ENG0216,Electronics and Communication Engineering,3,21,Male,73.7,4.1,77.6,71.6,65.9,77.6,74.5,67.4,66.9,88.7,77.5,0,0,7,22.9,75.4,66.3,76.0,High
+ENG0217,Electrical and Electronics Engineering,8,21,Female,78.4,5.0,84.9,78.4,72.6,77.3,78.7,80.4,80.6,76.6,81.7,0,0,7,38.8,81.5,77.9,75.1,High
+ENG0218,Electrical and Electronics Engineering,7,20,Male,70.6,6.1,71.2,66.4,62.0,78.5,74.6,68.4,59.7,81.9,68.0,0,0,7,49.6,73.1,65.4,63.0,Average
+ENG0219,Computer Science and Engineering,8,20,Female,75.4,3.2,74.2,72.3,54.8,63.5,68.7,63.1,83.5,78.6,74.2,0,0,5,63.0,71.4,64.6,60.4,Average
+ENG0220,Electrical and Electronics Engineering,6,20,Female,66.6,5.1,86.5,80.0,71.2,76.4,82.9,76.9,74.7,55.4,88.2,0,0,6,51.2,82.7,77.4,77.0,High
+ENG0221,Information Technology,5,22,Female,77.5,4.0,74.0,70.9,68.2,77.3,75.6,68.1,80.0,67.7,74.6,0,0,7,90.9,75.2,66.6,72.2,Average
+ENG0222,Civil Engineering,4,22,Female,69.6,4.9,65.8,62.5,50.6,70.6,69.7,63.3,53.0,71.2,61.1,0,0,6,56.2,67.4,59.6,66.1,Average
+ENG0223,Computer Science and Engineering,5,23,Female,81.3,4.9,83.1,80.3,74.4,82.1,81.4,82.1,82.3,73.8,88.6,0,0,8,30.2,82.5,77.5,77.5,High
+ENG0224,Computer Science and Engineering,8,20,Male,79.9,5.0,77.3,75.4,70.6,79.1,75.1,70.3,73.3,66.3,68.6,0,0,7,45.4,76.0,72.8,76.8,High
+ENG0225,Mechanical Engineering,5,21,Female,84.6,5.7,84.1,84.5,74.6,80.6,80.1,82.8,72.0,79.1,82.3,0,0,7,25.9,83.9,77.1,78.1,High
+ENG0226,Electronics and Communication Engineering,5,20,Male,73.9,4.1,68.2,65.7,57.2,68.2,71.1,63.6,63.7,67.4,67.0,2,2,6,56.6,70.6,60.4,54.8,Low
+ENG0227,Electronics and Communication Engineering,4,22,Male,76.3,4.2,83.1,74.2,70.4,80.5,81.7,76.7,66.9,78.3,76.0,0,0,7,34.2,79.9,72.9,76.6,High
+ENG0228,Information Technology,7,22,Male,74.1,3.6,69.6,65.3,53.9,66.6,70.8,62.6,82.2,76.8,73.7,2,3,6,34.8,69.4,62.6,55.8,Low
+ENG0229,Electrical and Electronics Engineering,7,20,Male,73.4,4.5,87.8,83.6,79.5,83.8,84.4,88.2,74.7,82.5,94.8,0,0,8,51.8,86.6,82.7,86.0,High
+ENG0230,Computer Science and Engineering,7,21,Male,66.6,4.3,72.6,65.1,56.3,68.8,70.3,68.4,71.2,89.7,64.8,1,1,6,71.8,70.6,59.8,58.8,Average
+ENG0231,Electronics and Communication Engineering,3,20,Female,64.2,4.1,57.8,55.2,45.9,65.1,65.2,53.9,49.6,65.7,52.6,1,2,6,94.9,62.0,51.4,48.9,Low
+ENG0232,Electronics and Communication Engineering,4,20,Male,78.0,6.0,78.8,80.1,73.5,83.5,80.8,73.0,72.9,62.7,78.3,0,0,8,50.3,80.6,78.2,78.7,High
+ENG0233,Mechanical Engineering,7,19,Male,79.5,5.6,67.8,64.4,58.5,78.8,72.3,68.1,53.8,66.3,60.6,0,0,7,24.2,71.6,60.4,67.4,Average
+ENG0234,Electrical and Electronics Engineering,5,21,Male,75.8,5.2,72.1,69.6,58.3,73.9,72.0,62.8,55.6,72.6,71.3,0,0,7,82.2,71.3,65.6,67.0,Average
+ENG0235,Mechanical Engineering,5,21,Male,79.4,4.7,67.4,68.9,52.4,68.3,70.7,67.5,56.6,77.0,71.9,0,0,6,29.0,70.4,60.9,62.1,Average
+ENG0236,Civil Engineering,5,19,Male,89.3,5.1,82.2,75.8,72.6,83.8,79.4,74.7,67.1,85.9,76.3,0,0,8,92.8,80.7,73.7,75.5,High
+ENG0237,Artificial Intelligence and Data Science,5,20,Female,72.2,5.4,81.1,74.3,65.6,76.5,76.0,74.7,79.2,84.2,84.5,0,0,7,35.0,79.0,68.5,70.9,Average
+ENG0238,Computer Science and Engineering,3,21,Female,79.7,4.9,71.0,69.7,64.2,80.4,73.7,70.0,75.9,56.7,69.4,0,1,8,25.5,73.6,63.4,77.9,High
+ENG0239,Artificial Intelligence and Machine Learning,5,21,Male,76.3,5.5,82.1,77.2,70.1,83.6,78.9,81.3,77.8,67.3,70.9,0,0,8,77.2,80.3,73.9,72.8,Average
+ENG0240,Electronics and Communication Engineering,3,22,Male,77.6,4.8,68.4,64.3,60.4,74.2,73.1,64.1,64.8,63.6,69.0,0,0,7,54.8,71.2,63.1,63.9,Average
+ENG0241,Computer Science and Engineering,6,20,Female,89.7,4.9,85.0,78.3,73.6,86.4,83.9,78.7,88.7,67.7,85.3,0,0,8,44.3,83.5,74.6,79.7,High
+ENG0242,Electrical and Electronics Engineering,5,19,Female,72.9,4.8,76.9,74.1,61.1,79.8,74.8,70.0,61.3,75.4,76.1,0,0,7,39.3,76.0,63.8,69.8,Average
+ENG0243,Information Technology,3,19,Male,71.6,4.6,81.1,80.5,74.6,73.2,78.6,72.7,83.8,64.4,85.6,0,0,6,71.9,79.3,76.6,76.8,High
+ENG0244,Electronics and Communication Engineering,3,20,Female,72.4,4.6,78.2,74.9,64.4,75.8,76.0,71.0,63.8,77.6,75.5,0,0,7,46.8,77.6,65.7,74.8,High
+ENG0245,Artificial Intelligence and Data Science,3,22,Female,75.1,5.0,70.7,71.8,58.4,72.2,72.3,64.9,75.7,79.9,76.5,0,0,6,56.8,72.6,63.2,67.8,Average
+ENG0246,Information Technology,4,21,Male,67.2,3.6,75.1,74.5,61.7,74.7,75.6,74.3,83.2,73.0,79.7,0,0,6,81.6,76.5,70.3,69.3,Average
+ENG0247,Mechanical Engineering,4,20,Male,82.5,5.2,86.8,83.8,83.9,89.1,87.3,84.2,67.6,80.4,77.6,0,0,9,43.6,85.8,80.9,91.1,High
+ENG0248,Computer Science and Engineering,4,19,Male,67.2,4.4,75.0,73.3,66.4,72.5,74.9,74.7,87.9,83.3,74.6,0,0,6,35.7,76.0,69.5,68.2,Average
+ENG0249,Artificial Intelligence and Machine Learning,3,21,Female,78.5,4.0,60.6,58.2,47.4,71.5,65.0,57.1,63.1,71.0,49.3,1,1,7,59.3,62.7,55.2,59.3,Average
+ENG0250,Information Technology,3,21,Male,84.9,4.4,75.2,67.5,58.5,80.4,77.8,73.5,74.9,88.2,67.3,0,0,8,39.3,74.8,66.6,68.1,Average
+ENG0251,Computer Science and Engineering,8,19,Male,78.0,5.9,87.7,82.8,78.7,86.9,83.3,79.6,85.9,69.7,81.2,0,0,8,84.7,85.7,80.3,82.8,High
+ENG0252,Electrical and Electronics Engineering,7,19,Male,87.3,6.1,72.1,67.4,67.2,83.7,74.9,72.4,52.9,73.8,65.1,0,0,8,69.1,74.3,65.6,67.3,Average
+ENG0253,Computer Science and Engineering,3,22,Female,92.9,5.9,84.2,79.4,78.7,88.9,83.7,77.5,93.4,76.9,83.1,0,0,9,27.7,84.4,82.6,79.8,High
+ENG0254,Civil Engineering,5,20,Female,73.1,3.7,78.4,75.4,65.2,73.2,76.3,69.2,66.2,77.3,83.2,0,0,6,47.4,75.7,73.3,70.9,Average
+ENG0255,Electronics and Communication Engineering,4,20,Male,74.3,4.3,82.8,80.8,71.7,81.2,84.0,81.4,70.4,90.3,84.5,0,0,7,85.3,83.9,73.8,80.0,High
+ENG0256,Electronics and Communication Engineering,3,21,Male,71.3,2.8,54.8,52.1,33.2,60.3,58.3,46.9,44.1,66.7,53.4,2,3,5,26.4,56.2,40.1,42.0,Low
+ENG0257,Civil Engineering,3,21,Male,75.0,4.8,60.7,57.2,46.1,68.6,64.7,61.4,53.8,88.8,47.4,0,0,7,92.7,63.7,53.2,59.8,Average
+ENG0258,Mechanical Engineering,6,19,Female,73.0,4.4,70.8,66.5,53.0,72.8,71.6,70.5,58.2,68.3,71.4,0,0,6,24.9,71.9,62.4,69.0,Average
+ENG0259,Computer Science and Engineering,7,22,Male,69.3,4.2,68.5,64.3,48.9,65.4,70.2,64.8,75.8,75.9,61.2,1,1,5,34.8,67.6,55.1,59.1,Average
+ENG0260,Computer Science and Engineering,4,21,Male,57.3,2.5,52.5,52.3,36.4,53.8,55.6,48.6,53.8,87.4,55.4,1,1,4,93.2,55.3,43.0,45.2,Low
+ENG0261,Mechanical Engineering,3,21,Male,77.9,4.4,71.2,69.1,62.7,78.5,75.1,69.2,69.1,64.4,70.6,0,0,7,31.2,74.6,66.5,66.8,Average
+ENG0262,Computer Science and Engineering,3,20,Male,74.9,4.2,74.4,73.8,64.3,75.6,76.9,75.5,80.7,66.4,77.4,0,0,7,90.9,76.4,66.2,74.5,High
+ENG0263,Mechanical Engineering,5,22,Male,81.8,5.9,86.8,81.3,83.8,93.7,84.4,86.3,75.8,73.5,85.7,0,0,9,58.5,87.1,80.4,85.1,High
+ENG0264,Computer Science and Engineering,5,22,Male,93.1,5.2,78.2,70.3,68.2,87.4,77.9,76.3,70.1,76.9,75.1,0,1,9,54.3,78.3,72.0,78.5,High
+ENG0265,Electronics and Communication Engineering,5,20,Male,75.6,4.9,71.8,67.5,54.9,73.6,72.3,68.2,67.8,73.9,70.2,0,0,7,48.0,72.1,60.3,67.0,Average
+ENG0266,Electronics and Communication Engineering,5,21,Male,75.6,5.2,69.4,63.8,52.0,71.5,69.1,61.1,52.4,72.5,61.1,0,0,7,77.6,68.2,61.0,62.1,Average
+ENG0267,Information Technology,5,20,Female,77.1,4.7,66.0,63.9,56.4,73.5,71.1,60.2,72.5,63.0,62.9,1,1,7,88.3,68.2,64.1,60.0,Average
+ENG0268,Artificial Intelligence and Machine Learning,8,19,Male,77.1,4.5,63.5,59.3,49.3,69.0,69.5,60.8,71.3,60.1,58.2,0,0,6,53.7,66.5,53.8,61.4,Average
+ENG0269,Computer Science and Engineering,6,20,Male,94.4,6.2,76.2,70.1,68.3,90.3,80.0,72.2,75.1,81.0,66.6,0,0,10,24.5,78.2,67.8,75.8,High
+ENG0270,Electrical and Electronics Engineering,3,19,Female,78.6,5.5,82.0,77.0,72.6,83.0,84.0,79.0,75.5,80.6,83.2,0,0,8,57.7,82.4,71.3,75.0,High
+ENG0271,Civil Engineering,7,20,Female,82.1,4.2,78.9,78.5,72.1,78.0,77.0,73.0,68.9,81.1,78.4,0,1,7,49.3,78.7,71.9,76.0,High
+ENG0272,Mechanical Engineering,5,20,Male,70.6,3.8,80.4,76.8,64.4,74.9,75.2,68.3,70.0,58.4,82.4,0,0,6,29.5,76.6,69.8,72.6,Average
+ENG0273,Computer Science and Engineering,4,20,Male,88.4,5.1,81.5,77.5,71.6,84.0,81.6,79.0,75.9,80.3,73.2,0,0,8,29.5,80.8,74.4,75.4,High
+ENG0274,Electrical and Electronics Engineering,8,21,Female,71.8,3.4,75.9,71.7,56.7,69.2,71.6,73.3,64.7,74.4,77.0,0,0,6,50.8,74.7,66.0,71.8,Average
+ENG0275,Electrical and Electronics Engineering,8,19,Male,76.6,4.8,75.3,71.1,56.4,71.4,73.3,71.1,60.9,63.9,77.3,0,0,6,57.9,74.0,66.3,69.5,Average
+ENG0276,Computer Science and Engineering,6,20,Male,82.2,5.2,75.0,73.1,70.6,82.5,79.4,72.6,81.7,54.6,73.9,0,0,8,30.5,77.8,70.4,72.3,Average
+ENG0277,Electrical and Electronics Engineering,3,22,Male,85.3,5.0,75.8,73.4,60.8,74.1,74.5,73.4,64.9,90.6,74.2,0,0,7,31.8,74.8,67.9,67.6,Average
+ENG0278,Computer Science and Engineering,8,20,Male,81.1,5.3,75.8,72.8,63.7,83.5,77.6,68.8,78.7,71.4,67.6,0,0,8,44.2,74.9,69.4,70.6,Average
+ENG0279,Artificial Intelligence and Data Science,6,22,Male,64.9,3.4,56.3,51.5,36.7,66.5,62.2,55.1,51.4,53.2,48.6,2,2,6,72.2,59.3,43.1,40.5,Low
+ENG0280,Information Technology,4,20,Male,85.8,5.9,81.6,76.2,71.4,86.7,79.5,74.4,76.8,87.0,75.8,0,0,9,58.8,81.1,72.9,79.6,High
+ENG0281,Electrical and Electronics Engineering,3,23,Male,87.0,5.0,84.8,82.1,82.9,86.3,84.5,82.1,69.9,74.9,86.8,0,0,8,43.6,85.6,83.1,80.6,High
+ENG0282,Information Technology,8,22,Female,76.7,4.4,89.1,86.2,80.6,79.9,81.9,81.9,93.9,81.0,91.9,0,1,7,36.9,85.3,84.3,86.1,High
+ENG0283,Electronics and Communication Engineering,3,20,Female,69.8,4.5,74.5,72.3,59.6,73.0,73.8,75.8,73.5,74.2,78.6,0,0,6,93.9,76.2,69.5,75.9,High
+ENG0284,Artificial Intelligence and Data Science,5,22,Male,84.8,6.1,75.4,72.6,69.2,85.7,77.0,74.4,81.1,86.8,68.0,0,0,9,60.8,77.7,70.9,70.7,Average
+ENG0285,Computer Science and Engineering,5,20,Male,83.0,4.9,72.6,65.6,54.6,71.4,70.6,61.7,79.3,73.5,72.3,0,0,7,52.2,70.6,59.4,66.5,Average
+ENG0286,Civil Engineering,6,21,Male,85.9,4.7,69.9,66.0,62.1,74.5,71.9,69.1,59.5,74.5,62.1,0,1,7,83.5,71.1,61.1,65.6,Average
+ENG0287,Computer Science and Engineering,5,21,Male,76.7,3.7,74.0,71.4,62.4,71.5,74.2,73.2,87.1,58.3,79.3,0,0,6,43.1,75.9,63.2,65.4,Average
+ENG0288,Information Technology,6,20,Male,64.7,3.8,76.7,72.8,62.2,72.4,76.3,71.5,87.4,87.7,75.0,0,0,6,51.3,76.7,71.0,67.4,Average
+ENG0289,Civil Engineering,3,21,Female,90.1,6.2,82.1,78.3,76.3,82.7,78.9,80.2,68.1,80.9,79.4,0,0,8,46.4,80.4,75.4,82.7,High
+ENG0290,Electronics and Communication Engineering,5,19,Female,92.0,6.2,65.9,63.0,61.1,83.6,74.1,68.5,48.2,78.7,53.6,0,0,9,60.6,70.8,64.8,64.1,Average
+ENG0291,Civil Engineering,3,23,Female,85.9,5.9,72.0,72.6,66.9,80.8,77.4,68.0,59.3,86.9,71.8,0,0,8,78.6,74.6,67.3,71.4,Average
+ENG0292,Mechanical Engineering,5,22,Male,78.6,4.6,65.0,65.1,51.2,64.2,65.3,61.4,58.1,68.2,63.9,0,0,6,37.4,67.1,58.4,64.6,Average
+ENG0293,Information Technology,5,20,Female,75.7,3.3,66.4,62.7,54.3,62.9,65.5,59.6,78.0,71.3,65.0,0,0,5,74.4,66.0,56.3,59.6,Average
+ENG0294,Electrical and Electronics Engineering,3,23,Female,64.6,3.8,66.8,62.4,51.1,60.0,67.5,63.2,60.2,88.4,70.4,1,1,5,88.9,66.3,59.3,57.7,Average
+ENG0295,Artificial Intelligence and Machine Learning,7,20,Male,66.2,4.0,75.5,69.7,60.1,72.0,75.5,70.6,80.5,76.1,79.4,0,0,6,89.7,75.0,63.9,65.9,Average
+ENG0296,Mechanical Engineering,4,20,Male,66.1,3.0,69.0,68.4,56.0,62.4,68.2,58.6,68.7,71.6,69.9,0,0,5,78.1,67.8,58.5,64.9,Average
+ENG0297,Mechanical Engineering,4,20,Male,87.0,5.4,68.1,64.9,59.8,75.5,71.0,65.5,55.9,60.8,61.4,1,1,8,81.9,69.4,61.6,62.5,Average
+ENG0298,Electronics and Communication Engineering,6,21,Male,75.9,3.7,64.7,65.4,51.8,65.3,67.4,60.3,58.7,64.2,62.4,0,0,6,78.0,67.2,61.1,61.8,Average
+ENG0299,Electrical and Electronics Engineering,4,21,Female,68.6,4.2,74.0,72.6,66.2,73.6,74.6,75.3,70.2,75.3,72.6,0,0,6,41.5,76.2,67.0,69.4,Average
+ENG0300,Electrical and Electronics Engineering,5,20,Male,76.2,4.8,71.5,68.4,66.3,80.2,75.2,69.7,61.3,57.2,60.6,0,0,8,78.7,73.2,67.0,67.5,Average
+ENG0301,Mechanical Engineering,5,20,Male,91.2,6.1,81.3,76.5,71.4,88.5,83.9,78.6,74.5,80.7,72.7,0,0,9,59.9,82.0,76.4,76.5,High
+ENG0302,Civil Engineering,7,20,Male,75.1,4.5,83.8,80.9,70.3,78.1,83.0,82.1,80.2,79.7,85.9,0,0,7,76.1,83.5,75.4,79.4,High
+ENG0303,Civil Engineering,6,21,Female,78.4,3.6,61.3,58.2,53.1,67.8,66.7,55.5,56.9,67.3,63.3,0,1,6,45.4,64.2,53.1,63.6,Average
+ENG0304,Electrical and Electronics Engineering,5,23,Male,59.3,2.8,71.2,69.9,56.9,59.5,69.6,67.3,73.4,82.0,85.6,0,0,4,70.7,72.0,63.9,69.9,Average
+ENG0305,Civil Engineering,6,21,Other,70.1,4.3,68.8,65.5,51.4,69.4,70.7,63.5,57.2,67.8,61.0,2,2,6,21.1,68.4,61.6,58.9,Low
+ENG0306,Artificial Intelligence and Data Science,7,23,Male,81.1,3.1,69.6,68.5,56.4,67.6,70.4,61.1,71.4,80.3,71.0,0,0,6,34.8,69.3,65.7,65.8,Average
+ENG0307,Computer Science and Engineering,4,21,Male,84.5,5.5,89.4,80.7,79.6,89.0,86.6,81.5,84.8,66.6,88.5,0,0,8,73.8,85.8,81.6,82.9,High
+ENG0308,Computer Science and Engineering,5,22,Male,88.3,6.4,85.5,79.0,76.9,92.8,86.7,86.1,90.6,73.9,82.6,0,0,9,76.2,85.6,81.5,81.3,High
+ENG0309,Computer Science and Engineering,3,21,Male,82.5,5.7,83.9,82.3,81.7,93.0,83.6,83.4,84.4,89.2,81.3,0,0,9,76.2,85.1,79.1,78.5,High
+ENG0310,Electrical and Electronics Engineering,7,22,Female,76.6,6.7,87.7,83.2,80.5,92.1,84.6,89.1,81.5,85.7,83.3,0,0,9,65.5,87.7,81.7,82.0,High
+ENG0311,Artificial Intelligence and Data Science,3,21,Female,80.0,5.2,78.6,74.3,66.7,89.4,78.7,74.3,81.8,71.5,78.0,0,0,9,69.4,80.4,69.3,73.8,Average
+ENG0312,Electrical and Electronics Engineering,3,22,Male,74.3,4.2,67.7,66.7,56.1,70.3,68.7,64.8,50.7,67.9,68.2,0,1,6,90.2,69.1,63.9,61.9,Average
+ENG0313,Mechanical Engineering,4,23,Male,64.2,4.3,80.8,76.0,69.3,72.3,75.7,72.7,69.3,71.4,86.1,0,0,6,32.6,78.0,76.4,74.1,High
+ENG0314,Electronics and Communication Engineering,6,20,Male,68.3,3.6,79.6,73.4,68.3,73.5,75.9,76.1,78.2,82.2,82.4,0,0,6,94.5,78.2,68.7,76.6,High
+ENG0315,Mechanical Engineering,5,19,Male,80.8,5.5,83.1,78.3,75.0,79.9,82.0,75.1,69.0,63.9,85.8,0,0,7,66.2,80.5,76.4,80.2,High
+ENG0316,Computer Science and Engineering,5,20,Male,82.7,5.3,81.3,77.5,69.7,80.5,79.9,80.9,91.1,78.1,76.0,0,0,7,37.0,81.0,77.0,74.0,High
+ENG0317,Civil Engineering,6,20,Male,67.8,5.0,70.8,63.9,52.0,74.9,73.0,66.2,59.6,88.6,65.3,2,2,7,21.4,69.8,58.3,60.2,Low
+ENG0318,Information Technology,4,21,Male,72.8,3.4,67.6,63.7,50.9,69.4,67.4,68.0,76.1,77.6,65.2,2,2,6,64.1,68.9,57.3,58.1,Low
+ENG0319,Artificial Intelligence and Data Science,3,21,Female,66.0,3.2,73.5,65.7,58.6,64.2,70.5,63.4,84.1,69.9,78.4,0,0,5,52.1,70.0,58.9,61.8,Average
+ENG0320,Electrical and Electronics Engineering,3,20,Female,72.0,5.1,80.8,73.7,70.7,76.7,79.9,78.6,66.8,70.8,75.4,0,0,7,34.3,78.4,72.6,80.3,High
+ENG0321,Information Technology,8,19,Male,78.6,3.7,82.0,75.8,67.1,75.0,80.0,75.9,81.5,80.7,83.0,0,1,7,59.1,79.2,71.4,79.9,High
+ENG0322,Computer Science and Engineering,7,20,Male,72.7,4.0,77.3,77.7,65.7,69.5,77.9,68.8,87.2,64.2,85.8,0,0,6,84.7,76.1,74.8,74.3,High
+ENG0323,Information Technology,3,23,Female,70.0,3.0,74.0,70.4,57.1,69.2,71.6,70.2,80.3,60.7,76.4,0,0,5,90.3,74.2,66.4,65.9,Average
+ENG0324,Electronics and Communication Engineering,5,20,Male,77.5,4.3,71.3,65.2,53.9,72.2,70.7,67.1,56.0,66.6,68.0,0,1,7,74.7,70.2,63.2,62.5,Average
+ENG0325,Artificial Intelligence and Data Science,7,21,Male,77.5,5.8,82.1,79.0,76.3,83.4,79.1,77.5,88.3,63.7,77.9,0,0,8,77.7,81.3,75.6,76.1,High
+ENG0326,Computer Science and Engineering,7,19,Female,76.5,4.7,60.5,55.8,43.0,70.6,67.8,61.9,57.3,82.2,50.8,0,0,7,44.5,64.7,48.9,57.2,Average
+ENG0327,Mechanical Engineering,5,21,Female,83.2,3.6,79.4,76.4,71.8,74.7,77.4,71.7,69.1,85.9,80.2,0,0,7,77.5,77.2,77.3,83.3,High
+ENG0328,Electronics and Communication Engineering,8,22,Male,85.9,4.7,84.7,76.4,75.6,80.1,79.2,80.0,66.3,61.7,83.6,0,0,8,42.3,81.5,74.8,78.8,High
+ENG0329,Electronics and Communication Engineering,8,20,Male,72.1,3.7,77.5,73.7,64.1,73.1,72.7,67.6,67.8,63.1,73.2,0,0,6,85.3,74.7,70.9,71.6,Average
+ENG0330,Artificial Intelligence and Data Science,5,21,Male,87.2,6.0,82.2,80.0,72.9,80.9,80.4,79.9,85.6,78.9,79.9,0,0,8,76.3,81.1,74.6,81.0,High
+ENG0331,Electrical and Electronics Engineering,8,20,Male,73.1,3.9,71.1,67.6,52.6,70.7,70.9,62.3,64.0,65.1,67.0,0,0,6,77.9,70.5,63.1,61.3,Average
+ENG0332,Information Technology,5,22,Male,68.9,5.6,83.5,84.2,79.0,80.8,81.9,78.9,95.5,85.4,83.7,0,0,7,67.0,83.3,81.9,79.3,High
+ENG0333,Mechanical Engineering,3,21,Male,72.6,3.2,69.4,67.1,51.8,65.3,69.0,67.0,69.9,51.3,72.6,0,0,5,32.4,70.0,61.7,64.2,Average
+ENG0334,Electronics and Communication Engineering,5,22,Female,73.6,5.6,68.1,66.9,54.5,78.3,73.5,69.5,50.2,87.8,62.7,0,0,7,52.5,71.3,58.3,68.9,Average
+ENG0335,Information Technology,3,20,Female,69.8,3.5,69.1,63.9,57.8,72.0,71.9,61.0,63.9,80.8,59.0,0,1,6,25.0,68.9,64.4,62.2,Average
+ENG0336,Civil Engineering,5,21,Female,82.5,4.7,70.8,62.5,59.7,82.2,70.6,70.2,57.2,79.3,54.7,0,1,8,63.1,71.3,64.2,66.6,Average
+ENG0337,Mechanical Engineering,5,22,Male,78.5,4.7,70.9,68.7,57.9,77.5,73.9,70.4,51.5,74.4,64.5,0,0,7,92.7,72.0,59.6,68.1,Average
+ENG0338,Electronics and Communication Engineering,3,21,Female,82.9,5.4,85.0,77.8,71.5,85.1,80.3,76.1,79.5,60.9,77.9,0,0,8,29.6,82.7,73.1,73.2,Average
+ENG0339,Electrical and Electronics Engineering,5,21,Female,66.4,4.7,59.1,51.7,37.3,65.6,63.0,55.9,40.4,52.4,46.6,3,3,6,63.3,60.2,47.5,41.8,Low
+ENG0340,Information Technology,6,20,Male,72.2,6.1,79.0,80.1,69.4,83.7,78.8,80.8,76.3,51.9,82.4,0,0,8,59.3,80.8,74.6,73.9,Average
+ENG0341,Electronics and Communication Engineering,7,20,Male,81.5,4.6,77.6,75.1,67.6,78.2,76.1,70.1,65.0,68.3,80.6,0,0,7,85.3,76.6,70.2,73.9,Average
+ENG0342,Information Technology,5,21,Male,74.5,4.6,79.5,72.4,67.7,74.8,76.6,71.0,89.3,77.0,79.3,0,0,6,55.2,76.1,72.7,75.5,High
+ENG0343,Computer Science and Engineering,4,19,Male,81.5,5.7,76.7,71.4,66.3,76.6,75.4,68.4,76.5,74.5,74.3,0,1,7,32.5,75.4,70.6,70.9,Average
+ENG0344,Artificial Intelligence and Data Science,7,19,Male,64.1,3.4,69.4,65.9,50.2,64.5,71.8,62.8,75.6,82.0,74.1,0,0,5,91.5,69.3,60.4,67.2,Average
+ENG0345,Computer Science and Engineering,4,20,Male,84.4,4.4,79.0,74.2,65.5,81.5,78.6,69.3,74.5,90.9,74.5,0,0,8,52.9,77.2,71.8,72.3,Average
+ENG0346,Mechanical Engineering,3,21,Female,64.5,3.4,61.9,58.0,50.2,65.6,65.9,58.5,44.0,65.7,59.3,1,1,5,65.7,62.1,53.0,60.8,Average
+ENG0347,Electronics and Communication Engineering,7,20,Female,81.8,4.5,83.0,81.0,71.6,85.5,84.0,82.7,81.6,67.1,85.7,0,0,8,74.3,83.9,79.5,80.6,High
+ENG0348,Mechanical Engineering,8,19,Female,90.4,5.5,78.0,77.1,68.6,86.2,80.2,79.9,67.4,79.6,70.2,0,0,9,73.3,79.5,74.1,78.8,High
+ENG0349,Computer Science and Engineering,7,20,Male,80.9,6.0,68.0,60.6,54.5,81.9,71.7,65.5,54.4,83.4,53.3,0,0,8,85.6,68.8,54.9,60.7,Average
+ENG0350,Civil Engineering,5,20,Male,74.0,5.4,63.4,60.1,49.7,73.5,68.3,65.6,54.2,76.8,58.5,0,0,7,42.5,67.2,53.2,59.5,Average
+ENG0351,Mechanical Engineering,7,21,Male,75.7,5.9,86.1,85.4,78.9,90.5,84.9,81.2,77.4,67.7,85.5,0,1,9,90.9,86.9,84.4,79.8,High
+ENG0352,Electronics and Communication Engineering,8,21,Male,67.9,3.2,82.7,77.2,66.2,70.3,76.7,73.2,82.9,73.2,80.7,0,0,6,64.8,78.5,74.1,72.9,Average
+ENG0353,Computer Science and Engineering,3,22,Female,83.0,3.9,78.3,75.5,62.1,73.6,74.7,70.5,88.1,58.5,76.5,0,0,7,65.4,75.3,70.3,71.6,Average
+ENG0354,Computer Science and Engineering,7,23,Male,65.5,3.5,56.4,55.5,46.3,61.7,63.9,50.9,62.6,88.7,53.9,1,1,5,51.2,60.0,49.3,51.4,Low
+ENG0355,Artificial Intelligence and Machine Learning,5,21,Male,60.9,3.6,59.8,59.5,51.7,64.5,66.3,57.1,64.4,59.4,57.6,0,1,5,87.2,63.1,54.9,59.3,Average
+ENG0356,Computer Science and Engineering,5,23,Male,77.6,3.4,62.6,62.8,49.3,71.4,65.8,66.1,61.4,74.7,62.4,0,1,7,65.3,67.0,55.2,62.8,Average
+ENG0357,Electrical and Electronics Engineering,5,20,Male,75.3,4.4,76.9,75.7,64.8,75.9,76.4,76.0,78.8,89.5,77.9,0,0,6,45.1,78.4,66.6,75.5,High
+ENG0358,Electronics and Communication Engineering,6,21,Male,78.5,4.0,70.5,69.3,52.9,69.9,68.4,68.2,59.5,57.8,72.9,0,1,6,56.1,70.2,60.7,65.9,Average
+ENG0359,Electronics and Communication Engineering,5,22,Male,85.7,4.9,75.0,75.3,66.5,80.5,75.8,72.9,57.8,76.7,68.5,0,0,8,78.6,76.7,68.1,75.0,High
+ENG0360,Mechanical Engineering,7,19,Male,78.3,5.0,76.1,72.3,65.6,81.3,74.8,70.3,62.1,74.6,63.5,0,0,8,48.9,75.2,72.2,70.7,Average
+ENG0361,Information Technology,4,22,Male,73.0,4.7,66.6,67.1,59.9,80.7,72.7,71.2,72.1,73.2,61.1,0,0,8,56.1,71.8,62.7,71.9,Average
+ENG0362,Information Technology,3,20,Male,75.3,4.5,78.4,76.1,68.3,78.9,78.0,73.3,77.0,80.1,79.3,0,0,7,36.5,76.6,70.7,72.7,Average
+ENG0363,Mechanical Engineering,5,20,Male,76.7,3.8,82.1,80.3,74.7,73.7,77.8,80.3,76.4,81.1,81.9,0,0,6,91.2,80.4,81.5,81.5,High
+ENG0364,Artificial Intelligence and Data Science,3,21,Male,78.8,5.2,72.7,68.4,58.3,79.1,72.5,71.3,66.5,71.3,69.7,0,0,7,68.3,73.7,65.1,62.8,Average
+ENG0365,Information Technology,4,20,Male,87.3,6.1,83.1,80.8,70.7,83.9,80.5,80.7,85.1,72.4,77.6,0,0,8,84.3,82.6,77.2,80.3,High
+ENG0366,Civil Engineering,6,21,Female,76.7,5.5,78.4,76.3,68.1,84.2,79.8,82.3,75.8,64.9,77.1,0,0,8,36.6,81.1,74.3,74.4,High
+ENG0367,Information Technology,8,21,Male,86.7,5.0,73.3,72.8,68.1,77.9,74.7,73.0,70.0,68.3,77.3,0,0,8,43.6,76.1,74.2,74.5,High
+ENG0368,Artificial Intelligence and Data Science,6,21,Male,83.2,4.0,64.6,63.3,55.9,71.2,69.9,63.1,66.1,83.5,55.4,1,1,7,38.3,67.2,58.0,59.8,Average
+ENG0369,Electrical and Electronics Engineering,5,21,Male,75.3,3.7,79.0,76.5,68.3,70.8,75.3,76.5,65.8,58.2,88.0,0,0,6,94.8,77.0,70.4,74.3,High
+ENG0370,Information Technology,3,23,Male,79.3,4.6,86.4,80.6,72.8,84.2,85.8,85.7,97.2,65.7,93.1,0,0,8,23.7,85.6,78.3,75.2,High
+ENG0371,Artificial Intelligence and Data Science,7,21,Female,82.4,3.7,75.8,75.5,61.9,74.4,75.6,69.0,84.2,62.3,75.2,0,0,7,20.3,76.2,69.0,70.7,Average
+ENG0372,Mechanical Engineering,4,20,Female,86.4,5.4,78.2,71.9,69.8,82.2,79.7,71.2,69.4,76.7,65.4,0,0,8,33.1,76.4,67.4,75.6,High
+ENG0373,Electronics and Communication Engineering,5,22,Female,75.2,3.8,70.7,66.1,51.6,67.3,69.5,64.7,57.0,80.9,64.4,0,1,6,80.6,68.9,56.1,60.9,Average
+ENG0374,Mechanical Engineering,6,21,Male,82.3,4.1,73.2,74.0,66.7,72.3,73.8,66.0,64.8,73.1,74.9,0,0,7,77.3,73.6,71.0,70.2,Average
+ENG0375,Mechanical Engineering,3,20,Male,74.3,3.5,77.3,74.5,67.0,66.3,75.8,69.6,76.9,80.4,86.8,0,0,5,28.3,76.4,72.5,73.9,Average
+ENG0376,Artificial Intelligence and Machine Learning,3,20,Female,84.0,5.2,79.7,74.2,66.7,81.6,77.3,78.4,78.2,70.4,72.0,0,0,8,68.6,79.5,66.7,74.6,High
+ENG0377,Computer Science and Engineering,3,20,Male,81.3,5.1,69.4,66.6,60.7,78.9,74.6,66.6,71.4,79.6,67.1,0,0,8,22.8,72.1,64.5,65.0,Average
+ENG0378,Information Technology,7,21,Male,81.1,4.2,66.0,63.8,56.3,68.1,67.9,60.9,73.0,57.8,58.9,1,1,6,46.4,67.8,57.9,58.1,Average
+ENG0379,Mechanical Engineering,5,23,Other,72.5,4.9,63.7,58.8,48.8,73.9,67.9,61.2,42.3,83.4,57.0,0,1,7,27.7,65.3,50.2,63.3,Average
+ENG0380,Civil Engineering,5,21,Female,79.8,4.7,73.3,71.2,61.5,84.4,74.4,73.9,65.7,79.3,69.0,0,0,8,56.6,75.8,70.3,70.0,Average
+ENG0381,Information Technology,6,21,Male,82.8,5.9,69.6,67.6,66.9,83.8,74.6,74.1,70.4,65.7,65.5,0,0,8,71.0,74.3,66.1,70.5,Average
+ENG0382,Information Technology,6,20,Male,61.8,4.3,66.1,65.8,58.0,65.8,70.6,58.5,71.8,83.3,70.9,0,0,5,69.6,67.5,61.6,61.7,Average
+ENG0383,Civil Engineering,3,20,Female,68.5,4.0,75.3,74.2,57.7,67.3,71.9,68.5,77.9,87.6,86.8,0,0,5,24.8,74.5,67.7,64.4,Average
+ENG0384,Electrical and Electronics Engineering,7,20,Male,86.7,5.8,78.6,76.6,66.4,81.3,77.7,76.0,72.5,75.2,73.1,0,0,8,28.4,79.2,72.1,75.9,High
+ENG0385,Civil Engineering,5,23,Male,94.4,5.1,88.0,82.5,76.5,91.2,84.9,79.9,71.0,80.0,79.3,0,0,9,20.5,85.1,79.6,85.0,High
+ENG0386,Civil Engineering,3,21,Male,73.2,2.9,67.7,64.8,49.2,63.5,69.3,65.0,67.2,58.1,68.8,0,0,5,26.6,68.9,59.6,58.7,Average
+ENG0387,Artificial Intelligence and Data Science,4,19,Female,69.0,3.7,82.9,77.9,69.7,77.5,80.1,70.5,90.4,83.5,83.7,0,1,7,35.1,78.6,76.7,75.7,High
+ENG0388,Civil Engineering,5,20,Other,68.4,3.9,73.8,68.1,58.1,77.6,72.3,66.2,58.9,62.2,64.7,0,0,7,52.0,73.5,66.7,70.5,Average
+ENG0389,Information Technology,4,19,Female,78.6,5.2,73.9,72.1,64.1,78.2,73.3,73.7,77.1,83.1,70.2,0,0,7,92.5,74.3,70.6,66.0,Average
+ENG0390,Computer Science and Engineering,5,20,Male,89.3,5.7,82.4,77.6,70.2,82.7,77.9,78.8,75.2,53.8,77.5,0,0,8,49.1,80.4,76.5,82.9,High
+ENG0391,Electronics and Communication Engineering,6,22,Female,71.9,4.4,72.5,69.9,65.4,79.5,72.5,66.2,55.9,78.0,66.3,0,0,7,24.8,72.8,68.0,66.9,Average
+ENG0392,Civil Engineering,7,20,Female,86.9,6.5,75.2,70.3,64.1,84.8,76.9,76.0,57.0,59.2,70.0,0,0,9,69.1,77.4,66.8,73.0,Average
+ENG0393,Electronics and Communication Engineering,7,21,Male,64.2,3.9,77.1,72.4,58.1,66.8,75.5,66.2,74.5,54.6,81.4,0,0,5,74.2,73.9,66.2,68.9,Average
+ENG0394,Artificial Intelligence and Machine Learning,3,20,Male,72.1,4.3,79.9,76.0,65.1,78.9,76.4,77.2,85.8,85.2,82.6,0,0,7,89.5,78.9,73.0,74.1,High
+ENG0395,Artificial Intelligence and Data Science,5,20,Male,75.1,4.0,81.7,78.3,64.5,70.8,76.0,77.2,85.9,78.6,84.5,0,0,6,69.2,79.2,74.1,76.6,High
+ENG0396,Information Technology,4,20,Female,83.2,5.3,65.9,63.7,56.1,77.1,69.8,67.8,72.4,69.2,57.1,0,1,8,22.7,70.1,63.8,66.2,Average
+ENG0397,Electronics and Communication Engineering,5,20,Male,70.9,2.3,73.8,71.4,54.8,62.8,70.3,63.5,70.3,53.6,72.6,1,2,5,52.0,70.7,63.2,62.7,Average
+ENG0398,Computer Science and Engineering,6,22,Male,73.5,5.1,72.4,66.2,55.2,75.2,74.1,66.3,71.7,80.0,69.8,0,0,7,36.9,71.3,60.0,65.1,Average
+ENG0399,Artificial Intelligence and Data Science,5,20,Male,78.1,5.4,70.4,66.2,60.0,77.1,74.4,66.7,77.9,88.1,63.3,0,0,7,80.3,72.3,63.5,64.4,Average
+ENG0400,Computer Science and Engineering,4,20,Female,81.5,3.3,74.1,67.6,54.0,73.1,74.4,68.3,77.4,70.9,76.6,0,1,7,28.7,72.3,63.6,60.0,Average
+ENG0401,Mechanical Engineering,3,21,Female,78.0,3.9,70.5,66.0,53.5,69.3,71.0,59.7,60.8,55.4,61.8,1,1,6,43.3,68.8,60.0,57.9,Average
+ENG0402,Information Technology,7,19,Male,63.0,4.6,66.5,62.6,50.4,68.3,70.6,61.0,74.2,76.8,72.8,1,1,6,22.6,68.5,53.8,55.0,Low
+ENG0403,Electrical and Electronics Engineering,3,22,Male,80.8,3.9,75.1,77.4,61.8,74.3,75.4,74.4,63.9,68.6,82.9,0,0,7,91.9,76.9,70.7,68.1,Average
+ENG0404,Artificial Intelligence and Data Science,5,20,Female,69.9,4.1,76.0,73.1,64.3,74.8,74.1,73.0,84.3,87.3,78.9,0,1,7,83.0,76.7,68.1,67.6,Average
+ENG0405,Electrical and Electronics Engineering,8,21,Female,72.8,4.1,79.0,72.3,65.7,77.2,76.6,74.0,73.1,78.8,80.7,0,0,7,81.3,76.5,70.2,73.3,Average
+ENG0406,Artificial Intelligence and Data Science,8,20,Male,71.4,4.5,80.0,76.3,74.2,80.2,78.2,75.6,80.6,61.8,86.6,0,0,7,67.6,80.6,74.3,74.2,High
+ENG0407,Electrical and Electronics Engineering,3,20,Female,70.0,2.7,62.2,60.2,49.2,64.2,64.9,56.6,59.7,81.0,58.7,1,1,5,91.5,65.2,53.0,52.6,Low
+ENG0408,Computer Science and Engineering,6,22,Female,77.5,5.0,84.9,76.7,73.9,87.5,82.6,77.9,77.0,77.8,81.0,0,0,8,52.6,82.4,74.4,77.3,High
+ENG0409,Artificial Intelligence and Data Science,4,21,Female,90.6,6.4,76.3,72.3,64.3,82.1,76.7,75.0,72.7,70.4,60.5,0,0,9,61.7,75.7,70.9,75.8,High
+ENG0410,Mechanical Engineering,7,19,Female,90.0,5.5,80.9,80.6,77.5,87.7,81.2,77.6,64.4,71.7,76.1,0,0,9,21.8,81.4,80.5,78.4,High
+ENG0411,Artificial Intelligence and Machine Learning,4,21,Female,81.2,5.2,76.3,72.2,65.4,83.2,78.0,71.7,70.1,57.3,73.1,0,1,8,21.6,77.9,70.7,71.4,Average
+ENG0412,Computer Science and Engineering,6,21,Male,81.8,6.2,79.4,73.2,65.3,81.4,78.2,74.6,72.2,77.2,75.9,0,0,8,27.0,77.8,69.4,71.7,Average
+ENG0413,Information Technology,5,21,Female,70.0,3.2,59.5,57.4,44.5,61.8,64.2,55.0,69.9,48.4,61.3,0,0,5,92.1,62.6,48.4,56.0,Average
+ENG0414,Artificial Intelligence and Data Science,5,21,Female,66.1,3.3,68.8,67.5,54.8,64.1,68.3,65.8,85.0,72.3,73.1,0,0,5,66.6,69.9,58.5,60.8,Average
+ENG0415,Artificial Intelligence and Data Science,7,20,Female,68.8,4.9,59.8,56.8,45.1,71.0,63.9,54.2,60.3,74.6,46.5,0,0,6,56.1,62.7,47.3,52.8,Low
+ENG0416,Electrical and Electronics Engineering,4,20,Female,84.0,5.2,78.6,76.6,63.8,75.9,77.2,75.4,74.9,82.4,73.2,0,1,7,41.8,76.9,70.4,76.1,High
+ENG0417,Electronics and Communication Engineering,8,20,Female,73.5,4.7,69.3,62.5,57.1,73.3,72.2,63.2,50.5,78.2,63.7,0,1,7,37.6,68.9,59.3,65.5,Average
+ENG0418,Information Technology,4,20,Male,81.6,5.7,74.9,72.5,70.2,81.3,76.4,75.6,75.7,60.1,73.4,0,0,8,24.2,77.3,68.3,70.6,Average
+ENG0419,Artificial Intelligence and Machine Learning,5,21,Male,59.5,2.5,53.4,50.3,39.2,54.7,60.2,47.2,65.3,64.6,52.6,1,1,4,38.9,56.3,43.7,47.4,Low
+ENG0420,Information Technology,5,22,Male,64.3,4.2,68.5,64.4,56.0,64.7,69.4,62.3,68.9,76.3,67.1,0,1,5,83.8,68.9,57.4,66.4,Average
+ENG0421,Computer Science and Engineering,8,21,Male,75.9,3.3,59.9,62.5,45.9,64.1,64.2,57.5,61.6,61.6,54.2,2,2,6,34.9,64.0,54.0,50.0,Low
+ENG0422,Computer Science and Engineering,5,21,Male,69.1,2.8,63.5,63.2,49.4,66.9,68.2,60.4,70.0,62.0,68.2,0,0,6,71.6,66.8,56.4,64.1,Average
+ENG0423,Electrical and Electronics Engineering,6,21,Female,68.8,3.4,73.9,67.8,54.3,62.8,67.9,62.5,71.4,74.7,75.0,0,1,5,84.6,70.1,58.4,58.1,Average
+ENG0424,Artificial Intelligence and Data Science,5,20,Female,84.7,5.0,76.9,77.7,66.9,80.8,76.9,73.6,89.3,64.5,77.9,0,0,8,62.0,79.0,70.3,76.9,High
+ENG0425,Artificial Intelligence and Machine Learning,6,20,Male,78.9,5.6,71.8,68.3,66.7,80.8,77.7,67.2,78.1,77.5,71.7,0,0,8,33.9,74.1,70.8,69.7,Average
+ENG0426,Artificial Intelligence and Data Science,4,19,Female,73.6,4.4,77.0,73.4,67.7,78.3,79.5,74.1,77.3,81.4,81.1,0,0,7,26.5,78.1,71.3,73.0,Average
+ENG0427,Civil Engineering,4,21,Female,95.7,5.2,79.2,74.9,69.9,89.2,82.7,80.6,58.1,57.4,75.6,0,0,9,83.9,81.3,76.1,80.3,High
+ENG0428,Artificial Intelligence and Data Science,7,19,Female,70.7,4.8,77.6,76.5,67.6,81.2,79.2,72.1,83.8,58.1,76.9,0,0,7,22.6,78.9,71.8,69.0,Average
+ENG0429,Electronics and Communication Engineering,3,21,Other,77.8,4.9,88.0,82.6,81.1,86.6,85.7,80.8,74.2,73.2,93.5,0,0,8,85.7,86.5,82.0,77.6,High
+ENG0430,Information Technology,4,22,Female,88.9,5.3,75.5,74.6,67.4,83.8,81.0,74.7,78.1,80.1,75.6,0,0,8,35.3,78.4,72.5,73.3,Average
+ENG0431,Civil Engineering,7,20,Female,81.4,5.1,83.7,75.0,74.3,82.9,82.5,78.6,65.0,63.7,81.9,0,1,8,53.5,81.1,72.0,78.2,High
+ENG0432,Information Technology,3,19,Female,85.7,5.2,69.4,61.9,53.8,78.3,70.3,69.6,60.4,66.5,64.2,1,2,8,79.0,70.3,61.6,54.6,Low
+ENG0433,Civil Engineering,3,20,Female,77.3,4.1,68.3,67.8,54.0,64.8,68.4,68.0,58.0,74.2,66.0,0,0,6,27.7,70.2,57.5,60.2,Average
+ENG0434,Electronics and Communication Engineering,7,20,Female,82.8,4.2,68.5,64.9,60.1,72.9,72.3,66.9,53.1,81.2,62.5,0,0,7,46.1,69.5,63.8,65.5,Average
+ENG0435,Computer Science and Engineering,3,19,Male,62.5,2.6,68.7,68.7,52.1,65.1,69.4,62.0,71.7,52.7,69.8,1,1,5,81.7,70.0,59.6,59.5,Average
+ENG0436,Electrical and Electronics Engineering,6,22,Female,78.7,4.8,77.5,75.4,68.5,76.0,79.6,72.1,79.2,58.9,75.2,0,0,7,91.7,78.5,71.1,72.8,Average
+ENG0437,Electronics and Communication Engineering,8,21,Female,81.7,4.2,76.4,71.4,67.0,75.1,77.5,68.7,68.4,54.9,70.0,0,1,7,22.4,75.6,70.5,76.4,High
+ENG0438,Electronics and Communication Engineering,6,21,Female,80.0,5.4,78.6,78.6,74.3,86.5,82.5,78.1,68.5,45.8,72.1,0,0,8,68.0,81.4,79.4,81.6,High
+ENG0439,Electronics and Communication Engineering,4,21,Female,70.5,5.0,67.7,65.7,59.1,70.3,71.9,69.8,64.4,63.2,64.4,0,0,6,85.6,70.8,61.2,59.6,Average
+ENG0440,Electronics and Communication Engineering,8,20,Female,69.7,4.4,78.5,76.1,67.2,69.0,74.3,75.2,78.7,72.9,77.6,0,0,6,31.7,76.0,69.6,71.0,Average
+ENG0441,Electrical and Electronics Engineering,6,23,Male,79.0,4.4,68.8,67.4,52.3,67.0,71.9,64.0,69.1,67.4,71.1,2,2,6,84.2,69.8,59.7,58.5,Low
+ENG0442,Artificial Intelligence and Machine Learning,4,22,Male,70.8,5.9,70.7,68.5,60.5,77.9,73.4,65.9,67.0,65.9,70.9,0,0,7,71.7,72.8,65.8,67.6,Average
+ENG0443,Electronics and Communication Engineering,6,19,Female,75.6,4.9,64.7,64.4,50.5,71.9,69.5,59.7,56.5,72.9,60.2,1,1,7,78.2,67.9,59.2,62.2,Average
+ENG0444,Artificial Intelligence and Machine Learning,7,20,Male,75.1,6.4,89.6,80.5,73.6,86.1,83.0,79.3,88.4,75.9,85.9,0,1,8,44.7,85.2,80.1,76.6,High
+ENG0445,Artificial Intelligence and Data Science,8,21,Female,76.9,5.5,77.8,74.9,67.4,75.8,73.6,72.7,86.2,69.8,78.8,0,0,7,47.5,76.0,69.6,73.3,Average
+ENG0446,Electrical and Electronics Engineering,5,22,Male,72.1,4.4,73.2,68.0,58.9,68.8,73.1,71.9,68.1,74.4,69.7,0,0,6,77.7,72.6,65.1,69.3,Average
+ENG0447,Computer Science and Engineering,5,19,Other,83.0,4.4,82.6,82.3,73.5,78.5,82.8,74.9,95.4,75.2,82.2,0,0,7,75.5,81.3,80.1,80.5,High
+ENG0448,Mechanical Engineering,4,22,Other,72.3,5.1,75.1,76.3,66.2,81.6,80.1,71.7,69.5,78.5,73.4,0,0,8,53.8,77.8,73.2,77.8,High
+ENG0449,Artificial Intelligence and Machine Learning,3,21,Male,72.4,4.6,77.6,76.2,68.5,79.9,78.2,79.7,88.0,67.1,78.2,0,0,7,82.0,79.4,72.0,75.4,High
+ENG0450,Computer Science and Engineering,5,21,Male,78.9,5.0,74.5,71.5,65.5,81.5,75.2,74.1,68.5,79.0,69.3,0,0,8,23.1,75.7,70.3,67.4,Average
+ENG0451,Computer Science and Engineering,5,21,Male,70.5,5.1,72.3,67.0,55.4,71.6,70.2,66.8,76.1,58.4,72.8,0,0,6,75.0,72.2,65.2,66.6,Average
+ENG0452,Electrical and Electronics Engineering,7,22,Other,74.0,4.6,78.7,78.3,69.8,74.2,77.3,71.5,79.3,75.5,80.6,0,0,6,86.7,77.7,73.8,78.8,High
+ENG0453,Electrical and Electronics Engineering,4,20,Female,80.5,4.9,70.9,67.7,60.0,77.0,71.3,67.5,62.1,63.5,62.2,1,1,7,82.7,71.1,65.3,61.2,Average
+ENG0454,Artificial Intelligence and Machine Learning,7,21,Male,84.7,4.0,79.1,72.2,61.0,77.2,78.5,77.1,79.4,79.5,74.4,0,0,7,91.6,77.7,65.6,71.5,Average
+ENG0455,Artificial Intelligence and Data Science,4,21,Female,83.5,5.8,83.7,77.9,73.5,85.8,80.2,77.5,75.5,77.7,73.3,0,1,8,87.1,81.4,73.2,81.7,High
+ENG0456,Computer Science and Engineering,5,20,Female,73.2,6.2,68.3,61.9,59.7,80.6,72.9,60.7,60.7,83.4,61.4,0,0,8,59.5,68.7,61.1,70.0,Average
+ENG0457,Electrical and Electronics Engineering,6,21,Male,82.5,5.0,67.8,63.1,55.4,74.9,73.3,69.4,64.2,68.1,65.3,0,1,7,54.2,70.7,58.2,64.3,Average
+ENG0458,Mechanical Engineering,6,20,Female,83.2,6.1,74.9,72.8,66.3,80.1,77.7,72.5,63.5,52.8,69.8,0,0,8,29.9,76.8,69.6,75.5,High
+ENG0459,Artificial Intelligence and Data Science,5,21,Female,80.2,5.1,86.3,84.0,81.6,86.9,86.7,81.4,89.7,57.3,84.0,0,0,8,57.8,84.9,84.3,85.6,High
+ENG0460,Mechanical Engineering,7,20,Male,61.1,3.0,73.9,73.3,62.5,63.9,69.5,69.6,78.9,84.6,85.9,0,0,5,25.7,73.1,71.5,68.8,Average
+ENG0461,Electrical and Electronics Engineering,3,21,Male,71.6,5.2,85.0,79.7,72.6,78.0,78.6,78.9,72.6,84.3,88.8,0,0,7,75.2,81.9,76.3,82.0,High
+ENG0462,Civil Engineering,7,22,Male,81.4,4.9,65.1,66.8,61.2,79.8,71.1,65.2,55.6,71.7,64.6,0,0,8,53.9,69.9,62.4,63.2,Average
+ENG0463,Civil Engineering,4,21,Female,75.9,5.4,74.4,70.5,62.6,78.4,78.1,68.3,63.5,73.4,68.1,0,0,7,75.6,74.9,64.6,68.5,Average
+ENG0464,Electronics and Communication Engineering,8,20,Female,71.2,2.7,73.4,74.3,59.1,65.7,74.4,65.2,74.2,73.2,82.2,0,0,5,25.1,73.8,64.1,67.8,Average
+ENG0465,Artificial Intelligence and Data Science,7,21,Female,76.6,5.6,84.0,79.9,76.0,84.7,80.0,81.2,94.2,77.8,83.0,0,0,8,21.5,83.3,75.2,72.0,Average
+ENG0466,Mechanical Engineering,6,21,Male,80.5,3.8,69.5,63.8,54.9,72.2,69.2,62.4,50.6,78.9,59.8,2,3,7,36.9,69.5,60.3,55.7,Low
+ENG0467,Electronics and Communication Engineering,3,20,Female,73.7,4.1,80.8,76.6,67.9,77.9,78.5,76.1,69.2,74.0,77.3,0,0,7,85.0,79.3,75.3,73.5,Average
+ENG0468,Computer Science and Engineering,5,21,Male,71.7,5.4,76.1,69.5,64.6,81.4,75.4,74.0,72.8,79.4,77.1,0,0,7,22.2,76.6,69.2,68.5,Average
+ENG0469,Artificial Intelligence and Data Science,6,23,Female,70.3,4.5,65.7,60.1,52.5,71.9,67.7,61.9,63.5,88.6,52.9,0,0,7,79.0,66.8,53.7,61.1,Average
+ENG0470,Computer Science and Engineering,6,20,Female,83.9,5.1,66.3,61.2,55.5,80.2,68.9,61.8,59.4,79.5,52.9,0,0,8,59.1,68.6,57.8,64.0,Average
+ENG0471,Electronics and Communication Engineering,6,21,Male,62.7,3.2,63.3,63.3,54.6,66.6,68.5,54.8,47.2,74.6,58.1,1,2,5,54.8,64.5,55.8,55.6,Low
+ENG0472,Electronics and Communication Engineering,5,21,Male,75.8,4.3,59.9,54.7,50.5,77.1,68.9,55.3,45.2,66.9,47.9,0,0,8,42.3,63.4,50.1,54.8,Low
+ENG0473,Computer Science and Engineering,3,21,Male,71.8,3.7,71.5,69.5,57.9,61.0,71.5,69.8,86.3,67.0,76.6,1,2,5,36.4,70.9,64.7,65.1,Average
+ENG0474,Electronics and Communication Engineering,8,20,Male,77.3,2.8,79.7,79.8,69.4,71.1,78.6,78.7,71.9,85.5,93.8,0,0,6,24.3,79.4,78.1,80.5,High
+ENG0475,Electrical and Electronics Engineering,7,19,Male,71.0,4.8,73.6,73.1,66.2,77.1,75.4,73.0,71.3,88.9,70.3,0,0,7,26.2,76.2,72.4,68.6,Average
+ENG0476,Computer Science and Engineering,7,20,Male,78.3,4.9,68.0,69.0,56.2,70.3,72.8,67.1,79.5,73.5,63.4,1,1,7,80.6,70.6,66.0,56.9,Average
+ENG0477,Artificial Intelligence and Data Science,5,21,Female,77.9,5.9,75.5,74.0,65.0,83.1,78.2,71.5,69.2,87.1,65.8,0,0,8,90.1,76.1,70.0,69.4,Average
+ENG0478,Mechanical Engineering,3,22,Male,77.8,3.3,76.0,68.9,60.5,72.7,73.5,68.9,63.5,84.0,71.0,0,1,6,57.6,73.7,62.3,72.1,Average
+ENG0479,Computer Science and Engineering,6,21,Male,77.9,3.0,80.9,77.1,62.1,70.8,74.3,73.8,92.0,73.9,86.0,0,0,6,74.2,77.7,72.1,69.0,Average
+ENG0480,Artificial Intelligence and Data Science,3,20,Female,73.1,6.1,73.5,68.5,60.4,82.7,75.1,71.4,73.5,88.7,66.0,0,0,8,74.3,73.1,64.2,67.5,Average
+ENG0481,Mechanical Engineering,3,23,Male,73.7,4.5,64.3,62.4,55.5,65.9,68.8,62.8,58.7,86.4,68.7,1,1,6,38.3,67.4,55.1,58.0,Average
+ENG0482,Artificial Intelligence and Data Science,5,20,Male,67.4,3.6,73.4,72.0,60.2,70.5,73.8,70.5,86.7,68.1,76.2,0,0,6,79.6,74.4,68.1,68.1,Average
+ENG0483,Information Technology,5,19,Male,62.2,3.2,75.5,76.8,66.9,67.1,73.9,72.1,94.4,83.0,85.7,0,0,5,61.4,75.9,72.4,68.9,Average
+ENG0484,Civil Engineering,4,20,Female,72.1,4.3,83.6,76.3,65.9,69.3,79.7,73.9,82.4,86.5,92.3,0,0,6,52.2,78.9,74.3,74.5,High
+ENG0485,Information Technology,4,22,Female,76.8,5.2,75.4,67.7,61.2,81.5,73.5,69.2,70.8,73.4,66.9,0,0,8,66.2,74.2,65.9,71.3,Average
+ENG0486,Artificial Intelligence and Machine Learning,7,20,Female,79.2,3.0,62.6,63.7,47.5,66.5,66.7,57.5,61.2,73.4,61.7,0,0,6,50.7,65.1,51.8,62.0,Average
+ENG0487,Information Technology,5,20,Male,61.6,3.7,69.0,67.4,51.5,61.9,66.7,64.0,71.7,86.6,75.3,1,1,5,78.4,67.5,60.6,54.4,Low
+ENG0488,Computer Science and Engineering,3,19,Male,64.8,3.5,64.8,63.3,48.7,69.7,67.1,63.4,69.5,56.3,58.5,1,2,6,68.6,67.6,59.3,56.5,Average
+ENG0489,Artificial Intelligence and Machine Learning,3,21,Male,79.9,4.7,84.0,76.7,69.1,83.1,83.2,74.8,79.5,67.0,80.1,0,0,8,30.6,81.3,75.5,72.1,Average
+ENG0490,Artificial Intelligence and Data Science,4,19,Male,68.5,5.4,78.3,73.9,61.5,76.3,75.4,70.1,81.4,75.4,71.4,0,0,7,62.4,76.3,70.9,73.3,Average
+ENG0491,Artificial Intelligence and Data Science,5,22,Male,78.1,3.7,75.6,68.6,58.2,74.6,73.5,68.9,70.0,62.3,73.0,0,0,7,80.0,73.5,66.8,69.5,Average
+ENG0492,Artificial Intelligence and Data Science,4,20,Male,83.4,4.4,68.8,63.6,56.3,78.0,69.0,68.7,66.5,54.6,65.3,0,0,8,44.4,70.2,57.8,62.9,Average
+ENG0493,Information Technology,3,22,Male,90.4,6.4,73.9,70.7,61.9,85.0,73.3,66.8,73.1,77.6,59.5,0,0,9,21.9,73.6,65.6,66.6,Average
+ENG0494,Computer Science and Engineering,5,20,Male,81.0,4.8,70.7,68.7,55.3,75.5,71.0,69.2,64.1,59.7,64.3,1,1,7,39.9,71.0,63.3,65.5,Average
+ENG0495,Electrical and Electronics Engineering,5,21,Female,67.5,4.6,64.1,61.4,51.2,69.5,65.3,56.9,56.2,55.7,61.3,0,1,6,20.6,64.0,56.9,62.2,Average
+ENG0496,Civil Engineering,6,22,Male,84.4,3.8,81.9,81.4,74.4,77.2,81.3,78.3,75.6,79.1,87.4,0,0,7,39.0,80.3,80.9,74.2,High
+ENG0497,Artificial Intelligence and Data Science,5,21,Male,89.6,4.8,75.3,73.0,68.9,82.5,77.4,75.7,77.9,80.5,64.4,0,0,8,41.1,76.4,67.4,73.6,Average
+ENG0498,Mechanical Engineering,3,20,Male,69.4,4.9,74.7,71.3,69.4,78.6,78.0,76.0,66.9,73.8,76.4,0,0,7,86.0,76.6,74.2,65.2,Average
+ENG0499,Electrical and Electronics Engineering,7,21,Male,65.6,4.4,73.3,71.1,62.1,64.6,69.5,68.9,62.8,68.6,75.5,1,1,5,88.1,71.2,66.1,59.8,Average
+ENG0500,Civil Engineering,8,22,Male,71.0,3.1,80.9,77.6,65.2,71.7,78.8,73.9,76.3,88.0,79.4,0,0,6,34.8,77.6,71.7,78.3,High
+ENG0501,Electronics and Communication Engineering,5,21,Male,73.6,5.9,75.5,69.6,60.9,79.4,76.2,74.5,57.0,78.3,72.7,0,0,7,94.6,74.9,65.5,76.2,High
+ENG0502,Civil Engineering,3,21,Female,83.3,3.5,72.6,69.1,58.1,73.0,71.2,73.0,66.9,71.9,71.9,0,0,7,90.9,73.3,60.8,66.9,Average
+ENG0503,Computer Science and Engineering,6,20,Female,78.3,4.9,70.3,67.2,54.7,77.9,72.2,64.1,61.9,71.2,67.3,0,0,8,78.7,70.9,64.6,71.6,Average
+ENG0504,Mechanical Engineering,6,20,Male,79.5,4.3,77.0,74.0,64.7,75.9,76.4,72.6,72.8,69.2,70.7,0,0,7,37.7,75.6,72.6,78.9,High
+ENG0505,Electronics and Communication Engineering,6,20,Male,63.2,3.4,79.2,77.9,67.3,72.5,76.3,78.7,78.6,63.9,80.5,0,0,6,90.3,79.4,70.1,74.0,High
+ENG0506,Mechanical Engineering,6,22,Female,76.5,4.3,70.5,70.5,57.9,73.9,75.3,73.8,55.8,74.2,69.4,0,0,7,47.1,74.1,62.3,66.9,Average
+ENG0507,Computer Science and Engineering,5,21,Male,71.1,4.8,78.7,78.0,64.9,78.8,78.0,78.1,82.5,69.9,72.0,0,0,7,43.2,78.6,72.4,73.2,Average
+ENG0508,Computer Science and Engineering,5,20,Male,74.2,5.2,76.4,69.7,65.1,80.9,77.3,70.2,75.2,69.4,71.1,0,0,7,38.4,75.0,69.1,77.4,High
+ENG0509,Information Technology,5,20,Female,77.0,4.0,68.8,64.9,52.1,71.2,68.7,68.3,79.4,79.5,63.4,0,1,6,25.6,70.4,62.4,66.8,Average
+ENG0510,Mechanical Engineering,6,20,Female,68.2,3.9,76.9,74.5,67.5,69.2,73.5,71.4,71.4,49.8,82.2,0,0,6,68.6,76.5,74.7,72.5,Average
+ENG0511,Information Technology,3,20,Male,74.2,3.8,71.5,67.6,55.5,67.2,70.5,62.5,74.9,55.8,79.0,0,0,6,89.3,71.0,63.3,62.3,Average
+ENG0512,Computer Science and Engineering,4,21,Female,74.6,3.6,69.7,68.1,59.4,69.9,71.1,69.8,78.8,75.2,74.0,0,1,6,24.1,71.9,63.7,63.3,Average
+ENG0513,Artificial Intelligence and Machine Learning,8,20,Female,87.5,5.2,73.0,72.0,61.5,79.0,73.0,72.0,78.0,68.8,68.7,0,0,8,48.1,73.9,69.5,70.9,Average
+ENG0514,Computer Science and Engineering,4,19,Male,76.6,4.8,79.1,77.9,69.9,75.1,75.9,75.3,87.7,52.1,77.5,0,0,6,45.2,78.4,71.4,73.4,Average
+ENG0515,Artificial Intelligence and Machine Learning,5,21,Male,83.9,5.5,62.8,61.0,54.9,81.2,68.5,66.9,57.7,69.1,53.4,2,3,8,46.9,68.6,55.1,55.0,Low
+ENG0516,Electronics and Communication Engineering,3,19,Male,76.3,3.8,75.5,74.2,60.1,67.6,74.9,69.1,75.4,52.2,87.8,0,0,5,26.3,74.6,70.2,67.0,Average
+ENG0517,Information Technology,5,21,Male,72.1,2.6,62.8,55.5,40.3,62.7,65.0,60.4,58.3,81.6,56.6,0,1,5,91.7,62.8,51.3,63.5,Average
+ENG0518,Information Technology,4,20,Male,82.1,4.7,80.0,73.7,64.7,77.8,80.0,75.0,90.9,78.0,85.3,0,0,7,88.2,78.8,66.9,77.2,High
+ENG0519,Computer Science and Engineering,6,20,Female,67.4,2.3,72.8,65.9,54.1,63.7,68.0,61.6,79.8,62.3,76.5,1,1,5,48.8,69.4,61.2,60.9,Average
+ENG0520,Artificial Intelligence and Machine Learning,5,20,Male,73.9,3.0,62.8,65.7,52.0,58.5,63.7,55.8,68.7,79.5,73.4,2,2,5,91.3,64.8,60.6,53.7,Low
+ENG0521,Mechanical Engineering,7,20,Female,67.7,4.4,72.2,72.0,58.0,73.0,74.8,65.4,67.3,56.5,75.3,0,0,6,22.8,74.0,67.8,70.2,Average
+ENG0522,Artificial Intelligence and Machine Learning,7,21,Female,83.2,6.0,77.7,76.2,69.8,79.0,78.8,72.6,74.9,71.4,74.9,0,0,8,42.3,76.9,70.7,78.2,High
+ENG0523,Artificial Intelligence and Machine Learning,3,22,Male,69.6,3.4,74.3,74.8,61.6,64.2,70.9,68.4,86.5,67.8,75.5,0,0,5,90.2,73.2,71.1,71.4,Average
+ENG0524,Information Technology,4,20,Male,66.4,4.4,72.3,68.5,64.5,74.6,74.1,70.8,70.8,56.6,68.1,0,0,6,79.7,73.2,67.5,66.1,Average
+ENG0525,Computer Science and Engineering,4,20,Male,73.6,6.1,77.4,68.9,62.5,83.0,74.6,76.9,76.7,62.8,74.3,0,0,8,77.5,76.4,67.6,74.4,High
+ENG0526,Mechanical Engineering,5,20,Female,79.6,3.1,70.2,68.2,55.0,69.8,71.9,59.6,58.0,59.4,63.7,0,0,6,27.0,69.1,60.6,64.3,Average
+ENG0527,Information Technology,5,21,Female,77.5,6.0,80.7,78.6,73.9,81.8,77.3,80.5,78.7,69.5,74.8,0,0,8,55.2,79.9,72.4,74.9,High
+ENG0528,Artificial Intelligence and Data Science,7,21,Male,66.9,4.4,81.5,81.2,72.1,74.2,79.7,78.3,88.5,88.6,95.8,0,0,6,25.8,81.4,74.4,76.2,High
+ENG0529,Mechanical Engineering,7,19,Female,67.4,3.9,65.9,62.4,50.7,67.4,70.7,64.0,58.6,77.7,67.2,2,2,6,71.2,68.1,60.2,57.0,Low
+ENG0530,Artificial Intelligence and Machine Learning,6,20,Male,84.6,5.1,73.3,69.7,61.8,75.2,75.1,66.8,75.4,67.3,64.5,0,0,7,32.7,72.2,68.2,64.3,Average
+ENG0531,Electrical and Electronics Engineering,5,19,Male,69.3,3.7,77.7,74.7,63.8,66.7,73.7,72.9,75.6,72.9,78.3,0,0,5,54.2,74.7,73.2,74.8,High
+ENG0532,Electronics and Communication Engineering,7,21,Female,75.8,4.4,67.4,62.8,59.8,79.9,72.0,70.3,57.5,80.9,57.4,0,0,8,50.7,71.7,65.2,72.9,Average
+ENG0533,Computer Science and Engineering,4,20,Female,82.0,5.7,86.1,82.3,73.3,84.6,84.1,84.8,90.6,70.0,82.4,0,0,8,48.6,85.4,74.9,81.3,High
+ENG0534,Electronics and Communication Engineering,3,21,Female,75.7,4.3,69.4,64.0,52.4,67.6,71.5,63.9,54.6,79.4,62.9,1,2,6,92.4,68.9,55.6,55.1,Low
+ENG0535,Mechanical Engineering,5,20,Male,80.9,4.8,75.5,72.5,69.5,80.8,76.3,71.9,60.0,80.4,70.5,0,0,8,49.4,76.5,73.3,73.4,Average
+ENG0536,Mechanical Engineering,4,21,Male,76.9,4.9,66.4,64.0,49.8,70.9,71.2,59.9,48.3,61.3,62.2,0,0,7,57.4,67.9,57.8,67.1,Average
+ENG0537,Artificial Intelligence and Data Science,5,20,Male,72.1,3.5,65.7,67.4,50.1,64.0,65.2,58.8,71.6,73.2,72.0,0,0,5,67.5,67.1,55.7,63.3,Average
+ENG0538,Mechanical Engineering,4,20,Male,79.5,5.1,74.6,73.3,63.6,71.4,71.9,63.8,62.5,65.5,73.1,0,1,7,38.2,72.7,70.2,68.2,Average
+ENG0539,Civil Engineering,4,21,Male,87.4,5.3,76.4,69.5,65.4,81.8,78.6,73.9,62.1,68.1,62.0,0,0,8,38.3,75.4,66.2,71.1,Average
+ENG0540,Computer Science and Engineering,7,21,Male,70.5,3.8,71.5,64.2,60.7,76.7,72.0,61.4,61.9,61.4,68.4,0,0,7,87.2,69.8,59.6,61.6,Average
+ENG0541,Information Technology,3,19,Male,80.7,3.7,77.1,76.0,62.8,70.9,77.4,73.4,81.8,53.2,84.1,0,0,6,45.7,77.9,65.6,69.9,Average
+ENG0542,Electronics and Communication Engineering,7,21,Male,78.4,4.7,76.7,68.5,63.6,68.5,72.1,68.7,68.5,53.2,74.0,0,1,6,25.8,73.6,66.9,69.4,Average
+ENG0543,Mechanical Engineering,4,22,Male,71.5,4.0,78.6,74.6,68.0,70.1,76.0,76.4,76.7,67.0,82.0,0,0,6,89.8,77.1,74.5,73.3,Average
+ENG0544,Computer Science and Engineering,7,22,Male,89.4,5.7,82.5,77.1,72.4,86.6,84.4,78.3,80.9,81.5,81.8,0,0,9,26.6,82.5,76.6,83.8,High
+ENG0545,Artificial Intelligence and Data Science,6,21,Female,73.9,3.9,83.9,78.3,68.8,78.4,80.4,79.1,87.0,75.6,88.6,0,0,7,33.7,81.4,70.5,78.2,High
+ENG0546,Artificial Intelligence and Data Science,6,20,Female,70.9,4.9,84.0,78.3,74.7,81.8,80.7,83.0,87.2,74.4,81.8,0,0,7,61.7,82.3,77.6,79.4,High
+ENG0547,Electrical and Electronics Engineering,5,21,Male,86.2,4.3,73.3,67.8,66.1,78.6,73.0,72.5,59.7,72.3,61.3,0,0,8,56.8,73.7,66.5,71.0,Average
+ENG0548,Artificial Intelligence and Machine Learning,8,21,Male,75.8,3.2,79.5,74.5,65.3,72.4,77.4,74.0,81.3,68.9,80.5,0,0,6,47.0,77.4,66.4,69.5,Average
+ENG0549,Civil Engineering,6,22,Female,72.9,3.6,65.8,62.8,50.6,67.7,69.1,60.3,63.0,62.9,60.5,0,0,6,66.1,67.4,56.5,63.5,Average
+ENG0550,Mechanical Engineering,4,20,Female,88.1,5.1,83.7,85.6,76.7,84.5,83.4,80.2,80.5,48.6,88.9,0,0,8,29.0,84.8,78.5,84.6,High
+ENG0551,Electronics and Communication Engineering,5,20,Male,91.4,6.0,84.7,76.3,71.4,86.3,80.0,78.8,72.5,82.7,81.8,0,0,9,40.8,82.4,77.0,75.8,High
+ENG0552,Electrical and Electronics Engineering,5,21,Female,66.6,4.5,71.9,68.3,56.3,69.0,70.8,69.6,67.6,64.2,78.6,0,0,6,28.6,73.2,64.0,64.2,Average
+ENG0553,Electronics and Communication Engineering,6,20,Male,74.2,2.2,83.3,77.1,70.2,65.0,75.8,71.9,78.7,75.8,96.4,0,0,5,72.5,77.7,72.9,80.8,High
+ENG0554,Electrical and Electronics Engineering,8,20,Male,93.3,6.8,82.3,81.2,77.5,88.0,82.1,80.0,70.5,81.8,75.6,0,0,9,43.8,83.4,79.6,83.0,High
+ENG0555,Electronics and Communication Engineering,6,22,Female,87.5,4.2,82.6,81.9,73.5,82.2,81.7,75.5,72.9,65.1,79.0,0,0,8,80.7,81.6,75.9,79.4,High
+ENG0556,Artificial Intelligence and Data Science,3,22,Male,78.5,5.1,60.7,61.6,55.0,75.4,67.8,64.3,66.6,52.4,51.9,0,0,7,63.0,66.1,57.7,64.8,Average
+ENG0557,Electrical and Electronics Engineering,3,20,Female,89.8,6.5,72.5,69.0,60.9,84.2,77.2,73.7,49.7,63.2,62.9,0,0,9,54.6,75.3,62.1,66.4,Average
+ENG0558,Civil Engineering,4,21,Male,84.6,5.5,83.3,79.7,75.0,83.5,81.5,77.7,70.3,73.2,85.7,0,0,8,33.4,81.2,78.7,76.8,High
+ENG0559,Artificial Intelligence and Data Science,5,22,Male,78.0,4.7,84.1,79.9,71.7,73.9,77.9,81.4,97.0,66.2,89.5,0,0,6,53.7,81.2,72.3,79.5,High
+ENG0560,Artificial Intelligence and Data Science,6,21,Male,79.4,5.3,78.5,79.7,76.5,84.8,80.9,74.4,86.5,69.7,83.6,0,0,8,85.2,80.3,74.6,78.6,High
+ENG0561,Electronics and Communication Engineering,3,21,Male,75.5,6.6,80.0,73.8,68.6,85.7,80.5,81.4,59.5,77.1,73.4,0,0,8,28.4,80.6,69.7,76.1,High
+ENG0562,Electronics and Communication Engineering,4,21,Male,86.7,6.0,81.6,77.4,69.3,80.5,80.4,76.0,77.4,59.0,78.7,0,0,8,76.2,79.8,76.3,75.9,High
+ENG0563,Artificial Intelligence and Data Science,4,20,Female,76.5,3.3,70.8,68.9,56.7,66.1,68.9,69.5,78.6,73.2,79.0,0,1,5,62.7,72.1,60.4,67.5,Average
+ENG0564,Information Technology,6,22,Male,74.7,4.8,71.5,67.6,64.9,79.7,77.7,72.5,71.3,73.3,71.2,0,0,8,70.3,75.0,65.8,70.6,Average
+ENG0565,Artificial Intelligence and Machine Learning,7,19,Male,77.5,3.6,73.1,73.4,62.7,75.1,76.8,67.6,85.0,69.8,71.8,0,0,7,64.3,74.8,70.0,72.7,Average
+ENG0566,Information Technology,3,21,Male,79.3,3.8,75.2,69.5,59.3,74.8,72.9,70.4,81.0,75.8,72.5,0,0,7,26.0,74.9,67.9,73.6,Average
+ENG0567,Mechanical Engineering,5,19,Female,66.8,4.9,68.8,61.8,49.0,72.5,71.2,58.4,54.6,76.0,60.4,0,0,6,82.6,67.5,56.7,62.3,Average
+ENG0568,Computer Science and Engineering,8,19,Female,83.9,5.5,70.2,69.5,63.2,84.3,77.4,65.2,70.8,73.7,57.3,0,0,9,43.0,73.0,67.1,73.4,Average
+ENG0569,Electrical and Electronics Engineering,5,20,Male,86.2,5.4,85.5,81.5,78.1,85.4,81.0,83.7,70.0,88.5,78.4,0,0,8,20.9,83.3,80.8,82.4,High
+ENG0570,Electronics and Communication Engineering,3,20,Male,71.4,5.7,74.0,69.5,62.6,76.3,71.4,73.1,56.6,49.7,62.8,0,0,7,74.9,73.4,63.4,66.0,Average
+ENG0571,Mechanical Engineering,5,20,Female,85.2,5.5,75.1,71.4,65.8,74.2,75.1,73.1,64.9,57.9,66.3,0,0,7,64.9,73.4,67.6,69.1,Average
+ENG0572,Electronics and Communication Engineering,3,22,Female,76.8,3.3,82.3,79.9,67.5,73.1,77.6,78.8,80.9,73.3,89.6,0,0,6,80.4,81.1,74.6,74.5,High
+ENG0573,Artificial Intelligence and Data Science,5,19,Male,71.2,4.7,63.9,59.7,55.4,73.1,68.9,60.1,63.2,69.8,61.0,0,0,7,68.5,65.7,57.7,59.6,Average
+ENG0574,Artificial Intelligence and Data Science,8,19,Male,85.8,5.2,84.9,81.9,77.9,90.8,86.7,81.3,90.7,55.7,76.6,0,0,9,54.6,84.9,83.5,84.3,High
+ENG0575,Information Technology,4,21,Female,72.1,5.0,76.2,74.3,64.4,75.8,74.1,70.2,80.8,93.5,79.3,0,0,7,64.3,74.7,70.8,77.7,High
+ENG0576,Artificial Intelligence and Machine Learning,6,21,Male,70.8,3.5,72.1,65.7,59.0,72.3,71.6,64.6,68.9,85.8,72.4,0,0,6,70.1,71.1,64.3,65.1,Average
+ENG0577,Information Technology,5,21,Female,80.9,5.6,78.6,79.7,71.8,81.0,77.9,75.4,86.0,67.0,78.8,0,0,7,65.6,79.8,76.7,83.9,High
+ENG0578,Electronics and Communication Engineering,5,22,Female,69.2,4.2,74.3,70.5,63.8,72.2,75.0,68.6,70.6,81.3,74.4,0,0,6,71.9,73.3,65.8,71.2,Average
+ENG0579,Mechanical Engineering,7,21,Female,64.0,3.6,69.0,65.2,52.7,56.8,66.9,55.7,65.4,68.2,71.3,0,0,4,73.0,65.4,60.4,59.4,Average
+ENG0580,Electrical and Electronics Engineering,5,20,Female,68.7,3.5,72.9,71.1,58.1,68.7,72.0,69.0,71.4,76.7,69.5,2,3,6,79.9,71.3,68.5,60.1,Low
+ENG0581,Electrical and Electronics Engineering,7,22,Female,73.9,5.1,71.8,63.0,60.0,74.0,71.0,68.4,51.4,88.7,67.0,0,0,7,40.6,70.7,62.2,67.7,Average
+ENG0582,Mechanical Engineering,3,20,Male,89.1,6.3,83.9,78.7,77.5,86.8,84.4,83.8,75.9,61.6,84.8,0,0,9,30.8,83.7,81.6,81.0,High
+ENG0583,Mechanical Engineering,6,21,Female,77.2,4.8,67.0,67.0,63.1,76.4,69.5,66.8,58.9,76.0,56.4,0,0,7,36.8,70.3,61.9,66.4,Average
+ENG0584,Artificial Intelligence and Machine Learning,4,20,Female,69.7,5.0,70.0,69.2,53.5,71.2,73.3,70.0,69.2,77.0,69.3,2,2,6,93.2,70.9,57.8,57.9,Low
+ENG0585,Electronics and Communication Engineering,6,20,Female,67.3,4.6,75.5,74.4,59.8,71.0,76.7,76.1,66.4,71.4,80.3,0,0,6,44.9,76.9,69.8,69.5,Average
+ENG0586,Civil Engineering,5,21,Female,68.4,2.4,71.2,67.9,55.1,63.8,69.8,64.3,60.7,70.7,76.1,0,1,5,68.3,70.3,63.1,57.9,Average
+ENG0587,Artificial Intelligence and Data Science,5,23,Male,79.1,4.5,78.4,72.8,66.9,76.1,77.4,76.0,82.8,69.1,73.7,0,1,7,52.7,76.5,73.7,71.7,Average
+ENG0588,Computer Science and Engineering,6,21,Male,83.9,4.7,76.3,70.1,64.2,81.5,74.7,73.1,70.7,81.4,71.6,0,0,8,40.8,76.5,63.2,75.6,High
+ENG0589,Artificial Intelligence and Data Science,7,19,Male,81.0,4.2,73.2,65.6,54.2,70.4,71.3,65.6,80.1,74.1,72.7,0,0,6,76.7,71.4,61.7,63.8,Average
+ENG0590,Computer Science and Engineering,4,19,Male,75.9,4.7,79.1,73.4,72.5,84.5,77.6,76.4,73.8,83.3,70.3,0,0,8,30.3,78.0,70.6,78.8,High
+ENG0591,Electronics and Communication Engineering,5,20,Male,73.2,3.4,67.9,64.0,52.4,71.4,69.2,64.9,54.6,86.8,72.5,0,0,6,84.0,70.3,58.3,61.1,Average
+ENG0592,Artificial Intelligence and Data Science,8,21,Male,75.8,5.6,76.9,70.5,66.8,82.4,75.6,71.5,78.4,76.5,77.8,0,0,8,57.6,76.7,67.7,68.1,Average
+ENG0593,Electrical and Electronics Engineering,5,20,Male,82.2,3.7,71.0,70.3,58.5,71.1,71.5,65.4,66.4,69.6,69.0,0,0,6,86.8,72.1,61.8,67.3,Average
+ENG0594,Civil Engineering,3,20,Female,69.6,5.3,84.0,76.3,69.0,77.4,81.6,81.6,78.9,89.5,84.7,0,0,7,73.6,81.5,73.0,75.4,High
+ENG0595,Artificial Intelligence and Data Science,4,22,Other,61.5,2.9,64.5,59.7,42.6,61.5,67.4,58.2,63.6,69.5,67.9,1,1,5,58.0,64.8,48.2,52.3,Low
+ENG0596,Mechanical Engineering,4,20,Other,71.5,4.5,78.3,73.8,65.2,73.4,78.1,74.1,76.0,75.3,82.4,0,0,6,91.5,76.6,70.4,71.0,Average
+ENG0597,Information Technology,5,19,Male,69.2,4.5,73.7,71.9,60.1,67.0,75.9,65.4,86.8,75.9,83.4,0,0,5,77.8,74.2,67.1,67.8,Average
+ENG0598,Information Technology,7,21,Female,70.8,4.9,81.0,76.4,65.2,77.3,79.0,76.1,92.0,77.3,77.2,0,1,7,93.5,79.5,74.8,75.8,High
+ENG0599,Electronics and Communication Engineering,3,20,Female,79.1,5.4,78.5,76.2,68.0,75.6,78.9,76.7,73.2,74.4,80.7,0,0,7,94.8,78.0,68.3,70.6,Average
+ENG0600,Computer Science and Engineering,3,20,Female,72.8,5.3,69.8,70.8,58.9,72.3,74.3,70.3,73.1,61.0,68.0,0,0,7,64.2,72.9,61.0,67.6,Average
+ENG0601,Artificial Intelligence and Data Science,7,20,Male,67.8,3.5,71.4,67.4,56.6,67.8,71.7,61.4,72.9,89.9,65.9,0,0,6,60.1,69.7,61.4,65.3,Average
+ENG0602,Information Technology,7,20,Female,61.5,3.0,66.0,58.7,43.1,56.8,63.7,56.6,76.6,64.3,63.8,0,0,4,89.6,63.5,51.1,54.5,Low
+ENG0603,Electronics and Communication Engineering,6,20,Male,81.2,4.9,74.4,68.0,64.3,75.8,73.3,64.8,59.9,70.2,64.0,0,0,7,23.4,72.8,64.5,66.7,Average
+ENG0604,Artificial Intelligence and Data Science,4,19,Female,89.0,5.2,85.6,79.2,74.2,84.9,82.4,75.9,86.1,71.9,84.9,0,0,8,94.9,83.2,77.4,83.1,High
+ENG0605,Artificial Intelligence and Data Science,3,20,Female,87.2,5.1,85.5,78.8,71.7,82.7,79.5,79.3,88.8,85.9,85.6,0,0,8,34.5,82.7,79.2,76.7,High
+ENG0606,Information Technology,6,20,Female,70.8,5.5,70.3,67.0,56.3,77.5,72.1,72.2,68.3,85.1,65.2,0,1,7,83.5,73.0,61.3,64.6,Average
+ENG0607,Electrical and Electronics Engineering,3,20,Male,74.4,4.6,68.3,61.9,49.0,68.3,68.1,67.7,56.3,68.2,58.9,0,0,6,94.9,68.5,54.3,65.2,Average
+ENG0608,Artificial Intelligence and Data Science,5,21,Female,72.3,3.2,68.8,69.3,52.0,61.9,67.4,65.6,81.6,52.8,74.4,0,0,5,34.5,69.5,57.7,59.0,Average
+ENG0609,Information Technology,7,21,Male,73.8,4.5,68.7,68.2,60.4,70.0,72.7,59.6,66.2,58.8,62.7,0,1,6,85.1,69.1,65.7,70.0,Average
+ENG0610,Mechanical Engineering,5,20,Male,63.9,3.9,63.9,60.7,52.9,66.6,64.6,55.3,47.5,84.9,63.4,0,0,6,71.4,65.0,56.5,63.0,Average
+ENG0611,Artificial Intelligence and Machine Learning,5,20,Male,77.4,4.7,79.7,78.9,67.2,77.8,80.7,76.5,88.3,89.0,81.7,0,0,7,71.9,80.1,74.7,75.0,High
+ENG0612,Electronics and Communication Engineering,5,20,Male,78.6,5.7,78.8,74.3,67.7,78.4,77.3,79.6,74.0,65.0,78.2,0,0,7,77.1,79.2,69.9,74.6,High
+ENG0613,Electronics and Communication Engineering,5,20,Female,92.4,6.2,88.4,86.9,83.7,89.9,88.4,89.7,84.9,84.0,84.7,0,0,9,64.8,89.5,83.3,88.8,High
+ENG0614,Civil Engineering,6,19,Female,69.1,3.3,70.8,65.7,53.1,65.3,67.5,67.2,59.3,79.9,75.5,0,0,5,58.3,68.8,58.5,65.8,Average
+ENG0615,Computer Science and Engineering,7,23,Male,68.6,4.7,70.0,71.8,65.2,71.5,73.9,65.0,84.5,56.1,74.6,0,0,6,26.2,72.3,67.3,63.5,Average
+ENG0616,Computer Science and Engineering,3,20,Male,64.5,4.6,73.6,70.5,64.6,72.2,75.6,69.0,87.9,87.5,81.6,0,0,6,59.8,75.0,64.4,66.8,Average
+ENG0617,Civil Engineering,5,19,Female,69.6,5.1,76.8,69.6,66.8,79.0,74.2,68.1,66.9,72.2,74.8,0,0,7,32.6,74.6,64.9,71.7,Average
+ENG0618,Artificial Intelligence and Data Science,5,21,Male,75.1,3.4,83.2,78.0,65.3,63.6,74.1,77.2,98.0,79.2,94.1,0,0,5,44.1,78.3,74.2,72.3,Average
+ENG0619,Electrical and Electronics Engineering,7,21,Female,69.6,4.3,74.4,75.8,64.4,69.9,72.0,74.2,71.0,84.3,76.0,0,0,6,69.7,75.2,70.0,71.5,Average
+ENG0620,Information Technology,5,19,Male,78.3,5.1,71.9,67.6,60.3,80.9,72.0,64.9,64.0,72.9,57.4,0,0,8,63.5,72.4,61.8,66.3,Average
+ENG0621,Artificial Intelligence and Data Science,3,20,Female,66.3,4.9,64.0,60.1,52.9,72.4,66.2,64.5,58.1,54.2,60.6,2,2,6,42.0,66.2,57.6,59.4,Low
+ENG0622,Electronics and Communication Engineering,4,20,Female,65.0,4.2,69.3,69.0,54.4,65.6,71.0,68.1,65.9,71.7,75.1,0,0,5,91.0,71.4,59.2,69.0,Average
+ENG0623,Artificial Intelligence and Machine Learning,3,20,Male,67.0,3.5,63.3,60.9,45.2,60.6,62.4,59.5,66.9,76.1,58.3,0,0,5,43.3,63.8,49.4,55.7,Low
+ENG0624,Computer Science and Engineering,3,20,Male,77.9,3.1,69.2,68.8,51.5,64.7,68.1,61.5,77.7,64.9,68.3,1,2,6,70.6,69.0,62.4,57.9,Average
+ENG0625,Electronics and Communication Engineering,4,20,Female,70.2,3.6,80.5,76.0,70.2,74.5,76.3,69.8,67.9,83.5,82.0,0,0,6,69.9,76.7,72.1,74.1,High
+ENG0626,Computer Science and Engineering,6,22,Male,67.5,3.6,79.9,77.8,67.9,74.9,78.3,76.0,95.1,76.1,89.4,0,0,6,37.1,80.4,69.4,76.7,High
+ENG0627,Electrical and Electronics Engineering,8,21,Male,79.4,4.3,70.9,66.0,55.7,67.0,72.1,68.5,61.6,81.6,72.7,0,1,6,63.0,70.7,60.9,65.7,Average
+ENG0628,Electrical and Electronics Engineering,8,19,Male,71.4,2.5,70.4,68.2,58.5,60.3,68.4,66.4,75.5,75.8,75.1,0,1,5,77.8,70.6,65.9,64.0,Average
+ENG0629,Electrical and Electronics Engineering,7,20,Male,73.2,4.2,63.3,59.5,49.1,67.1,65.7,57.5,50.6,67.0,63.9,0,1,6,65.6,65.1,54.3,61.7,Average
+ENG0630,Information Technology,4,19,Female,78.5,3.3,79.8,79.3,73.4,72.9,76.9,77.9,80.5,75.7,83.4,0,0,6,46.3,78.6,74.5,75.0,High
+ENG0631,Mechanical Engineering,8,22,Male,82.8,5.7,67.8,61.6,53.6,74.8,70.6,64.3,58.4,91.5,59.0,1,1,7,42.5,69.5,56.0,64.3,Average
+ENG0632,Information Technology,8,21,Female,78.0,5.0,62.3,62.7,53.9,71.6,67.0,60.9,68.6,77.9,57.4,0,0,7,35.6,65.5,60.7,60.8,Average
+ENG0633,Artificial Intelligence and Machine Learning,7,20,Male,60.9,4.5,65.8,63.4,55.1,66.1,68.3,64.8,68.1,74.6,62.3,1,1,5,31.0,67.4,59.3,58.7,Average
+ENG0634,Mechanical Engineering,6,21,Male,62.0,3.0,79.3,74.2,59.1,67.1,72.4,66.2,69.6,67.6,79.5,0,0,5,83.4,74.9,63.4,72.4,Average
+ENG0635,Artificial Intelligence and Data Science,5,21,Male,77.9,4.2,84.9,79.6,73.6,82.7,80.1,79.4,88.5,68.0,81.8,0,0,8,69.3,83.1,80.6,82.3,High
+ENG0636,Electronics and Communication Engineering,4,22,Female,83.4,5.1,74.5,70.0,62.1,72.7,72.7,71.5,65.5,67.3,80.5,0,0,7,64.2,74.5,68.3,73.7,Average
+ENG0637,Civil Engineering,3,22,Female,74.5,4.8,60.4,56.2,51.4,80.8,69.6,63.2,44.1,75.8,45.1,0,0,8,90.7,66.3,54.7,62.7,Average
+ENG0638,Electrical and Electronics Engineering,6,21,Male,67.3,3.8,74.1,72.6,54.9,62.2,71.1,72.0,72.1,73.2,83.3,0,0,5,72.6,73.0,59.9,68.7,Average
+ENG0639,Computer Science and Engineering,7,21,Male,77.4,4.9,81.2,76.4,70.7,78.7,75.9,79.4,89.2,68.3,73.9,0,0,7,92.8,79.1,72.4,71.9,Average
+ENG0640,Computer Science and Engineering,3,20,Female,71.4,4.9,63.0,59.2,54.3,75.8,67.7,66.7,59.0,65.8,54.1,0,0,7,64.5,67.5,55.0,64.8,Average
+ENG0641,Artificial Intelligence and Data Science,4,20,Male,86.3,5.8,80.7,75.3,70.1,90.7,82.5,79.0,83.0,67.3,72.3,0,0,9,44.7,80.3,72.0,78.0,High
+ENG0642,Artificial Intelligence and Machine Learning,6,20,Male,74.6,5.2,83.8,82.9,72.7,79.6,79.6,82.7,84.1,63.7,87.0,0,0,7,45.1,82.7,78.1,78.6,High
+ENG0643,Electronics and Communication Engineering,3,20,Male,82.6,4.5,68.6,68.2,58.2,71.9,71.9,69.3,65.3,50.1,69.8,0,0,7,89.9,71.1,65.8,64.2,Average
+ENG0644,Computer Science and Engineering,3,21,Male,71.6,4.4,62.9,63.9,46.8,67.6,67.5,62.4,64.8,79.7,63.1,0,1,6,20.2,66.0,53.6,61.7,Average
+ENG0645,Electrical and Electronics Engineering,4,22,Female,80.4,4.8,84.9,76.4,75.8,83.9,82.1,83.6,69.2,87.4,81.4,0,1,8,72.6,82.5,73.8,73.8,Average
+ENG0646,Electronics and Communication Engineering,6,21,Male,84.8,5.3,72.6,70.2,61.1,75.7,74.9,68.6,60.1,49.0,66.3,0,0,7,21.0,73.5,64.2,69.8,Average
+ENG0647,Artificial Intelligence and Machine Learning,4,22,Male,65.4,4.7,80.4,77.3,71.2,70.6,76.7,78.9,91.9,82.3,93.5,0,0,6,69.0,80.0,73.7,75.2,High
+ENG0648,Artificial Intelligence and Machine Learning,6,19,Male,75.4,5.8,69.5,63.5,51.4,75.9,70.0,65.6,67.5,76.3,54.6,1,2,7,76.4,69.5,60.0,58.3,Average
+ENG0649,Mechanical Engineering,6,20,Other,78.0,3.2,70.9,71.2,54.8,67.3,71.0,64.5,73.0,58.2,80.5,1,1,6,88.2,71.1,61.4,60.0,Average
+ENG0650,Artificial Intelligence and Data Science,4,20,Female,73.3,4.5,67.0,68.3,52.7,70.6,69.1,63.4,78.2,69.4,71.5,0,0,6,61.4,70.0,64.1,63.0,Average
+ENG0651,Computer Science and Engineering,3,20,Female,92.9,5.6,86.4,81.7,75.1,89.9,86.0,83.2,84.6,84.9,78.7,0,0,9,40.1,85.0,75.9,77.6,High
+ENG0652,Civil Engineering,4,21,Male,81.4,5.2,81.0,77.4,75.8,82.6,81.8,76.3,67.2,75.7,79.5,0,0,8,46.4,80.2,75.1,73.4,Average
+ENG0653,Mechanical Engineering,3,20,Male,79.1,3.8,75.7,69.3,55.7,73.1,75.1,70.3,64.9,59.3,78.6,0,0,6,78.7,73.4,59.0,74.7,High
+ENG0654,Mechanical Engineering,3,20,Female,72.2,2.7,64.2,62.1,50.1,65.6,66.8,60.9,61.6,61.9,71.6,0,1,5,35.9,67.2,58.0,60.7,Average
+ENG0655,Artificial Intelligence and Machine Learning,3,20,Female,79.6,6.0,73.2,65.7,62.3,82.7,75.0,65.7,70.5,83.0,63.5,0,0,8,54.3,72.3,61.7,68.1,Average
+ENG0656,Artificial Intelligence and Data Science,5,22,Male,70.8,5.4,72.9,70.9,61.8,76.5,75.8,69.5,70.8,67.0,74.0,0,0,7,34.3,75.4,69.3,72.0,Average
+ENG0657,Computer Science and Engineering,3,21,Female,76.2,3.9,72.5,73.0,66.0,69.0,74.9,71.4,80.0,67.7,78.0,0,0,6,28.2,74.0,70.7,72.7,Average
+ENG0658,Electronics and Communication Engineering,3,21,Female,71.5,5.1,69.6,68.9,65.4,79.5,71.7,70.3,49.1,56.8,58.7,0,0,8,93.4,72.0,64.1,70.5,Average
+ENG0659,Artificial Intelligence and Data Science,5,21,Male,64.2,4.2,72.4,67.2,55.1,70.5,73.3,70.7,78.2,80.1,66.8,0,0,6,91.8,72.4,59.6,66.7,Average
+ENG0660,Electronics and Communication Engineering,4,21,Male,72.7,5.8,81.7,78.1,78.0,84.2,82.4,84.8,80.2,70.6,79.6,0,0,8,45.9,83.5,75.1,75.6,High
+ENG0661,Artificial Intelligence and Machine Learning,6,21,Female,76.5,4.5,58.6,55.7,46.6,67.7,66.2,58.8,62.3,59.1,55.9,0,0,6,90.3,63.7,48.8,55.0,Low
+ENG0662,Civil Engineering,5,19,Female,72.0,3.0,75.4,74.6,57.2,64.9,73.2,66.0,74.2,51.6,83.9,0,0,5,62.4,73.5,66.3,68.7,Average
+ENG0663,Electronics and Communication Engineering,7,19,Male,66.7,5.3,82.4,78.2,72.4,76.1,79.2,81.0,71.2,69.6,88.1,0,0,6,75.0,80.5,77.2,76.7,High
+ENG0664,Civil Engineering,4,20,Female,76.3,4.4,73.4,69.8,62.7,76.8,74.0,70.2,59.7,69.3,70.1,0,0,7,26.8,74.6,69.2,75.5,High
+ENG0665,Electronics and Communication Engineering,7,21,Male,79.4,5.1,72.4,67.4,63.7,73.9,72.6,67.5,64.6,73.1,66.8,0,0,7,21.6,72.6,63.7,64.3,Average
+ENG0666,Computer Science and Engineering,6,22,Female,72.4,5.8,72.1,67.7,64.6,77.0,76.4,73.8,70.5,85.4,72.8,0,0,7,47.9,74.5,67.0,73.9,Average
+ENG0667,Electrical and Electronics Engineering,4,19,Male,77.7,2.8,78.6,74.1,58.0,67.6,75.7,70.3,76.5,73.1,82.7,0,0,6,62.7,75.1,64.1,64.7,Average
+ENG0668,Computer Science and Engineering,4,22,Male,65.8,3.7,66.7,63.1,52.4,60.1,70.2,61.9,79.1,85.9,74.1,0,0,5,30.0,67.9,53.9,61.3,Average
+ENG0669,Mechanical Engineering,6,21,Male,86.8,5.4,74.5,70.9,64.1,75.6,71.4,68.4,65.1,60.3,72.8,0,0,8,84.6,72.9,69.8,67.4,Average
+ENG0670,Computer Science and Engineering,3,20,Male,87.2,5.8,69.5,66.3,54.2,77.2,69.7,62.3,59.1,84.4,57.3,2,3,8,22.0,69.9,63.8,60.6,Low
+ENG0671,Civil Engineering,3,21,Female,76.8,3.0,80.3,78.1,68.2,70.0,75.1,73.6,73.6,62.4,77.9,0,0,6,78.2,77.0,69.6,76.2,High
+ENG0672,Mechanical Engineering,3,20,Male,75.3,6.3,79.2,78.0,69.5,84.0,77.1,80.0,74.6,72.6,73.4,0,0,8,84.9,79.8,76.0,78.4,High
+ENG0673,Electronics and Communication Engineering,7,19,Female,84.7,4.9,79.1,76.6,73.7,81.6,76.6,80.3,73.7,75.3,75.1,0,0,8,37.2,79.5,72.0,79.6,High
+ENG0674,Information Technology,8,20,Male,76.3,4.3,57.8,57.1,50.7,71.2,63.3,53.6,53.9,74.7,47.2,4,5,7,33.7,60.7,50.1,49.0,Low
+ENG0675,Electronics and Communication Engineering,7,23,Female,63.3,3.9,65.3,60.7,42.5,62.7,65.8,58.8,54.4,86.4,58.3,0,0,5,31.1,64.0,49.4,57.0,Average
+ENG0676,Mechanical Engineering,5,19,Female,83.7,4.5,78.2,74.7,67.1,81.6,80.1,77.3,76.3,56.9,81.7,0,0,8,42.2,79.2,73.1,67.5,Average
+ENG0677,Artificial Intelligence and Data Science,5,21,Male,87.1,5.7,73.3,72.8,68.2,84.3,79.7,78.0,74.1,63.6,69.8,0,0,8,55.1,77.2,67.3,71.1,Average
+ENG0678,Mechanical Engineering,6,22,Male,76.7,2.9,68.9,61.0,55.0,65.9,68.4,57.0,62.2,79.5,65.7,1,1,6,44.0,66.4,55.9,59.5,Average
+ENG0679,Electronics and Communication Engineering,6,21,Male,68.2,2.6,60.3,55.1,38.2,63.2,62.6,56.8,45.7,73.0,50.8,3,4,5,28.1,61.1,49.2,41.8,Low
+ENG0680,Mechanical Engineering,3,22,Male,89.0,5.7,79.5,77.8,66.3,82.7,77.6,78.3,68.2,66.8,76.8,0,0,8,65.6,79.1,75.8,75.3,High
+ENG0681,Artificial Intelligence and Machine Learning,6,22,Male,64.8,3.0,71.0,68.3,53.4,62.1,68.1,63.2,75.0,72.5,77.4,0,0,5,79.5,69.1,61.9,70.1,Average
+ENG0682,Artificial Intelligence and Machine Learning,5,21,Other,73.4,5.3,76.4,73.5,69.0,77.7,74.8,73.2,80.1,74.0,77.6,0,0,7,32.1,76.9,70.3,77.4,High
+ENG0683,Mechanical Engineering,6,20,Female,85.9,5.0,77.9,74.9,72.5,78.9,79.0,74.1,69.8,68.0,82.6,0,0,8,89.1,78.9,71.0,78.0,High
+ENG0684,Information Technology,7,20,Male,71.4,3.4,64.0,63.3,50.7,67.4,67.3,60.0,69.6,59.2,65.0,0,0,6,73.9,66.3,55.5,61.9,Average
+ENG0685,Computer Science and Engineering,5,19,Male,77.6,2.9,73.8,70.1,60.8,67.1,69.8,66.1,84.4,86.4,70.3,0,0,6,68.0,71.1,68.8,64.3,Average
+ENG0686,Electrical and Electronics Engineering,4,20,Female,78.5,2.9,72.3,66.1,56.7,66.0,69.5,63.1,66.1,80.7,76.4,0,0,6,31.6,69.3,61.7,65.0,Average
+ENG0687,Information Technology,3,21,Female,89.0,5.7,81.0,77.0,69.7,83.1,80.1,74.9,87.4,71.5,75.8,0,0,8,82.7,81.5,74.6,79.4,High
+ENG0688,Computer Science and Engineering,5,20,Male,81.3,5.1,60.3,53.2,46.9,70.7,65.1,58.5,51.8,62.1,46.0,0,0,7,87.1,61.8,47.2,59.8,Average
+ENG0689,Artificial Intelligence and Machine Learning,6,20,Female,63.9,4.9,70.2,70.5,62.0,69.9,70.5,66.8,82.3,69.4,69.1,0,0,6,72.6,72.5,66.7,68.2,Average
+ENG0690,Mechanical Engineering,7,20,Male,77.2,4.0,70.1,66.3,60.4,71.1,72.7,68.7,65.3,73.0,72.0,0,0,6,28.6,70.8,60.6,69.1,Average
+ENG0691,Information Technology,7,20,Female,76.2,5.8,88.6,80.6,79.5,87.8,85.2,82.3,83.4,84.0,85.2,0,0,8,21.3,85.1,83.3,81.1,High
+ENG0692,Electronics and Communication Engineering,6,23,Female,76.9,5.7,80.9,80.1,71.1,88.4,84.1,81.8,75.5,84.6,76.0,0,0,8,78.5,82.5,79.0,78.1,High
+ENG0693,Civil Engineering,6,20,Female,78.3,4.5,76.3,68.6,59.4,80.0,74.1,65.7,67.6,73.6,68.8,0,0,8,86.8,74.1,60.1,69.2,Average
+ENG0694,Computer Science and Engineering,3,21,Male,73.8,3.2,68.5,61.3,53.4,60.9,66.5,55.2,74.1,78.7,63.3,1,1,5,57.5,65.4,55.8,58.2,Average
+ENG0695,Electrical and Electronics Engineering,5,19,Male,75.7,5.9,85.2,80.4,72.4,84.9,81.2,81.9,76.6,54.7,85.7,0,0,8,81.6,82.5,78.9,79.9,High
+ENG0696,Computer Science and Engineering,6,22,Male,78.6,5.5,66.8,66.3,57.5,79.5,69.9,67.7,69.0,71.2,62.7,0,1,8,76.1,70.8,61.3,67.9,Average
+ENG0697,Civil Engineering,7,23,Female,77.1,3.3,78.1,76.0,64.5,72.2,78.1,77.1,74.9,83.0,83.8,0,0,6,40.5,78.0,69.5,72.2,Average
+ENG0698,Mechanical Engineering,6,21,Female,88.4,4.3,76.2,69.0,62.9,81.8,77.6,75.7,66.7,86.3,67.8,0,0,8,57.6,75.6,68.5,77.0,High
+ENG0699,Civil Engineering,3,21,Male,62.2,3.0,76.8,72.7,67.7,70.0,75.8,69.5,69.2,85.9,82.5,0,0,5,26.8,75.6,72.4,76.6,High
+ENG0700,Electronics and Communication Engineering,5,20,Female,76.1,5.3,75.1,75.0,65.9,75.2,77.1,72.5,76.3,64.1,71.3,0,0,7,37.6,75.9,73.4,72.4,Average
+ENG0701,Computer Science and Engineering,6,20,Male,66.3,3.8,77.3,76.2,67.4,72.4,74.7,69.2,90.5,53.9,83.4,0,0,6,74.9,77.5,68.4,69.6,Average
+ENG0702,Computer Science and Engineering,5,23,Male,72.8,4.8,65.0,62.3,52.1,73.6,70.3,66.4,68.7,76.1,63.3,0,0,7,32.0,68.1,57.0,64.8,Average
+ENG0703,Civil Engineering,8,21,Female,83.9,6.1,78.3,72.7,66.9,80.0,75.8,70.6,61.6,76.6,68.6,0,0,8,39.1,76.8,66.6,77.1,High
+ENG0704,Electrical and Electronics Engineering,5,20,Female,75.5,5.8,69.7,69.3,59.4,79.7,76.9,65.9,60.6,75.8,70.2,0,0,8,49.9,73.5,63.0,75.1,High
+ENG0705,Civil Engineering,7,21,Female,74.6,4.1,73.3,69.9,64.7,71.8,75.2,68.8,71.5,82.6,68.9,0,0,6,29.8,73.4,65.7,71.6,Average
+ENG0706,Artificial Intelligence and Machine Learning,6,22,Female,69.7,3.3,80.0,75.4,67.9,74.6,76.7,71.0,85.2,73.7,76.1,0,0,6,54.9,77.0,72.9,77.4,High
+ENG0707,Electrical and Electronics Engineering,3,21,Female,83.6,4.7,81.4,79.7,68.3,80.8,78.1,79.4,69.2,66.9,79.9,0,0,8,34.6,81.3,73.3,81.8,High
+ENG0708,Computer Science and Engineering,4,21,Male,79.6,5.0,86.9,84.6,80.4,88.8,83.0,84.3,88.0,62.3,80.3,0,0,8,74.4,85.9,86.4,86.0,High
+ENG0709,Mechanical Engineering,6,21,Female,78.3,3.6,69.5,64.3,49.7,70.5,68.1,68.5,61.2,59.7,61.3,0,0,6,78.9,69.8,56.3,66.1,Average
+ENG0710,Artificial Intelligence and Machine Learning,8,20,Female,68.3,2.0,79.7,77.7,64.1,63.1,71.4,66.1,95.7,65.0,89.3,0,0,4,84.6,74.5,72.0,65.5,Average
+ENG0711,Information Technology,4,21,Male,66.7,3.3,78.4,73.5,65.0,67.3,71.9,71.2,89.1,80.2,74.9,0,0,5,73.8,74.7,73.1,68.8,Average
+ENG0712,Civil Engineering,6,21,Female,70.1,4.4,82.0,76.9,75.4,83.1,82.6,79.0,69.9,71.9,77.8,0,0,7,89.5,82.0,75.6,72.1,Average
+ENG0713,Artificial Intelligence and Machine Learning,8,21,Male,64.6,3.5,65.8,63.8,55.7,68.6,69.7,59.2,64.0,74.4,60.9,1,2,6,63.1,67.7,56.5,60.5,Average
+ENG0714,Artificial Intelligence and Data Science,5,20,Male,66.7,4.3,62.7,57.9,42.4,63.6,65.1,59.0,63.8,75.6,65.0,0,0,5,49.3,63.8,49.3,53.1,Low
+ENG0715,Civil Engineering,5,21,Male,84.2,6.8,83.0,80.5,71.8,90.2,85.3,76.0,64.6,84.8,79.3,0,0,9,76.4,82.8,73.4,84.1,High
+ENG0716,Artificial Intelligence and Data Science,6,21,Male,78.7,4.6,67.4,62.0,49.3,70.5,66.4,58.2,64.7,59.5,58.2,0,0,7,92.8,67.0,56.0,62.3,Average
+ENG0717,Information Technology,7,20,Female,82.0,4.3,80.2,75.3,66.1,72.2,77.4,73.2,91.6,55.9,80.0,0,0,6,73.7,77.3,73.0,74.1,High
+ENG0718,Artificial Intelligence and Data Science,4,21,Female,82.4,5.9,76.2,71.1,63.9,83.9,79.1,69.6,80.5,66.8,67.5,0,0,8,49.9,77.3,65.3,71.2,Average
+ENG0719,Electronics and Communication Engineering,6,21,Male,75.7,4.9,60.1,57.6,49.6,71.3,66.8,60.7,45.9,70.5,52.5,0,0,7,36.8,64.8,57.1,57.7,Average
+ENG0720,Computer Science and Engineering,3,21,Male,79.7,4.5,68.3,67.9,59.4,75.5,69.4,69.1,68.5,81.9,67.6,0,0,7,30.2,70.2,64.9,69.6,Average
+ENG0721,Artificial Intelligence and Machine Learning,3,20,Male,80.3,5.6,69.9,66.1,57.0,79.2,74.6,66.5,72.6,73.6,67.6,0,0,8,55.0,73.0,65.1,70.5,Average
+ENG0722,Information Technology,5,21,Female,69.6,4.6,79.4,72.7,68.1,75.6,75.6,78.3,78.4,77.3,80.6,0,0,7,30.9,78.4,71.9,79.0,High
+ENG0723,Computer Science and Engineering,4,21,Female,68.5,4.3,57.1,54.2,37.1,63.3,63.7,55.9,62.2,77.8,52.3,1,2,5,52.9,59.7,43.9,50.3,Low
+ENG0724,Information Technology,3,19,Female,82.8,4.7,84.8,81.8,76.8,76.4,78.0,77.3,96.4,85.0,89.3,0,0,7,40.6,81.0,78.5,81.6,High
+ENG0725,Electronics and Communication Engineering,5,20,Male,85.8,5.0,82.6,82.3,80.7,87.0,83.8,84.9,77.1,87.4,79.6,0,0,8,80.4,83.7,84.6,82.2,High
+ENG0726,Computer Science and Engineering,4,22,Male,84.8,5.2,74.8,71.1,64.8,74.5,73.3,71.4,73.5,78.2,73.6,0,0,7,77.8,73.0,70.4,74.7,High
+ENG0727,Information Technology,3,20,Male,83.0,5.4,82.3,75.5,66.9,85.1,82.0,78.2,73.7,75.2,75.4,0,0,8,75.2,80.6,72.3,78.4,High
+ENG0728,Artificial Intelligence and Machine Learning,5,23,Male,67.9,4.0,72.7,68.1,59.3,74.0,69.8,66.5,69.7,73.4,63.1,0,1,7,55.5,71.1,66.6,63.2,Average
+ENG0729,Artificial Intelligence and Machine Learning,3,19,Male,72.2,5.7,56.4,56.9,51.0,73.3,64.7,61.0,62.3,74.6,47.0,0,0,7,69.3,63.0,54.0,57.8,Average
+ENG0730,Information Technology,5,20,Other,72.7,4.2,68.2,67.5,56.8,75.5,72.8,63.6,64.4,76.8,57.4,0,1,7,87.2,69.3,60.8,70.3,Average
+ENG0731,Electrical and Electronics Engineering,6,20,Male,75.1,5.8,81.4,80.0,78.3,82.4,82.6,74.4,73.6,69.7,88.7,0,0,7,54.6,81.9,78.8,80.0,High
+ENG0732,Civil Engineering,5,19,Male,91.9,5.7,68.5,64.6,56.2,82.5,71.6,73.1,52.3,73.4,57.7,0,0,9,33.6,72.8,60.1,68.5,Average
+ENG0733,Artificial Intelligence and Data Science,4,20,Female,66.8,3.0,81.8,77.9,70.8,72.3,80.0,74.2,90.5,66.1,92.4,0,1,6,64.8,78.9,73.0,74.6,High
+ENG0734,Information Technology,4,19,Male,82.9,5.3,79.2,72.0,68.9,77.6,79.1,77.3,76.9,82.5,76.1,0,0,7,92.6,77.4,72.7,72.2,Average
+ENG0735,Computer Science and Engineering,6,20,Male,70.4,4.0,66.0,63.0,54.8,70.9,69.1,63.9,64.2,65.9,55.4,0,0,6,86.6,66.4,62.3,59.9,Average
+ENG0736,Mechanical Engineering,7,20,Female,72.3,5.7,69.9,66.6,60.9,76.5,72.5,66.2,65.6,77.0,69.8,0,0,7,72.6,72.1,62.5,73.5,Average
+ENG0737,Mechanical Engineering,4,21,Female,78.1,6.5,77.7,74.7,73.2,87.1,79.1,74.4,62.5,52.3,68.1,0,0,8,36.6,79.3,73.1,73.1,Average
+ENG0738,Electrical and Electronics Engineering,5,21,Male,74.9,2.7,69.6,66.7,55.5,66.2,70.9,58.3,59.6,67.7,66.1,1,2,6,51.5,67.6,64.3,59.4,Average
+ENG0739,Information Technology,4,21,Female,83.7,5.4,82.9,83.0,74.0,81.5,82.0,78.0,83.3,64.4,88.4,0,0,8,45.6,83.2,80.3,80.8,High
+ENG0740,Mechanical Engineering,6,21,Female,80.6,4.2,79.5,74.4,63.1,74.2,77.5,74.3,74.3,74.0,81.0,0,0,7,75.9,77.7,72.5,69.3,Average
+ENG0741,Computer Science and Engineering,5,21,Male,85.3,4.3,66.6,61.7,58.3,76.4,70.5,64.3,66.9,59.2,58.1,0,0,8,76.9,69.7,60.4,63.1,Average
+ENG0742,Civil Engineering,6,22,Female,81.7,5.8,68.7,66.2,57.7,83.5,74.1,63.8,49.4,58.4,58.2,0,0,8,40.6,71.9,64.5,70.7,Average
+ENG0743,Computer Science and Engineering,4,21,Female,72.1,5.8,81.6,82.7,73.8,79.8,79.8,80.8,91.2,67.3,84.7,0,0,7,25.8,82.4,77.9,79.0,High
+ENG0744,Artificial Intelligence and Data Science,3,21,Female,82.3,5.0,77.6,76.7,65.1,80.6,80.3,70.8,85.6,79.7,68.9,0,0,8,56.4,77.4,74.6,68.5,Average
+ENG0745,Artificial Intelligence and Machine Learning,5,20,Male,71.2,5.7,87.5,81.3,77.9,79.9,84.7,83.7,98.0,53.9,89.2,0,1,7,57.7,85.4,83.3,79.6,High
+ENG0746,Computer Science and Engineering,5,19,Female,82.3,4.4,83.7,77.4,70.7,78.7,80.1,80.5,92.0,76.6,85.5,0,0,7,23.5,81.6,74.9,81.3,High
+ENG0747,Artificial Intelligence and Data Science,5,19,Female,81.0,4.2,69.4,68.5,58.7,69.8,69.4,65.1,77.5,64.7,76.0,0,0,6,28.6,70.7,61.8,66.2,Average
+ENG0748,Electrical and Electronics Engineering,5,21,Female,73.1,4.5,79.6,74.1,65.4,82.2,80.4,76.4,65.4,75.3,79.9,0,1,8,65.6,79.2,69.9,66.7,Average
+ENG0749,Electrical and Electronics Engineering,6,22,Female,92.2,4.7,80.8,78.2,73.7,85.5,81.3,72.8,65.7,58.1,69.8,0,1,9,79.4,79.6,73.1,75.6,High
+ENG0750,Artificial Intelligence and Machine Learning,6,20,Female,86.5,5.2,82.5,76.6,74.6,82.3,81.9,75.9,92.5,63.0,84.0,0,0,8,22.1,81.0,73.2,74.3,High
+ENG0751,Information Technology,5,22,Female,84.0,5.8,78.0,72.1,69.8,85.7,80.8,78.3,73.0,58.3,75.0,0,0,9,62.2,78.2,69.6,78.9,High
+ENG0752,Electronics and Communication Engineering,6,22,Male,74.5,5.0,73.4,68.4,58.2,74.4,72.0,70.6,65.2,76.3,72.7,0,0,7,51.2,74.0,65.7,69.1,Average
+ENG0753,Electrical and Electronics Engineering,4,21,Male,84.5,6.3,67.8,65.7,59.8,83.7,72.3,65.6,48.0,68.4,52.3,0,0,9,79.2,71.0,65.9,73.7,Average
+ENG0754,Civil Engineering,3,21,Male,79.8,5.0,75.9,69.8,65.2,76.7,75.9,75.0,63.0,82.8,66.5,0,0,7,31.8,75.2,65.0,72.8,Average
+ENG0755,Electrical and Electronics Engineering,7,21,Female,74.1,3.7,70.8,69.0,61.2,74.7,70.4,68.0,50.4,70.0,68.3,1,1,7,90.4,71.0,69.0,67.9,Average
+ENG0756,Artificial Intelligence and Machine Learning,7,21,Female,64.2,3.5,75.9,73.0,66.3,71.9,75.8,66.5,79.0,58.2,79.3,0,0,6,58.1,73.4,70.2,73.0,Average
+ENG0757,Mechanical Engineering,4,20,Female,79.6,5.4,74.5,73.0,64.5,80.2,75.9,70.6,59.6,82.7,70.8,0,0,8,47.3,77.1,66.0,70.8,Average
+ENG0758,Electronics and Communication Engineering,5,19,Female,56.4,3.0,68.5,64.2,53.8,59.4,64.9,60.1,70.6,72.7,77.6,0,0,4,47.1,66.6,61.9,59.8,Average
+ENG0759,Artificial Intelligence and Machine Learning,5,19,Male,76.0,3.7,71.6,69.6,51.9,63.2,70.7,64.6,82.7,86.8,72.2,0,0,5,91.7,69.3,63.5,68.0,Average
+ENG0760,Artificial Intelligence and Machine Learning,7,20,Female,77.0,3.3,63.2,61.3,52.5,69.2,69.2,64.2,63.8,79.0,58.7,1,2,6,21.5,66.7,53.0,59.8,Average
+ENG0761,Information Technology,5,19,Male,70.4,4.3,82.0,79.0,66.7,75.6,76.7,74.0,83.0,66.0,75.4,0,0,7,57.8,78.4,69.3,76.2,High
+ENG0762,Electronics and Communication Engineering,7,20,Female,79.3,6.5,79.6,77.3,72.7,87.6,81.3,77.7,64.5,76.8,78.1,0,0,9,40.8,80.5,75.3,81.7,High
+ENG0763,Mechanical Engineering,4,19,Male,72.2,5.3,81.8,75.2,66.0,83.3,79.7,76.0,62.5,75.5,74.0,0,0,8,73.8,79.6,67.4,72.2,Average
+ENG0764,Mechanical Engineering,3,20,Male,77.1,5.4,81.9,81.0,70.8,76.3,79.1,75.1,78.2,92.8,83.5,0,0,7,71.5,80.0,78.1,74.2,High
+ENG0765,Artificial Intelligence and Machine Learning,7,20,Male,65.5,4.5,69.8,69.8,60.6,71.6,70.3,72.1,80.8,54.0,74.4,0,0,6,67.4,72.4,67.6,70.8,Average
+ENG0766,Electronics and Communication Engineering,3,21,Male,74.8,4.3,76.0,67.7,61.9,75.0,76.2,69.6,59.5,76.9,67.8,0,0,7,59.1,73.8,68.6,65.8,Average
+ENG0767,Information Technology,3,21,Female,85.6,4.9,77.7,73.6,73.5,83.2,79.1,75.6,77.3,70.5,74.3,0,1,8,42.4,79.7,69.6,76.2,High
+ENG0768,Electrical and Electronics Engineering,4,19,Female,69.7,4.2,63.2,62.2,49.8,69.1,65.9,62.4,46.8,83.4,63.8,1,2,6,58.1,65.7,59.5,61.0,Average
+ENG0769,Electrical and Electronics Engineering,4,20,Female,78.6,4.9,85.6,80.6,76.1,81.9,84.2,81.1,76.5,78.3,89.2,0,0,7,77.9,84.7,80.0,80.9,High
+ENG0770,Computer Science and Engineering,6,21,Male,76.6,6.1,75.1,69.5,63.6,80.5,74.0,66.3,76.4,84.6,67.3,0,0,8,37.6,73.8,64.9,71.0,Average
+ENG0771,Information Technology,8,21,Female,79.2,3.8,73.8,71.8,66.2,73.5,74.1,76.0,73.3,58.0,77.3,0,0,7,50.1,76.1,69.6,75.1,High
+ENG0772,Electrical and Electronics Engineering,3,19,Female,75.9,5.0,73.4,73.4,67.8,85.4,79.9,73.2,64.4,69.0,62.9,0,0,8,43.2,77.0,70.6,68.5,Average
+ENG0773,Electrical and Electronics Engineering,6,20,Male,75.7,5.8,71.8,73.6,61.8,79.5,73.3,67.9,69.5,85.7,76.4,0,0,7,74.1,74.7,64.4,69.0,Average
+ENG0774,Mechanical Engineering,5,22,Male,67.6,5.3,63.1,59.5,52.2,72.8,68.8,60.0,53.1,57.7,61.7,0,1,7,89.0,67.0,56.1,64.2,Average
+ENG0775,Artificial Intelligence and Machine Learning,6,22,Male,71.0,5.9,70.1,67.7,55.7,77.7,73.5,67.7,74.4,61.3,60.4,0,0,7,53.4,71.8,65.0,63.3,Average
+ENG0776,Computer Science and Engineering,4,21,Female,90.8,5.7,79.4,72.9,64.7,83.4,77.5,74.7,78.3,60.7,72.5,0,1,8,26.5,79.4,72.3,74.8,High
+ENG0777,Computer Science and Engineering,3,20,Female,71.8,5.7,75.5,75.8,66.0,79.5,76.4,74.6,78.1,76.0,80.1,0,0,7,66.5,77.3,71.2,77.3,High
+ENG0778,Electrical and Electronics Engineering,7,20,Male,80.2,4.0,70.7,69.4,56.0,77.2,74.7,68.2,49.4,56.4,67.2,0,0,7,43.0,71.5,62.7,63.1,Average
+ENG0779,Artificial Intelligence and Data Science,8,22,Male,79.4,3.8,69.1,67.7,63.6,74.3,74.5,68.5,67.3,76.4,63.6,0,0,7,60.1,72.0,65.9,66.3,Average
+ENG0780,Artificial Intelligence and Data Science,8,21,Female,88.0,6.4,70.9,64.4,64.6,82.8,73.4,63.8,61.2,82.2,62.9,0,0,9,78.9,71.8,64.4,73.1,Average
+ENG0781,Electronics and Communication Engineering,5,21,Female,79.7,4.2,79.7,77.3,65.2,74.2,75.1,72.9,73.8,82.6,80.2,0,0,7,25.4,78.4,68.1,77.7,High
+ENG0782,Mechanical Engineering,6,20,Male,86.9,4.9,81.7,79.8,79.1,84.5,83.1,76.4,75.6,85.6,81.7,0,0,8,38.2,82.7,78.5,75.2,High
+ENG0783,Information Technology,6,22,Male,71.3,4.0,74.3,71.9,57.7,74.4,72.5,70.8,72.2,85.8,72.4,0,1,7,46.4,74.1,66.7,66.1,Average
+ENG0784,Information Technology,5,21,Male,67.8,4.2,68.6,64.5,52.4,73.6,71.8,62.2,62.5,63.1,57.7,1,1,7,66.2,68.6,61.4,65.5,Average
+ENG0785,Artificial Intelligence and Data Science,3,21,Female,77.8,5.0,76.6,74.1,62.0,78.5,74.7,68.2,76.8,78.1,74.4,0,1,7,51.7,76.1,70.5,74.7,High
+ENG0786,Information Technology,4,21,Male,63.0,3.8,62.9,59.4,48.0,66.1,65.7,61.8,72.0,72.8,65.2,0,0,5,24.2,65.4,57.6,60.0,Average
+ENG0787,Artificial Intelligence and Data Science,7,21,Male,62.1,3.0,66.1,66.6,50.8,62.4,67.8,65.4,72.1,64.7,70.4,1,1,5,36.5,67.1,62.0,63.8,Average
+ENG0788,Computer Science and Engineering,5,21,Male,69.3,2.9,69.8,66.7,58.3,67.3,68.9,62.9,71.8,86.6,68.9,2,2,6,81.4,69.8,64.2,56.8,Low
+ENG0789,Computer Science and Engineering,8,21,Female,78.5,5.0,90.3,87.4,76.8,84.4,86.5,80.7,98.0,78.1,95.2,0,0,8,84.5,86.5,80.6,80.0,High
+ENG0790,Artificial Intelligence and Machine Learning,5,20,Male,71.2,5.1,82.8,79.6,70.2,77.9,78.2,74.9,89.9,68.2,86.2,0,0,7,35.1,80.2,72.4,79.8,High
+ENG0791,Artificial Intelligence and Machine Learning,5,20,Female,72.7,5.1,66.0,61.0,54.9,76.6,71.4,64.0,67.2,81.5,60.2,0,0,7,39.5,68.8,61.3,64.6,Average
+ENG0792,Information Technology,3,22,Female,72.4,4.2,79.8,77.6,67.3,76.6,78.0,76.9,90.3,80.3,78.1,0,0,7,24.9,79.7,73.3,71.2,Average
+ENG0793,Artificial Intelligence and Machine Learning,3,21,Male,80.5,4.9,71.9,70.9,60.1,72.5,74.4,63.1,71.4,81.4,72.3,0,0,7,89.0,71.7,66.2,70.4,Average
+ENG0794,Information Technology,4,20,Male,72.5,3.9,78.5,75.1,69.5,72.8,78.9,71.5,91.6,89.7,90.5,0,0,6,87.8,78.3,68.5,68.4,Average
+ENG0795,Computer Science and Engineering,3,20,Male,79.3,5.3,76.1,70.3,57.5,74.2,73.2,72.5,70.4,73.3,71.2,0,0,7,22.3,74.0,65.4,65.3,Average
+ENG0796,Electrical and Electronics Engineering,6,21,Male,74.3,4.8,74.4,69.9,61.4,76.2,75.5,71.4,73.8,70.9,76.5,0,0,7,74.4,75.5,62.0,69.7,Average
+ENG0797,Electronics and Communication Engineering,5,21,Male,66.8,3.8,81.0,80.8,65.8,71.9,77.0,76.7,85.8,70.4,91.4,0,0,6,67.3,80.0,72.0,72.4,Average
+ENG0798,Electrical and Electronics Engineering,4,20,Female,90.9,6.9,84.8,85.2,81.3,91.4,83.8,79.3,78.8,68.4,87.3,0,0,9,47.0,85.6,82.8,81.9,High
+ENG0799,Computer Science and Engineering,7,20,Male,74.5,3.2,73.3,75.8,58.7,69.7,72.4,73.3,82.7,64.1,82.1,0,0,6,46.0,75.1,69.1,72.7,Average
+ENG0800,Information Technology,4,21,Female,89.1,5.2,86.3,86.1,79.2,86.8,83.3,84.1,95.4,86.0,89.6,0,0,8,36.5,86.3,84.7,80.2,High
+ENG0801,Electrical and Electronics Engineering,6,22,Male,72.0,4.4,59.4,53.1,47.5,65.1,62.1,55.6,46.2,81.9,51.7,4,6,6,54.1,61.3,46.3,35.3,Low
+ENG0802,Artificial Intelligence and Machine Learning,3,20,Male,87.3,5.0,84.6,78.5,74.7,86.7,83.0,81.5,87.8,77.7,77.9,0,0,9,51.4,83.0,80.5,81.0,High
+ENG0803,Civil Engineering,3,22,Male,80.5,4.4,70.7,70.0,57.0,72.8,73.7,72.0,69.9,73.9,69.6,0,0,7,37.6,73.1,60.3,67.4,Average
+ENG0804,Mechanical Engineering,3,20,Male,76.6,5.7,78.7,73.0,67.4,83.2,81.5,77.8,71.3,69.9,73.8,0,0,8,63.7,79.1,67.6,70.4,Average
+ENG0805,Information Technology,4,21,Female,80.5,3.8,80.2,74.2,62.6,71.3,78.4,77.0,87.0,73.3,79.1,0,1,6,92.0,77.4,70.4,76.9,High
+ENG0806,Information Technology,4,23,Male,83.4,5.5,66.2,63.6,56.6,76.7,71.5,61.1,72.0,76.5,62.7,1,1,8,58.4,70.0,63.4,57.9,Average
+ENG0807,Mechanical Engineering,5,19,Male,73.3,3.3,74.9,74.0,59.9,70.2,73.3,68.0,66.8,71.3,78.5,0,0,6,61.2,74.2,64.9,65.6,Average
+ENG0808,Electrical and Electronics Engineering,3,20,Male,92.6,6.5,82.7,80.1,71.8,87.6,83.5,83.2,69.6,78.7,79.0,0,0,9,72.1,81.9,79.4,79.3,High
+ENG0809,Computer Science and Engineering,7,21,Male,77.1,5.2,72.3,71.7,61.3,75.9,73.0,68.7,78.8,87.0,65.7,0,0,7,73.4,73.1,69.1,69.8,Average
+ENG0810,Artificial Intelligence and Machine Learning,5,21,Male,77.6,5.6,72.1,71.5,70.2,87.5,77.4,70.5,74.8,80.6,67.1,0,0,9,52.1,76.3,68.8,74.2,High
+ENG0811,Information Technology,3,20,Male,83.0,4.0,77.5,71.6,64.4,77.6,76.5,69.4,76.2,70.8,69.9,0,0,7,33.9,75.0,65.5,72.9,Average
+ENG0812,Mechanical Engineering,5,21,Female,74.2,5.1,82.4,82.5,74.7,81.4,83.1,81.7,82.0,72.8,90.3,0,0,7,38.0,82.9,78.7,78.0,High
+ENG0813,Mechanical Engineering,5,21,Female,82.9,6.1,81.0,75.3,72.4,86.2,79.2,80.7,60.3,65.1,75.4,0,0,8,93.1,80.4,77.5,77.9,High
+ENG0814,Artificial Intelligence and Data Science,3,22,Male,77.4,3.2,66.5,61.3,54.2,71.5,70.0,61.6,65.3,48.5,61.9,1,1,6,40.9,68.0,55.9,55.6,Low
+ENG0815,Artificial Intelligence and Data Science,3,19,Male,75.2,4.7,86.6,82.4,80.0,79.8,83.6,84.8,90.6,67.8,91.9,0,0,7,63.1,85.2,77.9,77.5,High
+ENG0816,Mechanical Engineering,5,20,Female,60.1,3.0,76.6,73.8,65.2,63.6,72.9,67.6,78.8,85.2,81.2,0,0,4,81.2,75.0,72.3,71.0,Average
+ENG0817,Artificial Intelligence and Data Science,5,22,Female,71.4,4.3,66.3,63.2,47.3,64.1,67.7,62.7,73.9,90.5,74.0,0,0,5,81.9,68.2,51.9,57.1,Average
+ENG0818,Electronics and Communication Engineering,5,20,Male,66.9,3.7,76.9,78.6,62.7,71.4,77.6,75.1,73.7,58.4,85.6,0,0,6,55.5,77.3,70.2,63.3,Average
+ENG0819,Electrical and Electronics Engineering,7,21,Female,83.4,4.7,71.5,65.2,55.4,75.7,72.9,66.2,61.7,74.4,63.3,0,0,7,22.1,71.1,63.3,70.3,Average
+ENG0820,Electrical and Electronics Engineering,5,21,Female,86.4,4.7,69.3,70.4,57.2,77.4,73.8,66.2,52.4,79.3,71.8,0,0,8,39.4,72.0,61.6,75.0,High
+ENG0821,Computer Science and Engineering,8,20,Male,70.0,4.1,70.4,66.1,49.7,65.2,69.0,67.2,70.0,85.8,66.7,0,0,5,85.1,68.6,59.4,60.3,Average
+ENG0822,Artificial Intelligence and Data Science,8,20,Female,70.0,5.2,67.1,66.1,54.4,78.3,72.6,69.9,73.9,62.5,55.3,0,0,7,88.4,70.8,63.5,65.0,Average
+ENG0823,Computer Science and Engineering,5,19,Male,83.9,5.5,78.2,71.9,65.4,79.6,78.8,75.8,81.4,77.1,67.2,0,0,8,47.9,76.7,71.6,70.6,Average
+ENG0824,Electronics and Communication Engineering,6,22,Male,76.9,6.5,82.0,81.0,75.2,87.2,80.8,75.9,67.7,69.3,84.7,0,0,8,87.0,82.3,75.7,75.3,High
+ENG0825,Civil Engineering,6,19,Male,85.2,6.1,75.1,74.3,69.8,83.8,79.0,70.6,67.1,64.7,76.0,0,0,8,50.3,78.0,69.6,74.8,High
+ENG0826,Artificial Intelligence and Data Science,6,19,Male,94.5,6.8,77.2,74.2,74.7,89.9,79.9,79.1,80.3,61.3,68.0,0,0,9,75.6,80.6,77.5,78.8,High
+ENG0827,Mechanical Engineering,5,20,Female,75.1,4.0,77.5,72.5,67.1,78.2,77.9,71.9,74.8,69.9,80.0,0,0,7,32.8,76.8,66.6,76.3,High
+ENG0828,Computer Science and Engineering,3,19,Male,76.4,5.1,75.7,74.4,65.4,77.2,74.2,67.6,81.4,50.9,78.1,0,0,7,39.6,74.9,72.4,63.3,Average
+ENG0829,Civil Engineering,6,23,Female,80.3,5.0,69.7,69.0,63.1,75.5,75.0,73.5,60.8,75.2,67.6,0,0,7,70.4,73.6,65.1,66.4,Average
+ENG0830,Mechanical Engineering,6,21,Male,76.0,4.7,55.8,54.8,48.2,69.4,61.4,54.7,42.3,62.5,47.4,3,3,7,62.3,60.3,48.5,48.7,Low
+ENG0831,Computer Science and Engineering,4,21,Female,84.7,4.3,77.2,74.8,61.3,74.4,72.7,71.5,81.3,73.1,77.5,0,0,7,58.3,75.1,71.4,72.3,Average
+ENG0832,Computer Science and Engineering,7,19,Male,75.7,6.3,77.1,77.5,66.9,85.2,82.0,72.4,77.3,57.4,72.3,0,0,8,78.7,79.4,73.4,78.4,High
+ENG0833,Civil Engineering,5,20,Male,82.4,6.0,65.5,65.2,59.6,80.0,72.9,62.3,54.0,79.9,61.0,0,0,8,60.1,70.0,60.5,66.1,Average
+ENG0834,Electrical and Electronics Engineering,7,20,Female,78.8,5.3,78.3,75.1,71.6,84.3,78.2,74.2,64.8,63.0,73.7,0,0,8,34.3,77.2,71.5,75.4,High
+ENG0835,Computer Science and Engineering,5,20,Male,80.3,3.5,64.8,61.0,54.6,69.0,66.9,57.9,70.3,71.4,59.6,1,1,6,72.4,67.0,57.4,63.7,Average
+ENG0836,Information Technology,8,21,Male,68.7,4.5,72.1,68.8,60.8,72.7,74.3,70.5,72.1,76.3,71.0,0,0,6,84.7,71.9,66.1,65.7,Average
+ENG0837,Electronics and Communication Engineering,5,22,Male,80.7,4.1,80.1,77.9,71.5,79.7,78.9,81.2,76.5,76.3,79.9,0,0,7,22.0,80.7,78.5,80.1,High
+ENG0838,Artificial Intelligence and Data Science,3,23,Female,67.3,3.3,81.3,79.2,70.7,71.8,75.2,77.6,89.5,66.9,82.3,0,0,6,24.8,79.3,72.4,71.3,Average
+ENG0839,Electronics and Communication Engineering,5,21,Male,67.7,3.4,64.7,59.4,46.3,63.5,63.3,59.7,54.9,83.5,57.8,0,1,5,29.2,64.7,50.9,59.9,Average
+ENG0840,Artificial Intelligence and Machine Learning,7,21,Female,76.8,4.8,75.4,70.6,64.6,81.6,76.4,71.2,75.8,65.4,71.5,0,0,8,50.5,74.6,64.9,74.7,High
+ENG0841,Information Technology,5,21,Female,85.4,5.8,68.3,64.3,58.9,80.1,72.6,67.0,64.2,65.7,59.5,1,1,8,30.0,71.0,62.2,64.5,Average
+ENG0842,Electronics and Communication Engineering,6,21,Female,70.2,3.8,79.3,80.5,71.3,70.9,79.5,70.4,74.9,65.9,88.0,0,0,6,88.6,78.3,75.5,73.8,Average
+ENG0843,Electronics and Communication Engineering,8,20,Male,80.1,4.3,82.1,80.6,69.4,82.7,81.7,73.0,65.0,75.2,82.1,0,0,8,58.7,80.5,78.7,78.7,High
+ENG0844,Information Technology,5,21,Male,75.5,4.8,77.6,71.2,64.4,78.6,73.6,67.6,82.5,79.6,73.8,0,0,7,37.7,75.2,65.1,71.2,Average
+ENG0845,Electronics and Communication Engineering,5,19,Female,62.4,3.5,73.8,72.2,61.4,71.4,72.4,69.6,75.0,68.6,74.6,0,0,6,85.8,75.1,63.4,68.2,Average
+ENG0846,Electrical and Electronics Engineering,7,23,Female,89.5,6.2,87.8,84.5,81.8,85.1,84.3,77.8,69.5,54.5,81.5,0,0,8,45.4,83.9,84.7,83.4,High
+ENG0847,Artificial Intelligence and Data Science,4,23,Male,63.3,3.5,66.6,62.2,51.5,63.5,64.5,59.6,65.4,58.7,59.4,1,1,5,20.9,65.1,53.3,57.5,Average
+ENG0848,Mechanical Engineering,5,19,Male,66.9,2.5,60.8,57.2,44.4,63.6,64.1,59.0,58.9,58.3,63.4,1,1,5,38.0,63.7,50.2,52.4,Low
+ENG0849,Electronics and Communication Engineering,3,22,Male,71.3,3.6,74.7,72.9,59.6,75.9,75.6,66.6,70.8,68.9,75.4,0,0,7,59.6,75.0,66.7,70.2,Average
+ENG0850,Mechanical Engineering,6,19,Male,78.2,4.2,66.4,66.4,55.4,67.1,67.5,59.6,63.5,76.7,68.9,1,1,6,79.2,66.9,60.9,59.5,Average
+ENG0851,Electrical and Electronics Engineering,5,22,Male,73.7,5.3,79.5,71.8,65.2,74.9,77.4,69.4,66.7,72.1,74.4,0,0,7,79.5,76.2,68.9,75.9,High
+ENG0852,Electrical and Electronics Engineering,6,21,Female,74.6,4.9,77.2,73.9,63.5,74.6,74.0,70.4,70.6,77.9,76.8,0,0,6,30.1,76.6,72.3,76.7,High
+ENG0853,Electronics and Communication Engineering,4,20,Female,84.9,5.7,77.7,74.5,63.7,81.8,77.7,75.3,66.7,68.1,68.3,0,0,8,27.7,78.3,70.9,76.0,High
+ENG0854,Electrical and Electronics Engineering,5,21,Male,91.0,5.8,84.9,82.2,78.7,89.3,84.2,82.3,84.0,68.8,82.4,0,1,9,43.7,86.3,82.0,84.1,High
+ENG0855,Artificial Intelligence and Machine Learning,7,23,Male,78.9,6.2,77.7,69.3,66.4,86.3,76.8,75.6,73.7,57.0,63.9,0,0,8,46.9,77.1,64.1,71.7,Average
+ENG0856,Information Technology,6,21,Male,73.1,4.5,85.5,78.3,69.0,78.1,82.6,77.5,90.0,58.2,87.0,0,0,7,55.9,82.1,75.6,74.6,High
+ENG0857,Electronics and Communication Engineering,6,19,Male,71.3,4.7,83.9,80.3,77.2,84.1,84.1,85.4,79.4,70.6,85.6,0,0,7,31.2,84.6,78.8,76.3,High
+ENG0858,Artificial Intelligence and Machine Learning,5,19,Female,65.5,4.9,73.8,67.2,60.0,70.5,75.1,64.8,83.4,58.4,74.4,0,0,6,68.5,72.4,64.7,65.9,Average
+ENG0859,Mechanical Engineering,3,22,Male,64.5,2.5,62.7,61.8,46.5,62.9,68.2,63.0,53.1,63.1,61.3,2,2,5,86.0,66.2,56.7,46.1,Low
+ENG0860,Computer Science and Engineering,4,19,Female,78.8,4.4,68.2,64.2,58.8,74.5,70.6,60.5,67.5,77.9,68.6,0,0,7,32.1,69.7,64.1,62.9,Average
+ENG0861,Mechanical Engineering,5,21,Female,83.1,4.9,69.3,65.5,51.9,74.6,68.8,63.1,50.8,75.7,56.3,0,1,7,84.7,68.9,61.3,63.2,Average
+ENG0862,Electronics and Communication Engineering,6,20,Male,82.9,4.4,70.8,68.0,57.0,76.4,74.3,73.4,67.9,86.5,74.7,0,0,7,72.9,74.3,59.7,69.1,Average
+ENG0863,Civil Engineering,6,20,Female,80.2,4.8,65.7,64.1,55.8,76.2,73.7,65.7,48.9,80.3,58.8,1,2,7,79.0,70.2,58.1,61.4,Average
+ENG0864,Information Technology,3,20,Male,71.7,4.8,82.4,76.9,71.2,75.4,80.3,72.3,81.2,75.3,85.9,0,0,7,63.2,78.8,75.0,77.1,High
+ENG0865,Electrical and Electronics Engineering,6,21,Male,87.8,4.7,75.1,70.0,64.3,81.0,75.4,76.1,67.8,67.9,72.4,0,0,8,49.6,76.4,63.5,74.2,High
+ENG0866,Artificial Intelligence and Machine Learning,6,20,Male,76.7,5.2,76.2,75.2,68.2,81.5,76.2,71.6,78.1,49.2,74.1,0,0,8,76.5,78.0,75.1,75.4,High
+ENG0867,Artificial Intelligence and Machine Learning,5,20,Female,66.0,3.7,59.2,58.2,41.0,59.4,64.5,58.2,61.3,85.7,62.0,1,1,5,50.3,61.8,53.2,54.5,Low
+ENG0868,Information Technology,4,20,Female,80.9,6.3,77.9,75.1,73.8,85.0,78.1,74.4,76.4,60.1,72.9,0,0,8,65.5,79.0,74.3,73.9,Average
+ENG0869,Civil Engineering,6,19,Male,68.0,4.0,76.7,69.5,62.1,68.8,71.6,66.5,70.1,47.4,75.1,0,0,6,91.5,73.7,65.8,70.1,Average
+ENG0870,Civil Engineering,5,19,Male,87.5,5.7,83.4,80.5,79.7,83.8,81.9,79.6,77.4,85.4,86.4,0,0,8,75.1,84.4,76.9,77.2,High
+ENG0871,Electronics and Communication Engineering,4,19,Female,79.0,4.4,81.3,77.5,66.4,76.6,77.5,77.7,64.5,88.1,80.5,0,1,7,50.6,78.8,69.4,75.0,High
+ENG0872,Mechanical Engineering,4,19,Male,64.2,5.0,73.8,71.5,59.7,72.5,74.1,65.9,62.1,58.8,79.7,0,0,6,40.7,73.9,68.3,69.2,Average
+ENG0873,Artificial Intelligence and Machine Learning,7,19,Male,61.1,2.8,60.4,60.0,47.0,61.8,64.1,55.9,59.2,70.1,59.8,0,0,5,83.9,62.3,52.6,54.0,Low
+ENG0874,Electrical and Electronics Engineering,3,21,Male,76.6,3.9,67.2,65.1,51.4,73.5,69.5,65.4,51.3,73.8,59.0,0,0,7,44.8,69.3,60.5,64.6,Average
+ENG0875,Electronics and Communication Engineering,7,19,Male,72.2,4.7,69.4,66.9,55.1,74.5,70.2,63.8,64.5,74.0,68.6,1,1,7,38.2,71.1,62.5,55.3,Low
+ENG0876,Information Technology,6,19,Female,88.3,5.5,69.3,70.1,60.3,79.3,72.9,70.9,74.4,56.8,61.1,0,0,8,71.3,73.2,67.8,65.8,Average
+ENG0877,Artificial Intelligence and Data Science,7,20,Male,70.2,4.6,63.9,62.4,49.9,69.8,69.3,64.0,63.9,74.2,60.3,0,0,6,29.5,65.4,56.9,60.0,Average
+ENG0878,Electrical and Electronics Engineering,6,20,Male,56.7,2.6,72.8,68.7,54.9,60.5,70.6,61.3,62.9,72.0,77.4,2,2,4,20.4,69.1,62.6,47.0,Low
+ENG0879,Computer Science and Engineering,5,20,Male,79.5,3.3,79.8,80.1,68.8,68.4,77.4,72.0,86.3,79.1,82.1,0,0,6,94.5,77.8,71.6,76.2,High
+ENG0880,Computer Science and Engineering,5,21,Male,79.9,4.1,81.7,77.5,66.7,76.9,80.0,75.6,93.2,87.0,82.4,0,0,7,49.2,80.5,73.8,73.8,Average
+ENG0881,Electronics and Communication Engineering,7,21,Female,78.2,3.3,82.9,80.8,68.4,69.4,76.3,75.2,74.3,70.0,83.2,0,0,6,44.8,78.7,73.9,74.9,High
+ENG0882,Electronics and Communication Engineering,3,19,Female,85.7,5.2,82.0,80.1,76.1,84.1,80.1,84.6,67.7,75.4,79.4,0,0,8,62.7,83.5,77.7,78.8,High
+ENG0883,Mechanical Engineering,3,20,Female,75.1,4.5,82.7,78.9,70.1,84.4,82.5,84.9,73.6,78.3,84.3,0,0,8,58.7,83.9,75.9,75.6,High
+ENG0884,Civil Engineering,6,20,Male,87.6,4.8,70.3,67.1,63.1,82.7,74.1,66.2,51.6,67.9,65.0,0,0,8,78.4,72.3,67.6,70.1,Average
+ENG0885,Computer Science and Engineering,3,21,Male,80.8,6.1,71.9,66.2,60.6,78.2,72.7,68.8,72.1,72.2,66.7,0,0,8,48.0,72.0,59.7,66.3,Average
+ENG0886,Information Technology,7,21,Male,87.3,5.3,83.9,79.7,77.7,85.7,85.1,78.2,92.0,76.0,82.8,0,0,8,63.0,84.2,75.0,84.4,High
+ENG0887,Information Technology,7,20,Male,80.7,3.6,77.0,74.3,68.8,73.6,76.1,70.4,80.3,70.4,75.4,0,0,7,26.1,75.7,72.5,72.6,Average
+ENG0888,Artificial Intelligence and Data Science,7,20,Female,83.8,6.0,83.8,77.1,75.2,81.6,81.6,74.4,91.2,70.9,80.2,0,1,8,35.1,81.2,76.8,75.9,High
+ENG0889,Artificial Intelligence and Machine Learning,5,21,Male,66.3,3.6,71.6,67.3,53.1,61.4,68.2,65.7,80.4,77.5,81.8,1,2,5,81.2,70.7,58.0,55.6,Low
+ENG0890,Civil Engineering,5,21,Male,81.9,6.4,86.1,77.9,72.2,88.5,83.3,83.5,68.8,64.8,80.9,0,0,9,87.0,84.6,72.6,80.1,High
+ENG0891,Electronics and Communication Engineering,4,19,Male,84.1,5.2,67.2,63.1,53.0,73.6,71.1,69.0,49.0,74.3,67.2,1,1,7,85.4,70.1,60.5,62.9,Average
+ENG0892,Mechanical Engineering,5,20,Male,78.2,3.9,72.8,74.6,59.8,74.5,74.4,73.3,63.8,81.1,78.9,0,1,7,92.7,75.1,68.9,72.6,Average
+ENG0893,Computer Science and Engineering,3,21,Female,72.1,3.4,63.0,59.7,51.7,64.0,63.8,56.5,69.0,82.5,56.5,1,1,6,22.7,63.5,54.0,52.0,Low
+ENG0894,Artificial Intelligence and Data Science,6,20,Female,80.7,5.0,73.0,69.5,60.2,75.3,72.2,67.7,72.3,62.5,74.7,0,1,7,85.7,73.6,65.8,72.8,Average
+ENG0895,Mechanical Engineering,3,21,Female,88.7,4.8,86.9,79.6,79.8,86.5,83.3,82.8,77.0,86.2,84.0,0,0,9,72.0,84.3,75.7,75.0,High
+ENG0896,Information Technology,5,21,Female,77.4,4.5,79.2,74.5,69.9,79.5,79.8,79.2,85.3,68.9,85.6,0,0,7,31.4,80.1,71.6,79.6,High
+ENG0897,Mechanical Engineering,3,21,Male,77.4,5.0,64.0,59.4,47.4,75.8,69.0,60.9,51.3,64.3,52.7,0,0,7,74.0,66.3,55.0,62.3,Average
+ENG0898,Electronics and Communication Engineering,5,21,Female,73.7,3.5,69.4,65.1,59.7,73.0,74.5,62.0,60.2,77.2,64.9,1,1,6,38.8,71.0,64.9,62.9,Average
+ENG0899,Computer Science and Engineering,8,20,Male,91.5,6.2,74.2,72.7,68.9,83.3,78.6,71.1,76.1,79.0,73.5,0,0,9,40.7,77.2,73.8,70.8,Average
+ENG0900,Electronics and Communication Engineering,6,20,Male,78.6,4.4,71.3,63.2,52.3,72.9,69.6,60.5,58.9,47.2,68.1,0,0,7,22.3,69.4,56.2,60.4,Average
+ENG0901,Artificial Intelligence and Data Science,5,19,Male,76.9,4.2,75.9,76.3,65.2,72.6,76.4,78.0,89.2,90.6,77.2,0,0,6,87.4,78.0,68.0,71.0,Average
+ENG0902,Artificial Intelligence and Data Science,8,20,Female,82.5,4.5,73.6,71.4,61.0,73.1,72.9,65.8,78.1,80.2,73.6,0,0,7,21.5,73.0,64.1,71.6,Average
+ENG0903,Artificial Intelligence and Machine Learning,5,22,Male,70.6,4.4,76.4,74.6,66.7,76.7,75.4,76.1,82.6,81.1,73.7,0,0,7,21.4,76.0,70.6,73.6,Average
+ENG0904,Computer Science and Engineering,5,22,Female,78.3,5.3,85.8,83.7,74.6,84.5,81.6,82.6,82.8,85.8,80.8,0,0,8,70.1,84.5,80.3,80.9,High
+ENG0905,Computer Science and Engineering,6,20,Male,83.9,4.3,66.5,61.8,55.3,75.6,71.8,60.2,58.7,76.0,59.3,0,0,7,70.7,68.8,55.6,62.9,Average
+ENG0906,Electrical and Electronics Engineering,4,19,Male,86.1,4.9,64.5,63.3,53.7,74.9,68.5,60.0,52.5,75.3,60.9,0,0,7,67.4,68.0,57.5,63.7,Average
+ENG0907,Artificial Intelligence and Machine Learning,3,19,Female,68.0,5.3,65.5,63.4,57.6,74.5,69.7,64.3,58.8,77.9,62.0,1,1,7,40.0,68.6,63.4,64.1,Average
+ENG0908,Electronics and Communication Engineering,6,21,Male,75.3,4.9,78.1,73.9,68.4,80.6,79.1,72.0,72.2,67.3,77.0,0,0,8,47.7,78.0,71.4,79.6,High
+ENG0909,Computer Science and Engineering,5,21,Female,70.2,3.6,59.2,54.3,40.1,65.9,64.9,53.0,61.4,66.7,54.3,1,2,6,63.5,60.6,50.7,55.1,Low
+ENG0910,Information Technology,5,19,Female,70.5,3.6,78.2,77.6,63.7,73.3,77.9,78.4,91.2,63.0,86.7,0,0,6,90.0,78.6,68.6,81.7,High
+ENG0911,Information Technology,4,21,Male,82.4,4.2,70.2,65.9,61.3,69.9,70.9,64.2,66.7,74.3,66.4,1,1,7,45.0,70.4,64.9,62.7,Average
+ENG0912,Electrical and Electronics Engineering,5,22,Male,84.9,6.0,82.2,82.2,80.2,83.8,79.7,80.6,71.3,50.1,77.3,0,0,8,71.0,82.8,80.1,77.0,High
+ENG0913,Mechanical Engineering,3,20,Male,61.3,3.5,72.8,71.9,63.2,68.9,70.8,64.9,70.1,85.0,69.9,0,0,5,84.5,72.0,68.4,71.2,Average
+ENG0914,Civil Engineering,5,20,Male,77.4,4.0,76.2,73.9,67.5,73.0,76.0,66.8,75.6,73.3,80.1,0,0,6,83.9,75.5,71.5,73.6,Average
+ENG0915,Electrical and Electronics Engineering,6,22,Female,65.5,3.7,77.9,72.7,62.5,63.9,72.2,73.4,74.0,69.1,85.0,0,0,5,81.3,74.8,65.4,66.2,Average
+ENG0916,Artificial Intelligence and Machine Learning,5,21,Female,76.5,5.6,89.1,83.0,80.3,89.0,85.8,84.1,94.7,59.0,85.0,0,0,8,30.6,85.8,84.6,83.4,High
+ENG0917,Information Technology,4,20,Female,69.4,3.1,79.7,77.0,64.9,71.6,76.3,72.3,89.4,82.5,79.5,0,0,6,61.2,76.5,69.8,65.5,Average
+ENG0918,Artificial Intelligence and Data Science,3,21,Male,75.9,4.3,73.0,66.1,53.3,70.7,72.0,70.1,69.4,80.0,63.6,0,0,6,91.0,71.3,58.8,67.6,Average
+ENG0919,Mechanical Engineering,5,19,Male,72.5,4.8,67.6,64.3,52.8,74.8,71.1,65.5,47.2,77.1,61.8,0,0,7,38.9,67.6,59.1,68.9,Average
+ENG0920,Computer Science and Engineering,6,22,Male,72.5,5.4,80.3,75.9,69.4,77.0,79.9,79.0,84.5,56.0,84.6,0,0,7,90.4,79.2,75.6,73.1,Average
+ENG0921,Computer Science and Engineering,3,21,Male,67.2,4.7,77.3,70.5,60.8,74.3,75.7,66.4,80.3,84.8,77.1,0,0,6,66.2,74.2,68.5,68.8,Average
+ENG0922,Computer Science and Engineering,7,20,Female,82.6,5.8,79.5,75.6,70.7,81.0,76.8,70.6,75.4,76.6,79.8,0,0,8,36.5,78.0,74.1,73.1,Average
+ENG0923,Electronics and Communication Engineering,6,21,Female,72.3,5.2,78.5,75.3,67.1,77.1,75.9,76.7,64.5,75.4,79.9,0,0,7,46.5,77.5,72.7,69.7,Average
+ENG0924,Information Technology,5,20,Male,64.3,4.1,65.8,63.9,50.0,62.1,66.1,65.1,71.4,68.6,66.5,0,0,5,57.2,67.6,53.4,59.6,Average
+ENG0925,Electronics and Communication Engineering,5,19,Male,76.5,5.0,80.0,75.8,64.4,83.8,77.2,76.5,58.3,51.5,78.0,0,0,8,78.1,78.2,68.9,71.5,Average
+ENG0926,Computer Science and Engineering,6,23,Male,85.1,4.4,77.4,71.0,62.8,80.6,78.8,74.1,78.1,59.9,68.1,0,0,8,38.5,76.6,64.7,69.7,Average
+ENG0927,Mechanical Engineering,5,21,Male,72.8,2.7,64.9,66.0,51.2,64.0,66.4,64.9,66.5,70.4,68.4,1,2,5,88.1,66.9,55.5,54.3,Low
+ENG0928,Computer Science and Engineering,3,22,Male,69.5,4.7,73.3,70.1,57.5,74.5,75.9,69.1,73.8,81.6,81.9,0,0,6,49.0,75.2,60.8,64.4,Average
+ENG0929,Mechanical Engineering,4,20,Female,85.7,4.6,76.2,73.5,72.6,82.7,76.3,72.6,65.3,65.9,76.2,0,0,8,81.9,78.3,72.3,74.5,High
+ENG0930,Mechanical Engineering,4,20,Female,66.1,3.6,77.1,72.8,57.5,65.3,71.9,70.2,68.6,73.0,76.9,0,0,5,26.2,74.0,65.2,64.4,Average
+ENG0931,Mechanical Engineering,4,21,Female,63.0,4.2,60.9,62.5,45.4,65.5,65.1,63.9,55.1,77.0,59.9,0,0,5,39.5,65.4,53.2,55.2,Low
+ENG0932,Electronics and Communication Engineering,7,22,Female,89.9,6.3,75.5,68.0,67.3,83.1,75.5,68.0,55.2,83.1,66.4,0,0,8,32.7,75.1,64.0,74.1,High
+ENG0933,Information Technology,6,19,Male,71.1,5.8,79.0,75.5,66.0,81.1,76.0,69.2,73.5,67.6,79.3,0,0,7,89.3,77.0,70.7,70.6,Average
+ENG0934,Civil Engineering,4,21,Male,71.4,3.3,63.4,61.9,45.6,66.9,69.4,61.2,50.1,72.8,67.9,0,0,6,51.1,66.1,52.4,62.2,Average
+ENG0935,Information Technology,6,21,Male,75.6,4.9,59.1,57.3,45.4,67.9,65.5,59.2,61.7,78.4,45.4,2,3,6,33.1,61.6,52.6,48.8,Low
+ENG0936,Electronics and Communication Engineering,5,21,Male,68.7,3.1,76.8,73.4,64.6,65.1,73.9,71.9,71.9,79.7,77.3,0,0,5,25.0,73.9,72.7,70.5,Average
+ENG0937,Electronics and Communication Engineering,7,22,Female,82.2,5.4,75.8,72.5,70.7,80.1,76.9,72.3,66.3,73.5,76.5,0,0,8,38.0,76.7,70.7,74.3,High
+ENG0938,Electronics and Communication Engineering,7,20,Male,82.1,6.2,85.7,82.2,74.5,87.6,86.4,81.8,83.9,74.9,82.0,0,0,8,43.6,85.3,80.7,74.5,High
+ENG0939,Electronics and Communication Engineering,5,23,Male,70.6,4.2,84.8,80.5,75.5,75.6,76.8,80.9,73.9,75.5,83.8,0,0,6,68.2,81.0,76.5,78.4,High
+ENG0940,Electronics and Communication Engineering,5,20,Female,64.8,3.9,70.5,67.2,54.7,67.5,68.9,66.9,56.1,86.9,65.8,0,0,5,34.8,69.4,63.1,66.1,Average
+ENG0941,Civil Engineering,7,21,Male,73.7,4.7,74.1,71.4,62.1,80.5,73.3,66.6,62.2,68.9,67.1,0,0,8,82.3,73.2,69.4,75.4,High
+ENG0942,Artificial Intelligence and Machine Learning,8,21,Male,86.2,4.0,80.7,80.3,75.9,80.7,81.8,75.4,93.9,58.4,89.7,0,0,8,72.6,81.3,74.6,79.4,High
+ENG0943,Computer Science and Engineering,6,20,Male,72.6,5.9,82.6,77.7,66.8,80.1,80.7,75.2,91.0,68.8,82.4,0,1,7,75.1,80.5,72.9,74.7,High
+ENG0944,Electrical and Electronics Engineering,6,21,Male,84.8,6.0,71.4,66.1,61.6,79.3,71.7,71.8,63.3,57.0,59.7,0,0,8,32.2,73.1,65.9,70.3,Average
+ENG0945,Electronics and Communication Engineering,5,21,Male,74.8,4.2,61.4,59.4,45.5,66.4,66.2,59.2,48.9,83.8,56.4,0,0,6,65.9,64.5,49.8,59.2,Average
+ENG0946,Information Technology,5,22,Male,76.1,3.3,65.3,66.4,49.0,66.4,67.6,62.0,79.4,74.1,70.1,0,0,6,51.4,67.2,54.5,60.8,Average
+ENG0947,Electronics and Communication Engineering,7,20,Male,67.5,3.5,78.5,74.8,64.6,76.1,77.3,76.4,75.7,81.7,80.6,0,0,6,37.5,76.7,67.8,73.7,Average
+ENG0948,Electrical and Electronics Engineering,5,21,Male,78.5,4.3,69.5,71.0,58.4,73.0,74.3,69.2,68.7,64.6,73.9,0,0,7,59.2,72.4,64.8,63.9,Average
+ENG0949,Mechanical Engineering,4,22,Male,70.8,4.6,75.6,66.7,62.5,78.8,75.4,67.0,56.2,66.3,69.1,0,0,7,42.0,73.6,63.1,67.8,Average
+ENG0950,Information Technology,6,19,Female,82.2,4.4,66.7,62.4,57.4,80.8,71.8,64.0,62.9,72.5,59.6,0,0,8,45.2,69.7,59.0,65.6,Average
+ENG0951,Civil Engineering,4,22,Male,80.2,2.9,61.0,55.8,44.9,65.7,62.8,60.8,47.7,89.7,59.3,1,1,6,69.7,62.8,47.1,54.5,Low
+ENG0952,Computer Science and Engineering,5,20,Male,62.7,4.0,61.3,56.9,45.8,63.2,61.8,59.8,59.6,86.9,64.5,1,2,5,55.7,62.9,48.0,48.3,Low
+ENG0953,Information Technology,5,20,Female,59.6,3.4,66.6,63.1,51.8,59.7,65.9,59.9,85.1,70.8,67.9,1,2,4,32.2,67.5,59.3,55.3,Low
+ENG0954,Electronics and Communication Engineering,6,21,Male,66.2,3.6,82.3,74.5,68.1,73.4,78.0,71.1,70.4,59.6,82.2,0,0,6,91.1,77.8,71.4,75.2,High
+ENG0955,Mechanical Engineering,8,19,Female,72.0,5.9,73.7,72.0,61.1,79.3,75.7,66.7,62.5,59.8,72.0,0,0,7,32.3,75.1,64.5,62.1,Average
+ENG0956,Computer Science and Engineering,3,19,Male,67.2,2.5,56.8,52.9,42.8,57.8,60.1,52.1,68.7,69.3,59.8,2,2,5,68.8,58.5,49.9,43.9,Low
+ENG0957,Mechanical Engineering,7,21,Male,72.3,6.0,60.0,59.6,52.6,77.8,68.3,62.4,37.6,64.4,53.7,1,1,7,94.8,65.6,55.8,59.5,Average
+ENG0958,Civil Engineering,6,20,Male,79.5,5.3,86.6,83.4,70.9,77.5,80.6,79.7,72.3,91.0,86.8,0,0,7,68.7,83.0,78.5,79.2,High
+ENG0959,Civil Engineering,6,19,Male,67.9,4.7,78.9,73.7,68.0,73.6,77.3,77.4,74.0,79.0,75.3,0,0,6,51.0,77.4,74.1,71.8,Average
+ENG0960,Information Technology,8,21,Female,83.8,5.1,77.6,69.9,65.3,78.5,78.5,75.7,71.8,77.0,72.0,0,0,8,84.1,76.6,64.0,76.1,High
+ENG0961,Artificial Intelligence and Machine Learning,7,22,Male,69.1,3.8,62.0,61.8,50.2,65.6,64.2,60.0,73.1,68.3,60.4,0,0,6,46.1,64.4,59.6,61.2,Average
+ENG0962,Information Technology,4,23,Male,83.2,3.4,65.7,60.2,51.1,69.3,66.8,61.0,59.7,59.4,61.4,0,1,7,63.1,65.8,52.7,57.3,Average
+ENG0963,Civil Engineering,8,20,Male,73.0,4.7,67.8,66.1,60.4,73.3,73.9,70.6,60.5,59.6,63.7,1,1,7,74.4,71.5,59.9,58.0,Average
+ENG0964,Civil Engineering,4,21,Male,81.8,4.4,83.7,78.6,73.2,72.7,79.4,77.4,72.7,70.2,93.3,0,1,6,46.6,80.2,72.8,76.3,High
+ENG0965,Electrical and Electronics Engineering,4,20,Male,78.9,4.3,70.0,68.9,59.0,70.9,71.4,69.5,72.4,85.5,76.0,0,0,6,64.6,72.6,60.1,56.3,Average
+ENG0966,Electronics and Communication Engineering,6,20,Female,80.2,3.7,73.7,69.6,57.1,72.6,74.4,70.5,64.2,81.9,71.0,0,0,6,70.5,72.2,60.3,67.5,Average
+ENG0967,Electronics and Communication Engineering,4,20,Male,85.6,4.6,68.9,65.3,52.9,76.3,70.2,62.8,47.8,62.7,63.5,0,1,7,32.8,69.3,60.4,62.8,Average
+ENG0968,Civil Engineering,4,19,Male,70.9,3.4,71.1,71.1,62.8,72.3,73.4,68.5,71.8,61.3,71.0,0,0,6,35.5,73.1,69.7,66.3,Average
+ENG0969,Mechanical Engineering,6,21,Male,89.3,5.7,88.8,82.8,77.6,85.9,84.5,83.2,79.5,63.5,92.5,0,0,8,68.0,85.9,82.2,85.7,High
+ENG0970,Computer Science and Engineering,3,20,Male,79.3,4.9,70.0,64.6,59.0,71.8,70.0,70.0,72.0,77.6,69.5,0,0,7,30.2,71.0,60.5,68.9,Average
+ENG0971,Civil Engineering,8,21,Female,73.9,5.4,72.4,73.0,68.6,77.7,72.7,70.1,58.5,70.8,64.5,0,0,7,72.0,74.1,73.4,69.0,Average
+ENG0972,Artificial Intelligence and Data Science,6,19,Male,87.0,5.2,77.1,73.9,74.0,83.3,77.1,76.2,87.5,63.9,82.0,0,0,8,83.1,79.6,71.8,70.7,Average
+ENG0973,Artificial Intelligence and Data Science,5,20,Female,88.0,4.7,66.5,65.0,53.2,77.1,72.0,61.1,62.2,88.7,61.5,1,1,8,49.5,69.9,56.2,59.5,Average
+ENG0974,Electrical and Electronics Engineering,7,20,Male,73.5,5.0,70.5,64.9,62.0,82.0,75.1,66.5,57.2,88.3,61.9,0,0,8,71.5,70.9,61.4,69.3,Average
+ENG0975,Mechanical Engineering,8,21,Female,67.1,3.9,75.8,70.8,58.9,75.5,73.4,74.6,60.0,69.7,69.3,0,0,7,84.7,74.8,63.7,72.8,Average
+ENG0976,Electronics and Communication Engineering,6,20,Male,69.8,3.8,78.9,74.6,59.8,63.3,72.5,66.7,76.2,57.4,85.0,0,0,5,34.7,74.3,68.1,70.1,Average
+ENG0977,Artificial Intelligence and Machine Learning,5,21,Male,68.2,3.9,63.3,60.9,47.1,72.3,67.6,57.1,66.0,63.2,58.3,0,1,7,54.4,64.3,54.2,61.4,Average
+ENG0978,Mechanical Engineering,5,21,Female,84.9,5.3,74.4,67.0,56.9,75.0,74.6,64.6,59.4,71.3,68.8,0,0,7,50.5,72.7,61.0,68.7,Average
+ENG0979,Mechanical Engineering,5,19,Male,73.4,4.7,69.8,67.9,55.4,80.1,71.3,72.3,62.0,80.6,61.2,0,0,7,88.8,72.6,57.8,65.5,Average
+ENG0980,Civil Engineering,6,21,Female,76.9,4.3,62.7,60.1,49.4,74.8,69.3,64.1,44.8,65.7,56.3,2,2,7,91.6,64.9,51.9,57.3,Low
+ENG0981,Mechanical Engineering,4,20,Female,74.2,3.1,67.4,63.7,56.8,66.5,70.5,58.7,53.9,71.7,60.9,0,0,6,45.5,67.7,58.9,61.0,Average
+ENG0982,Electronics and Communication Engineering,5,20,Male,65.2,4.8,68.7,68.1,57.6,68.1,73.1,68.8,68.3,77.3,69.7,0,0,6,89.4,70.9,60.2,64.9,Average
+ENG0983,Artificial Intelligence and Data Science,5,19,Female,89.6,6.4,86.5,79.0,79.1,86.8,81.2,75.9,87.7,71.6,83.5,0,0,9,91.0,83.0,80.5,80.2,High
+ENG0984,Civil Engineering,4,21,Male,71.9,3.9,78.6,79.4,73.9,76.5,76.5,75.4,79.2,82.3,83.6,0,0,7,87.2,79.3,75.2,71.9,Average
+ENG0985,Electrical and Electronics Engineering,4,21,Male,80.5,4.0,79.6,76.9,67.0,74.9,75.8,75.1,72.0,74.8,80.5,0,0,7,56.2,77.6,75.0,71.6,Average
+ENG0986,Electronics and Communication Engineering,6,22,Male,65.5,4.3,79.6,71.9,61.5,70.6,73.4,71.6,79.4,88.3,82.3,0,0,5,56.1,75.8,63.4,68.0,Average
+ENG0987,Artificial Intelligence and Data Science,5,21,Female,75.2,3.1,70.6,67.9,57.5,68.9,72.1,71.2,76.0,67.1,68.7,2,2,6,34.2,72.1,63.3,58.9,Low
+ENG0988,Information Technology,8,20,Male,86.1,3.9,78.9,74.1,69.5,77.2,78.6,79.6,87.9,71.6,85.2,0,0,7,83.5,79.3,74.7,77.3,High
+ENG0989,Mechanical Engineering,6,20,Other,66.1,2.1,77.6,77.3,61.1,62.2,73.5,71.9,84.0,70.1,87.8,0,0,4,86.0,75.4,72.3,73.5,Average
+ENG0990,Computer Science and Engineering,3,21,Female,82.4,5.7,81.9,80.5,75.7,81.2,79.3,77.9,87.1,85.4,84.2,0,0,8,28.9,80.5,76.1,72.7,Average
+ENG0991,Computer Science and Engineering,3,20,Female,85.8,4.9,73.7,64.6,54.8,77.7,71.1,63.5,74.7,79.8,70.6,0,0,8,51.2,71.8,62.1,63.7,Average
+ENG0992,Mechanical Engineering,5,19,Male,79.7,5.5,77.2,75.2,65.7,80.5,76.5,75.1,59.7,59.7,69.6,0,0,8,81.4,78.0,66.7,71.7,Average
+ENG0993,Electronics and Communication Engineering,6,19,Male,86.6,6.1,80.0,74.8,67.9,81.2,79.4,78.6,71.6,84.8,78.9,0,0,8,59.9,79.3,68.8,75.1,High
+ENG0994,Computer Science and Engineering,5,21,Male,83.2,4.3,78.5,75.1,66.2,79.0,75.9,73.7,81.3,77.9,79.6,0,0,7,25.6,78.1,70.1,75.0,High
+ENG0995,Information Technology,5,20,Male,83.4,4.2,75.6,66.8,57.2,77.0,72.6,72.8,77.8,67.1,66.4,0,0,7,68.7,73.9,61.7,62.8,Average
+ENG0996,Electrical and Electronics Engineering,8,20,Male,79.9,4.7,78.4,74.6,70.6,81.0,76.0,72.7,68.4,82.1,72.5,0,0,8,54.0,77.4,73.4,76.5,High
+ENG0997,Electronics and Communication Engineering,5,21,Male,82.5,3.8,77.5,74.4,64.5,75.9,77.9,75.7,72.9,73.2,84.9,0,0,7,37.4,78.8,70.3,83.1,High
+ENG0998,Information Technology,6,20,Male,82.4,5.2,80.0,74.2,73.0,78.5,79.9,77.9,90.5,59.3,74.2,0,0,7,75.4,79.8,70.7,80.2,High
+ENG0999,Electronics and Communication Engineering,6,20,Male,74.5,4.3,75.9,68.7,56.7,70.2,73.9,64.6,66.3,67.2,76.1,0,0,6,38.9,72.7,58.8,66.3,Average
+ENG1000,Artificial Intelligence and Machine Learning,6,21,Female,62.3,4.7,78.1,75.3,65.0,70.9,77.4,73.5,83.4,73.8,80.9,0,0,6,74.3,76.0,68.3,70.1,Average
+ENG1001,Artificial Intelligence and Data Science,4,20,Female,85.5,5.6,71.5,66.7,64.2,78.7,72.8,70.5,69.4,65.7,64.4,0,0,8,77.5,73.1,67.5,74.1,High
+ENG1002,Computer Science and Engineering,5,22,Female,74.0,3.3,72.6,72.4,59.0,63.6,69.1,65.7,78.4,64.7,80.2,0,0,5,55.8,70.9,69.5,64.2,Average
+ENG1003,Electronics and Communication Engineering,8,19,Female,75.1,5.9,86.4,80.7,77.5,86.3,84.1,80.8,79.6,80.1,82.3,0,0,8,60.0,83.3,78.4,76.8,High
+ENG1004,Electronics and Communication Engineering,8,21,Female,67.0,3.4,70.7,70.1,62.1,67.4,69.5,64.1,55.7,80.3,67.3,0,1,6,68.5,70.1,68.4,67.4,Average
+ENG1005,Mechanical Engineering,4,20,Male,83.4,4.5,75.2,72.0,62.4,80.5,78.6,76.8,60.9,57.7,73.2,0,0,8,89.2,77.5,63.7,72.4,Average
+ENG1006,Electrical and Electronics Engineering,3,20,Female,78.0,4.0,86.0,86.0,74.6,82.9,83.3,85.7,76.1,78.2,93.9,0,0,7,73.6,86.3,81.3,76.4,High
+ENG1007,Mechanical Engineering,6,21,Male,70.6,4.9,74.8,68.1,62.2,81.4,76.8,71.3,61.8,69.4,65.2,0,0,7,35.6,75.0,66.7,68.9,Average
+ENG1008,Civil Engineering,4,21,Male,93.5,5.0,88.5,84.4,78.7,88.1,82.7,83.3,70.5,55.5,79.9,0,0,9,45.0,85.8,79.8,84.7,High
+ENG1009,Civil Engineering,8,22,Male,70.3,4.8,72.9,68.3,56.4,75.6,75.0,69.8,59.3,90.6,68.6,0,0,7,29.1,72.4,64.6,68.9,Average
+ENG1010,Computer Science and Engineering,4,22,Male,77.8,5.1,77.1,75.2,64.6,78.3,78.2,76.2,81.2,75.9,78.0,0,0,7,59.1,78.2,71.4,76.0,High
+ENG1011,Electronics and Communication Engineering,3,21,Male,82.5,6.1,81.4,77.6,76.9,87.5,82.1,78.6,60.2,82.1,70.2,0,0,9,90.0,81.1,77.3,75.0,High
+ENG1012,Civil Engineering,7,20,Male,90.8,5.9,77.5,72.4,62.5,82.8,77.1,75.5,61.3,82.4,71.1,0,1,8,80.1,77.5,65.1,75.0,High
+ENG1013,Computer Science and Engineering,4,20,Male,88.5,6.0,77.8,75.1,72.3,87.7,78.5,78.3,71.3,81.3,68.7,0,0,9,82.3,79.8,71.6,79.0,High
+ENG1014,Electrical and Electronics Engineering,4,22,Male,92.0,6.4,88.7,80.7,82.5,89.6,87.1,80.6,78.1,64.1,80.3,0,1,9,87.6,85.7,84.7,86.1,High
+ENG1015,Mechanical Engineering,3,22,Female,73.8,4.2,75.6,72.1,59.3,69.6,75.5,65.7,62.1,65.9,79.1,0,0,6,79.4,73.6,63.0,70.3,Average
+ENG1016,Electronics and Communication Engineering,5,20,Male,85.9,4.7,81.3,77.8,77.4,82.9,79.3,79.1,68.9,80.1,82.9,0,0,8,64.2,82.4,79.3,79.0,High
+ENG1017,Artificial Intelligence and Data Science,3,21,Male,65.1,3.7,55.6,53.2,47.2,68.8,65.2,53.6,62.7,66.1,48.4,1,1,6,49.0,60.2,49.0,52.0,Low
+ENG1018,Artificial Intelligence and Data Science,3,23,Male,73.9,4.2,70.1,70.1,58.8,77.3,75.7,65.0,75.7,49.1,73.4,0,0,7,30.0,72.7,64.3,71.2,Average
+ENG1019,Electrical and Electronics Engineering,4,21,Male,68.2,3.8,55.5,56.3,43.7,67.7,65.3,54.7,45.9,82.6,45.6,2,4,6,67.8,61.0,49.5,44.6,Low
+ENG1020,Civil Engineering,7,21,Female,66.6,5.0,80.2,76.6,69.8,74.8,77.0,78.2,75.7,85.7,81.1,0,0,6,74.3,78.3,75.4,77.2,High
+ENG1021,Electronics and Communication Engineering,8,21,Male,83.0,4.5,71.5,67.9,54.3,74.0,71.5,68.3,63.6,84.9,69.6,0,0,7,52.4,72.0,58.7,66.7,Average
+ENG1022,Computer Science and Engineering,6,20,Male,74.9,4.2,67.9,66.5,56.8,76.8,71.5,65.7,64.5,79.5,58.1,1,1,7,38.9,69.4,62.8,61.6,Average
+ENG1023,Electronics and Communication Engineering,7,19,Female,89.9,4.7,82.6,79.3,76.9,85.0,82.3,80.7,66.9,58.7,81.5,0,0,8,30.8,81.6,76.5,73.8,Average
+ENG1024,Electrical and Electronics Engineering,5,20,Female,60.9,3.1,71.7,67.7,55.3,63.1,68.7,67.3,63.6,72.7,72.3,0,0,5,50.3,71.3,63.9,63.8,Average
+ENG1025,Electrical and Electronics Engineering,4,20,Male,91.5,5.1,76.6,72.1,68.8,82.9,80.2,79.4,71.1,80.2,76.8,0,0,8,85.4,79.0,72.9,75.4,High
+ENG1026,Information Technology,6,19,Male,70.7,2.5,78.5,79.7,64.7,67.3,74.3,70.1,86.0,76.2,88.6,0,0,5,88.3,77.2,71.2,81.4,High
+ENG1027,Civil Engineering,5,20,Male,73.0,6.1,69.3,66.9,59.6,81.9,75.1,74.8,53.0,86.3,59.1,0,0,8,44.8,74.4,65.3,69.3,Average
+ENG1028,Electronics and Communication Engineering,8,20,Male,84.8,5.8,78.8,77.3,64.7,79.9,78.6,76.9,70.2,64.9,77.6,0,0,8,80.7,78.0,68.8,74.4,High
+ENG1029,Civil Engineering,4,21,Male,76.9,6.0,76.9,74.6,66.1,85.5,76.6,73.6,58.1,66.8,64.7,0,0,8,39.2,77.6,71.0,75.5,High
+ENG1030,Electronics and Communication Engineering,7,23,Male,80.8,6.2,73.2,69.1,63.6,81.6,78.0,76.2,65.3,72.5,65.6,0,0,8,94.5,76.7,67.8,72.4,Average
+ENG1031,Computer Science and Engineering,3,20,Female,77.5,4.6,77.8,75.8,74.5,83.1,80.8,77.2,88.9,67.3,74.5,0,0,8,43.5,80.4,71.9,74.9,High
+ENG1032,Mechanical Engineering,8,21,Male,82.1,3.7,78.6,70.4,63.3,77.5,75.9,69.3,60.3,64.2,79.0,0,0,7,71.2,75.8,66.1,67.4,Average
+ENG1033,Mechanical Engineering,6,19,Female,81.2,4.4,70.8,68.0,61.4,71.2,71.3,71.7,67.8,78.4,79.0,0,0,6,81.8,73.6,62.0,65.1,Average
+ENG1034,Information Technology,4,19,Female,84.7,4.6,65.3,65.0,60.9,78.3,68.6,63.2,68.3,75.1,57.5,0,1,8,90.2,68.8,66.4,67.2,Average
+ENG1035,Information Technology,3,19,Male,86.5,5.8,82.8,80.2,71.9,88.8,84.7,81.5,83.4,79.5,78.2,0,0,9,79.7,82.7,76.6,85.0,High
+ENG1036,Civil Engineering,4,21,Female,69.3,4.1,70.1,68.8,58.0,74.4,70.1,62.5,54.5,90.0,71.4,0,0,7,79.2,70.4,60.9,62.3,Average
+ENG1037,Artificial Intelligence and Machine Learning,6,19,Male,83.7,3.7,65.4,61.3,52.7,73.0,67.4,58.2,66.8,54.2,66.8,0,0,7,72.1,67.5,57.2,65.2,Average
+ENG1038,Information Technology,4,19,Male,67.1,4.2,68.8,65.2,56.5,72.0,71.6,66.1,67.0,60.9,58.4,0,0,6,50.1,69.2,61.9,66.0,Average
+ENG1039,Electrical and Electronics Engineering,6,21,Male,81.4,5.8,70.4,66.7,59.7,77.9,74.2,70.8,49.0,76.6,58.5,0,0,8,51.2,71.8,64.6,64.9,Average
+ENG1040,Electrical and Electronics Engineering,4,21,Female,83.7,5.4,67.2,62.6,59.0,83.0,71.6,71.9,53.0,71.4,54.3,0,0,8,66.5,72.0,63.6,67.4,Average
+ENG1041,Information Technology,5,21,Male,63.5,3.1,61.7,62.2,48.3,64.9,63.9,63.3,62.6,78.1,65.9,0,1,5,24.2,65.7,57.8,57.8,Average
+ENG1042,Information Technology,6,21,Male,83.0,5.5,63.4,62.2,52.6,78.1,68.7,64.9,62.8,82.4,52.8,1,2,8,29.5,67.5,57.9,57.0,Average
+ENG1043,Artificial Intelligence and Data Science,3,20,Female,76.1,4.5,64.7,62.2,55.1,67.7,69.9,65.9,78.5,54.2,63.7,1,1,6,78.5,68.0,54.9,62.3,Average
+ENG1044,Computer Science and Engineering,5,20,Female,65.9,4.1,75.2,75.2,65.6,72.8,73.3,66.8,91.0,76.9,74.7,0,0,6,87.2,75.6,70.8,70.9,Average
+ENG1045,Mechanical Engineering,4,19,Male,71.0,4.1,77.8,70.8,61.9,76.2,74.3,73.9,64.0,70.3,68.8,0,0,7,46.0,75.3,64.3,66.4,Average
+ENG1046,Mechanical Engineering,5,20,Male,73.1,4.6,73.2,74.4,68.6,71.0,76.3,67.1,67.1,71.8,80.2,0,0,6,54.4,74.7,69.1,68.5,Average
+ENG1047,Electronics and Communication Engineering,4,21,Male,88.2,5.9,69.6,65.9,59.9,82.4,73.2,66.8,46.6,70.4,50.8,0,0,9,50.6,70.6,65.0,67.7,Average
+ENG1048,Electrical and Electronics Engineering,5,20,Male,71.8,3.6,64.3,64.4,58.5,71.1,71.5,66.6,54.4,72.0,60.5,1,1,6,62.9,68.3,59.8,58.5,Average
+ENG1049,Civil Engineering,4,21,Male,87.9,6.6,72.4,70.8,67.3,86.1,75.3,68.7,54.6,76.4,64.5,0,0,9,34.6,76.1,69.4,73.9,Average
+ENG1050,Mechanical Engineering,4,21,Female,88.5,6.2,82.2,75.2,66.9,88.6,79.1,81.1,68.4,78.6,68.5,0,0,9,70.8,80.8,71.0,79.7,High
+ENG1051,Mechanical Engineering,8,21,Female,73.8,5.1,79.8,75.4,67.0,75.6,76.6,71.6,69.6,86.3,87.5,0,0,7,54.7,78.3,68.5,77.7,High
+ENG1052,Electronics and Communication Engineering,6,20,Male,71.1,4.2,79.3,80.6,77.0,78.9,78.7,81.2,67.4,77.6,82.6,0,1,7,27.5,81.3,81.2,74.4,High
+ENG1053,Civil Engineering,8,21,Female,64.4,3.8,58.1,52.2,41.2,58.8,58.4,55.9,47.5,73.2,57.0,3,4,5,83.2,58.9,44.1,45.8,Low
+ENG1054,Information Technology,4,21,Male,75.8,5.0,75.9,75.2,67.4,80.2,79.4,78.1,83.4,75.3,74.6,0,0,8,73.3,78.7,71.8,74.2,High
+ENG1055,Artificial Intelligence and Machine Learning,7,22,Male,90.3,5.5,79.1,71.1,69.3,85.1,78.6,76.2,74.7,76.1,72.2,0,0,8,90.8,78.3,69.5,71.4,Average
+ENG1056,Electrical and Electronics Engineering,7,20,Female,81.4,3.7,66.4,62.7,54.8,70.3,67.5,63.4,52.7,59.0,62.1,1,1,7,65.5,66.2,58.6,59.4,Average
+ENG1057,Information Technology,7,19,Female,83.5,5.2,66.5,68.0,59.2,79.7,72.4,62.6,61.6,68.0,61.4,1,1,8,89.1,70.5,66.2,62.1,Average
+ENG1058,Artificial Intelligence and Machine Learning,5,21,Male,81.2,4.8,69.4,66.4,51.9,69.3,69.1,66.9,72.4,64.4,70.2,0,0,6,72.0,69.9,57.0,64.5,Average
+ENG1059,Computer Science and Engineering,5,21,Male,67.3,4.0,68.7,70.2,59.0,74.3,71.1,64.7,67.8,81.9,65.1,1,1,6,40.5,71.2,60.8,65.8,Average
+ENG1060,Electronics and Communication Engineering,3,22,Female,70.2,3.2,72.6,67.8,60.4,69.0,69.8,68.5,58.3,48.8,68.2,0,0,6,49.1,71.3,64.1,65.6,Average
+ENG1061,Electronics and Communication Engineering,4,23,Male,73.9,4.5,67.1,63.7,54.8,75.9,69.6,64.6,46.9,87.5,57.4,0,0,7,94.0,69.4,60.3,64.3,Average
+ENG1062,Electronics and Communication Engineering,3,20,Male,75.3,3.2,66.4,65.6,57.6,68.3,70.7,61.6,60.9,64.0,65.2,1,1,6,22.7,68.2,64.6,59.5,Average
+ENG1063,Information Technology,6,19,Male,78.6,5.5,84.5,77.2,75.9,86.3,82.4,83.7,83.5,71.5,76.8,0,0,8,54.9,83.6,76.1,79.4,High
+ENG1064,Mechanical Engineering,4,22,Male,71.4,4.6,60.3,58.5,43.6,72.5,66.6,61.9,48.6,61.6,46.1,1,2,7,51.3,64.0,49.1,53.2,Low
+ENG1065,Mechanical Engineering,4,20,Male,69.8,4.0,75.5,73.5,69.0,75.6,78.6,72.7,64.5,83.0,77.9,0,0,6,30.6,77.1,68.5,68.9,Average
+ENG1066,Mechanical Engineering,5,20,Female,60.6,3.1,70.8,68.8,52.0,60.1,70.4,60.1,63.4,86.4,73.6,0,0,4,83.1,69.6,61.8,69.3,Average
+ENG1067,Artificial Intelligence and Data Science,7,20,Male,67.7,3.8,78.2,73.0,62.2,76.0,77.7,74.7,83.4,73.6,72.8,0,0,6,71.4,76.2,65.3,70.1,Average
+ENG1068,Information Technology,6,19,Male,83.3,6.0,78.2,74.3,76.3,89.8,81.1,79.7,83.1,81.9,75.0,0,1,9,79.3,81.3,78.2,74.5,High
+ENG1069,Artificial Intelligence and Data Science,7,20,Male,65.2,3.6,78.4,74.8,64.1,74.8,74.8,73.0,84.1,75.2,73.7,0,0,6,26.9,76.1,72.6,72.5,Average
+ENG1070,Electronics and Communication Engineering,7,21,Male,76.2,4.9,73.4,70.8,65.1,79.5,75.6,68.9,62.1,57.2,67.1,0,0,7,21.1,73.3,70.3,67.3,Average
+ENG1071,Artificial Intelligence and Data Science,6,22,Female,72.5,4.9,76.2,72.3,63.7,80.1,78.5,76.2,81.9,75.5,73.0,0,0,7,77.2,78.0,66.7,72.8,Average
+ENG1072,Computer Science and Engineering,4,21,Female,74.5,4.3,64.0,62.0,49.0,70.8,67.7,59.2,67.5,64.2,51.5,0,0,7,94.5,64.7,58.9,54.6,Low
+ENG1073,Mechanical Engineering,7,20,Female,85.7,4.8,81.2,73.3,65.0,82.3,77.4,76.2,63.1,62.2,77.6,0,0,8,23.0,79.2,68.1,72.3,Average
+ENG1074,Electronics and Communication Engineering,5,21,Female,76.2,5.9,75.1,75.1,67.5,85.5,77.7,70.3,59.7,66.1,73.9,0,0,8,29.3,77.7,72.4,70.2,Average
+ENG1075,Artificial Intelligence and Data Science,8,19,Male,80.2,5.0,76.4,70.6,57.4,74.2,74.5,69.0,81.1,65.3,72.7,0,0,7,71.8,74.4,60.9,74.6,High
+ENG1076,Computer Science and Engineering,6,20,Male,90.0,5.2,87.4,84.0,79.3,86.2,84.0,82.8,97.0,87.4,87.4,0,0,8,77.9,85.8,84.6,83.8,High
+ENG1077,Electronics and Communication Engineering,7,20,Female,81.2,5.4,78.9,80.4,72.0,86.5,79.8,77.0,74.1,64.2,77.2,0,0,8,37.6,81.1,78.5,77.6,High
+ENG1078,Electrical and Electronics Engineering,6,19,Female,69.4,4.1,69.5,63.4,50.5,62.8,65.0,59.7,60.8,56.3,73.9,0,0,5,38.5,66.6,57.3,60.1,Average
+ENG1079,Information Technology,3,23,Female,76.8,5.0,80.6,75.7,72.3,81.3,77.3,71.5,83.6,82.0,72.8,0,0,7,35.2,77.9,74.4,80.6,High
+ENG1080,Computer Science and Engineering,5,21,Male,69.5,3.6,57.4,56.8,44.2,66.8,65.9,59.3,63.9,62.5,57.5,1,1,6,64.1,62.0,52.7,50.7,Low
+ENG1081,Artificial Intelligence and Machine Learning,6,20,Male,73.3,3.0,54.9,54.1,42.0,53.8,59.4,48.3,53.8,80.0,54.4,2,2,4,82.8,55.9,48.5,46.0,Low
+ENG1082,Information Technology,5,21,Male,72.0,4.7,78.1,72.6,68.6,74.4,74.6,74.0,85.4,74.4,75.1,0,0,6,52.5,76.3,72.5,74.9,High
+ENG1083,Mechanical Engineering,3,20,Male,75.6,4.9,76.3,73.5,68.1,76.0,75.6,73.3,67.6,66.5,73.7,0,0,7,85.3,74.4,70.4,70.2,Average
+ENG1084,Civil Engineering,4,20,Male,77.8,5.5,86.1,82.8,82.9,87.9,85.0,83.8,69.2,83.8,90.6,0,0,8,54.5,85.4,83.6,87.6,High
+ENG1085,Information Technology,8,20,Male,71.6,3.7,67.5,59.2,47.4,68.8,69.8,56.4,72.5,48.5,58.2,0,0,6,72.0,65.6,55.9,58.8,Average
+ENG1086,Artificial Intelligence and Data Science,3,20,Male,76.2,4.4,80.3,80.3,73.9,80.2,82.2,78.2,91.4,69.1,84.6,0,0,7,67.7,81.6,76.9,79.3,High
+ENG1087,Electrical and Electronics Engineering,6,21,Male,62.3,3.8,74.8,67.6,60.8,66.6,71.7,69.0,60.4,82.7,72.7,0,0,5,85.0,71.8,61.2,61.9,Average
+ENG1088,Artificial Intelligence and Data Science,5,23,Female,80.6,4.4,72.1,66.2,61.8,77.9,74.8,66.8,69.4,70.7,62.7,0,0,7,77.7,73.0,64.7,73.5,Average
+ENG1089,Artificial Intelligence and Machine Learning,4,21,Female,75.0,3.8,57.6,52.6,43.5,61.6,61.2,53.2,59.4,69.9,54.2,3,3,5,53.3,59.1,49.0,41.6,Low
+ENG1090,Electronics and Communication Engineering,4,21,Female,71.6,2.9,66.3,60.7,51.9,65.5,65.4,56.2,51.6,64.6,64.3,1,2,6,88.5,65.2,54.1,53.5,Low
+ENG1091,Mechanical Engineering,3,19,Female,77.9,5.4,82.1,80.1,71.8,80.8,81.2,75.8,71.6,69.5,82.7,0,0,7,43.9,80.3,76.4,77.3,High
+ENG1092,Civil Engineering,4,19,Female,79.5,5.2,74.5,66.1,56.1,78.1,72.1,70.7,61.6,69.7,69.2,0,0,8,44.2,73.7,60.6,67.4,Average
+ENG1093,Computer Science and Engineering,8,21,Female,80.9,4.9,58.3,55.7,46.7,68.6,67.4,59.2,67.0,77.0,57.8,0,1,6,59.1,63.4,54.4,55.0,Low
+ENG1094,Civil Engineering,5,22,Male,77.0,5.6,71.6,68.0,57.8,78.9,75.1,76.0,63.5,62.7,65.3,0,0,7,28.4,75.6,65.8,70.5,Average
+ENG1095,Information Technology,6,21,Male,85.7,5.9,72.1,70.5,68.5,81.3,74.0,75.5,74.1,74.9,64.6,0,0,8,34.6,75.6,72.6,76.1,High
+ENG1096,Mechanical Engineering,6,21,Male,80.9,5.4,84.3,81.4,67.2,77.3,78.0,79.8,71.1,74.0,84.7,0,0,7,56.5,80.8,77.8,78.1,High
+ENG1097,Mechanical Engineering,4,20,Male,86.9,5.5,88.3,83.9,82.7,85.2,84.0,78.9,75.4,78.8,94.3,0,0,8,64.5,85.4,86.7,84.9,High
+ENG1098,Information Technology,6,23,Male,65.4,4.2,67.7,63.4,50.9,67.9,68.8,65.4,78.2,59.5,68.2,0,0,6,50.7,68.4,54.0,63.9,Average
+ENG1099,Computer Science and Engineering,7,20,Male,91.4,5.1,75.5,76.3,66.8,87.7,80.2,74.9,68.6,76.4,65.2,0,0,9,35.8,78.4,68.2,76.3,High
+ENG1100,Artificial Intelligence and Data Science,3,19,Male,80.4,5.9,67.8,64.6,61.5,78.7,72.7,68.7,68.9,89.4,58.0,1,1,8,37.4,70.9,61.8,62.4,Average
+ENG1101,Mechanical Engineering,4,19,Male,85.3,4.3,74.5,71.2,64.0,77.0,74.2,71.1,69.3,61.1,78.8,0,0,7,90.4,75.3,66.5,71.4,Average
+ENG1102,Artificial Intelligence and Data Science,6,19,Male,78.1,5.4,83.8,79.9,77.7,88.3,81.8,78.0,85.0,79.8,74.7,0,0,8,47.1,81.9,80.4,79.0,High
+ENG1103,Electrical and Electronics Engineering,7,19,Female,73.5,4.2,74.9,70.5,68.4,78.9,75.5,76.4,62.2,65.4,79.3,0,0,7,49.6,76.8,71.8,71.9,Average
+ENG1104,Information Technology,5,20,Male,59.7,2.5,73.1,67.4,52.3,59.2,69.8,67.3,84.7,81.8,74.7,0,1,4,45.0,70.9,57.9,65.6,Average
+ENG1105,Electrical and Electronics Engineering,3,21,Male,75.3,4.8,81.3,76.7,68.5,82.5,81.5,79.9,71.9,56.7,84.5,0,0,7,52.5,82.2,72.0,79.1,High
+ENG1106,Electronics and Communication Engineering,3,21,Female,86.7,4.4,78.9,75.4,72.5,80.2,77.7,79.1,68.2,66.0,85.5,0,0,8,41.7,80.5,72.6,77.1,High
+ENG1107,Civil Engineering,4,20,Male,76.3,3.9,69.3,64.5,56.7,75.8,70.8,68.0,46.7,86.8,63.6,0,0,7,81.8,69.5,59.3,69.9,Average
+ENG1108,Civil Engineering,5,20,Male,79.6,4.9,71.5,64.3,51.7,74.3,69.9,60.9,60.8,75.1,70.5,0,0,7,25.2,69.6,61.0,62.4,Average
+ENG1109,Mechanical Engineering,5,19,Male,73.7,5.1,71.1,67.6,62.3,78.2,72.3,70.3,55.6,85.1,70.0,0,0,7,71.4,74.0,67.5,70.2,Average
+ENG1110,Electronics and Communication Engineering,7,20,Male,85.4,5.6,82.7,74.7,75.0,84.0,82.8,80.2,63.5,72.2,72.3,0,0,8,65.3,81.2,76.7,77.7,High
+ENG1111,Artificial Intelligence and Machine Learning,4,20,Male,69.9,4.4,77.9,73.8,63.5,79.8,75.0,75.7,83.2,64.5,75.2,0,1,7,65.0,76.9,72.1,70.5,Average
+ENG1112,Electrical and Electronics Engineering,4,23,Female,80.8,4.5,69.1,68.3,58.6,80.9,74.1,68.5,52.2,78.5,67.7,0,0,8,52.4,72.7,60.4,65.8,Average
+ENG1113,Computer Science and Engineering,5,19,Male,69.3,5.2,83.3,78.1,75.3,80.9,79.8,76.0,92.0,63.2,85.2,0,0,7,74.4,81.6,73.2,75.9,High
+ENG1114,Computer Science and Engineering,6,23,Female,81.1,3.8,73.0,70.5,64.7,76.8,70.5,66.2,79.5,72.8,61.5,0,1,7,80.8,71.9,67.8,65.7,Average
+ENG1115,Electrical and Electronics Engineering,6,20,Female,75.4,6.3,72.2,70.7,69.9,87.0,74.5,75.4,54.2,73.1,62.8,0,0,8,69.0,76.0,69.2,73.4,Average
+ENG1116,Civil Engineering,7,20,Female,75.1,5.6,77.3,71.4,64.9,78.0,76.8,76.9,60.2,84.4,73.5,0,1,7,88.4,77.1,68.3,70.7,Average
+ENG1117,Computer Science and Engineering,5,20,Male,82.0,4.7,71.8,70.9,62.9,76.9,74.9,68.4,66.8,69.2,67.9,0,0,7,63.5,72.6,67.7,64.3,Average
+ENG1118,Information Technology,4,20,Male,81.3,6.7,80.6,78.1,69.1,85.9,78.2,75.2,85.4,64.0,74.2,0,1,9,53.3,80.0,74.0,74.3,High
+ENG1119,Electrical and Electronics Engineering,7,20,Male,75.5,3.6,65.2,58.7,44.8,69.3,67.5,63.3,49.7,60.2,55.6,1,1,6,61.1,65.0,55.2,55.1,Low
+ENG1120,Information Technology,4,21,Female,77.5,4.8,73.3,68.3,61.4,77.1,73.1,73.3,82.2,82.2,73.6,0,0,7,57.2,74.3,64.0,70.5,Average
+ENG1121,Information Technology,5,23,Female,73.5,4.5,84.4,80.6,75.6,74.5,80.4,74.6,97.1,91.1,82.7,0,0,6,86.1,80.4,74.6,75.5,High
+ENG1122,Civil Engineering,5,22,Male,87.6,5.1,80.3,76.5,66.2,82.1,78.8,78.3,70.3,62.0,76.3,0,0,8,70.6,78.4,67.7,73.6,Average
+ENG1123,Artificial Intelligence and Machine Learning,7,19,Male,74.0,3.2,74.3,71.7,58.6,62.3,70.4,70.7,81.2,64.8,84.9,0,0,5,65.7,72.3,67.0,70.2,Average
+ENG1124,Electronics and Communication Engineering,7,21,Male,89.0,6.3,69.6,64.9,57.8,84.0,74.4,64.1,53.2,68.7,57.0,0,0,9,80.9,72.5,58.7,72.6,Average
+ENG1125,Artificial Intelligence and Data Science,3,20,Male,81.2,5.7,70.3,68.6,58.1,75.8,72.0,71.4,76.1,73.6,66.8,0,0,7,30.7,73.5,63.2,68.2,Average
+ENG1126,Artificial Intelligence and Data Science,5,19,Other,73.0,5.1,73.9,70.8,58.5,77.6,73.5,73.1,72.6,66.4,69.3,0,0,7,75.5,75.3,66.6,65.6,Average
+ENG1127,Electrical and Electronics Engineering,5,21,Male,80.3,4.2,80.6,76.3,70.2,82.0,82.5,81.7,76.0,50.6,79.3,0,0,7,81.9,81.8,70.3,75.4,High
+ENG1128,Electrical and Electronics Engineering,4,21,Male,75.0,3.7,61.1,59.7,47.3,73.3,66.3,62.9,48.6,71.4,56.0,0,0,7,29.9,66.3,56.8,59.5,Average
+ENG1129,Computer Science and Engineering,5,23,Female,86.9,5.1,72.7,72.2,63.6,77.3,74.8,66.7,68.1,73.8,72.9,0,0,7,56.7,73.5,65.9,77.1,High
+ENG1130,Civil Engineering,3,21,Female,67.0,3.9,69.6,66.3,54.8,73.4,73.7,64.8,58.4,83.5,66.9,0,1,6,42.6,71.3,64.0,67.9,Average
+ENG1131,Electronics and Communication Engineering,5,20,Female,75.6,4.9,77.4,75.2,66.2,78.3,80.4,71.6,75.0,65.5,77.0,0,0,7,57.5,78.1,74.2,71.8,Average
+ENG1132,Electronics and Communication Engineering,4,23,Male,74.5,4.6,82.0,76.2,71.2,83.2,78.0,77.1,66.4,57.6,71.6,0,0,8,77.9,80.3,75.8,76.3,High
+ENG1133,Computer Science and Engineering,3,21,Female,92.9,6.6,71.7,66.2,64.5,84.1,74.0,70.6,66.2,80.2,67.3,0,0,9,55.0,74.2,63.4,70.8,Average
+ENG1134,Computer Science and Engineering,5,20,Male,75.9,4.3,74.7,67.8,61.7,75.3,75.3,73.4,74.3,66.5,70.4,0,0,7,25.5,73.5,65.4,66.1,Average
+ENG1135,Artificial Intelligence and Machine Learning,3,19,Female,81.9,4.5,84.6,79.6,67.2,75.2,78.1,79.5,95.4,79.4,87.6,0,0,7,86.5,81.4,72.8,77.5,High
+ENG1136,Artificial Intelligence and Data Science,8,21,Male,67.0,4.0,73.2,71.2,61.5,69.2,72.1,71.7,83.7,79.7,81.5,0,0,6,24.9,74.0,63.7,63.3,Average
+ENG1137,Mechanical Engineering,4,22,Female,74.3,5.6,70.3,64.3,60.8,79.8,72.2,68.6,56.7,70.5,55.0,0,0,8,37.8,71.5,62.1,65.1,Average
+ENG1138,Electrical and Electronics Engineering,3,20,Male,82.4,5.4,71.4,66.6,59.8,72.9,72.7,64.4,56.3,54.9,71.6,2,2,7,57.0,71.1,63.4,56.5,Low
+ENG1139,Artificial Intelligence and Data Science,4,19,Male,72.0,4.5,73.6,72.0,59.1,68.6,72.3,66.0,82.5,60.6,79.2,0,0,6,30.0,73.9,68.7,67.2,Average
+ENG1140,Information Technology,6,21,Female,71.2,4.6,76.0,70.8,65.1,75.7,72.7,68.2,72.3,75.8,65.3,0,0,7,26.3,74.1,69.5,73.3,Average
+ENG1141,Electrical and Electronics Engineering,4,21,Male,68.6,3.1,75.0,71.3,55.6,67.9,71.2,71.7,67.3,65.9,75.3,0,0,5,74.7,74.5,64.8,65.5,Average
+ENG1142,Civil Engineering,8,21,Female,80.3,4.8,70.9,73.0,66.5,81.2,77.9,68.1,58.7,59.0,66.8,0,0,8,53.1,74.3,66.4,72.2,Average
+ENG1143,Artificial Intelligence and Data Science,3,20,Male,82.6,5.1,71.0,68.4,56.4,81.8,73.3,71.8,66.3,67.5,55.8,0,1,8,20.4,72.3,63.0,67.7,Average
+ENG1144,Mechanical Engineering,6,21,Female,78.4,4.3,71.5,67.6,63.1,74.9,70.9,64.9,62.5,73.7,67.2,1,1,7,76.0,71.3,65.9,64.5,Average
+ENG1145,Electronics and Communication Engineering,8,20,Female,81.1,5.7,81.0,72.3,65.4,86.2,79.1,72.2,61.9,75.3,72.9,0,0,9,26.6,78.9,71.1,71.4,Average
+ENG1146,Information Technology,6,21,Female,66.5,4.6,67.4,64.9,58.4,69.1,69.2,61.6,64.3,75.8,62.9,2,2,6,37.3,67.9,60.7,54.3,Low
+ENG1147,Civil Engineering,4,22,Male,82.5,3.9,75.9,72.6,64.7,77.3,77.2,68.7,62.1,84.1,77.2,0,0,7,53.5,75.1,71.0,69.8,Average
+ENG1148,Mechanical Engineering,6,20,Male,74.8,2.4,77.3,74.2,65.4,66.1,74.5,66.7,67.5,76.3,75.4,0,0,5,87.8,73.3,71.9,69.2,Average
+ENG1149,Artificial Intelligence and Data Science,5,22,Male,66.9,3.9,69.6,69.1,59.5,75.3,72.5,63.4,73.6,70.7,64.1,0,0,7,76.0,71.4,65.2,64.7,Average
+ENG1150,Computer Science and Engineering,3,20,Male,81.5,3.8,72.7,74.8,68.1,71.1,72.1,68.4,86.1,73.4,74.0,0,1,7,37.3,74.6,68.5,69.8,Average
+ENG1151,Artificial Intelligence and Data Science,3,19,Male,83.1,5.4,73.7,71.9,64.3,73.7,72.6,70.8,84.5,67.5,75.7,0,0,7,87.3,74.8,68.3,69.9,Average
+ENG1152,Artificial Intelligence and Machine Learning,7,21,Male,79.1,4.6,77.7,77.2,68.7,85.1,76.8,77.2,72.7,56.1,75.0,0,0,8,84.6,78.6,72.4,76.3,High
+ENG1153,Computer Science and Engineering,5,22,Male,81.6,5.4,81.2,76.0,71.3,87.5,81.5,75.8,83.8,75.3,81.2,0,0,8,27.9,81.7,77.3,76.8,High
+ENG1154,Artificial Intelligence and Data Science,5,21,Male,76.4,3.2,72.8,68.3,59.6,65.5,70.2,69.8,76.0,82.9,79.9,0,1,5,29.4,70.9,67.6,66.0,Average
+ENG1155,Civil Engineering,4,20,Female,82.0,3.4,75.8,72.1,62.6,72.7,76.3,70.1,65.1,74.0,72.5,0,0,7,23.3,74.8,64.4,66.6,Average
+ENG1156,Artificial Intelligence and Machine Learning,3,21,Female,71.9,3.3,66.1,65.7,59.3,71.7,70.9,65.7,64.2,84.8,63.7,0,0,6,49.7,69.2,61.5,68.3,Average
+ENG1157,Civil Engineering,6,22,Female,77.6,4.6,78.1,78.5,69.7,72.7,77.7,69.6,75.8,70.1,84.3,0,0,6,47.6,77.3,71.0,75.9,High
+ENG1158,Information Technology,3,23,Male,77.6,5.5,73.3,70.2,62.2,76.9,72.4,70.7,64.5,72.0,71.7,0,0,7,90.4,72.8,65.8,68.1,Average
+ENG1159,Computer Science and Engineering,6,22,Male,81.6,5.9,84.5,80.6,73.6,87.5,82.3,81.0,81.2,80.9,86.5,0,0,8,66.2,83.4,75.8,78.8,High
+ENG1160,Mechanical Engineering,8,21,Male,73.2,3.8,76.9,76.6,62.5,72.9,73.1,71.9,77.6,56.5,75.1,0,0,6,62.3,76.2,69.2,78.1,High
+ENG1161,Electrical and Electronics Engineering,3,20,Male,78.5,4.8,63.3,61.0,47.4,67.3,67.9,58.7,56.2,80.1,58.4,0,0,6,80.6,63.9,52.6,67.2,Average
+ENG1162,Artificial Intelligence and Data Science,5,20,Female,74.8,6.8,81.1,76.7,76.4,86.9,78.1,74.6,79.2,60.5,73.3,0,0,8,60.5,79.7,74.5,76.6,High
+ENG1163,Information Technology,6,20,Male,71.2,3.4,81.2,75.9,63.4,66.9,77.6,74.4,87.0,77.6,83.8,0,0,5,45.8,77.9,72.3,71.9,Average
+ENG1164,Mechanical Engineering,6,20,Female,69.2,3.4,63.4,62.8,46.7,58.0,65.3,56.3,63.4,73.8,73.0,2,2,5,72.4,65.2,57.6,57.0,Low
+ENG1165,Artificial Intelligence and Data Science,6,21,Male,77.9,5.9,74.7,73.0,67.7,84.5,80.3,74.7,74.2,53.5,69.2,0,0,8,37.3,77.9,70.5,71.8,Average
+ENG1166,Artificial Intelligence and Data Science,5,23,Male,75.0,4.8,78.0,72.8,65.6,75.9,76.9,70.3,85.2,61.3,76.6,0,0,7,61.7,76.5,67.1,73.5,Average
+ENG1167,Information Technology,4,22,Male,65.7,2.5,74.3,69.4,52.4,60.6,67.7,65.2,75.7,77.2,84.0,1,1,4,72.3,70.5,64.8,64.1,Average
+ENG1168,Mechanical Engineering,3,19,Female,80.8,5.3,79.8,76.5,65.8,81.9,79.0,71.3,58.8,90.3,78.3,0,0,8,67.6,77.3,74.5,73.1,Average
+ENG1169,Civil Engineering,8,19,Female,69.0,3.7,67.3,61.5,49.8,62.8,67.7,60.0,53.2,74.7,64.3,0,1,5,20.3,65.9,58.8,59.3,Average
+ENG1170,Civil Engineering,4,20,Other,79.0,5.6,69.0,67.5,56.6,77.4,71.9,63.9,60.9,54.7,64.4,0,0,7,54.9,70.6,60.8,61.6,Average
+ENG1171,Computer Science and Engineering,4,21,Male,75.1,4.3,59.6,59.7,47.9,72.5,67.4,53.9,61.8,81.2,45.2,0,0,7,48.7,63.0,54.4,58.6,Average
+ENG1172,Civil Engineering,6,21,Female,76.4,3.9,78.6,73.6,62.5,79.8,78.7,78.1,70.9,84.9,70.1,0,0,7,51.9,77.8,64.1,77.3,High
+ENG1173,Mechanical Engineering,3,20,Female,76.6,5.3,65.8,59.1,53.7,79.8,72.4,63.9,49.1,64.4,52.0,0,1,8,41.1,67.3,57.0,61.0,Average
+ENG1174,Civil Engineering,5,21,Male,81.6,4.3,76.8,76.3,64.8,73.6,76.3,67.9,68.5,74.5,78.1,0,0,7,54.7,75.8,68.5,74.1,High
+ENG1175,Information Technology,3,22,Female,74.8,5.3,76.3,67.8,68.2,81.9,75.9,72.4,65.7,79.3,70.0,0,0,8,60.6,75.4,64.9,77.5,High
+ENG1176,Electronics and Communication Engineering,6,19,Female,77.6,4.7,72.9,65.1,61.0,82.0,73.1,70.0,54.2,79.4,60.8,0,0,8,33.0,73.3,59.4,75.6,High
+ENG1177,Computer Science and Engineering,3,20,Female,72.4,4.6,74.7,71.5,65.4,78.7,75.6,69.3,76.3,64.2,64.8,0,0,7,89.3,73.9,64.6,66.6,Average
+ENG1178,Computer Science and Engineering,5,20,Male,81.2,4.6,72.9,70.6,65.9,77.9,74.4,74.7,81.2,64.5,73.5,0,0,7,49.8,75.4,65.6,71.1,Average
+ENG1179,Information Technology,5,20,Male,63.8,3.2,60.3,59.2,50.0,65.9,61.6,59.9,66.3,69.9,55.4,1,2,5,90.5,62.4,54.5,47.1,Low
+ENG1180,Electronics and Communication Engineering,6,20,Male,74.9,3.7,64.6,58.8,46.4,72.9,67.1,61.2,53.8,84.9,58.3,0,0,7,23.9,66.4,52.5,58.2,Average
+ENG1181,Artificial Intelligence and Data Science,6,22,Male,76.8,4.2,75.2,74.5,68.3,78.5,76.4,67.9,74.7,82.7,70.1,0,0,7,53.8,74.9,69.5,74.8,High
+ENG1182,Electronics and Communication Engineering,7,20,Female,62.5,4.1,59.1,54.9,39.5,63.0,62.2,48.0,50.8,79.3,54.7,1,2,5,28.4,58.9,49.0,50.3,Low
+ENG1183,Mechanical Engineering,6,19,Male,79.7,3.8,84.8,80.4,68.3,74.8,78.9,74.9,82.3,74.3,96.0,0,0,7,72.8,81.9,70.6,76.7,High
+ENG1184,Civil Engineering,5,21,Male,85.5,5.6,85.6,77.6,73.3,83.4,83.8,84.1,65.7,85.5,82.7,0,0,8,68.7,82.8,74.4,81.7,High
+ENG1185,Mechanical Engineering,5,21,Female,80.5,4.7,79.1,70.7,60.4,78.6,75.6,73.0,66.3,76.2,76.3,0,0,8,78.3,76.7,69.3,70.9,Average
+ENG1186,Artificial Intelligence and Data Science,5,20,Female,66.3,4.6,61.9,54.2,45.4,65.0,64.8,55.9,67.2,77.8,59.7,0,0,6,77.2,61.9,52.0,57.6,Average
+ENG1187,Electronics and Communication Engineering,4,22,Other,83.1,4.5,87.1,81.1,70.6,78.3,81.6,82.9,79.4,81.4,84.8,0,0,7,24.2,83.5,72.8,81.7,High
+ENG1188,Computer Science and Engineering,5,21,Male,65.2,3.1,57.3,55.2,44.0,61.4,61.7,48.7,60.0,84.9,51.1,1,1,5,93.5,57.3,50.5,50.4,Low
+ENG1189,Computer Science and Engineering,3,21,Male,69.6,4.6,59.6,59.7,43.3,64.1,64.1,60.6,58.9,56.5,59.5,0,0,6,82.0,63.0,50.1,61.2,Average
+ENG1190,Electrical and Electronics Engineering,4,20,Male,82.5,4.2,72.5,64.8,59.5,71.5,73.6,69.4,66.4,64.0,67.7,0,0,7,68.8,71.6,58.3,71.5,Average
+ENG1191,Computer Science and Engineering,5,22,Female,79.2,5.1,82.8,81.1,75.7,80.1,80.8,73.7,93.5,83.8,81.6,0,1,7,51.2,81.3,81.8,76.0,High
+ENG1192,Computer Science and Engineering,4,21,Male,64.1,2.6,55.7,55.2,35.5,58.1,59.4,54.8,59.2,76.1,54.5,4,5,5,34.9,57.6,43.9,45.4,Low
+ENG1193,Information Technology,4,21,Female,80.3,4.7,76.2,75.1,68.2,74.1,76.5,73.4,76.0,62.8,84.3,0,0,7,40.7,76.3,72.9,74.4,High
+ENG1194,Information Technology,4,22,Male,74.4,5.1,77.3,75.0,71.9,78.8,77.1,72.5,86.2,85.4,73.1,0,0,7,81.9,77.9,72.1,76.3,High
+ENG1195,Artificial Intelligence and Machine Learning,5,19,Male,72.0,4.1,80.2,75.7,66.3,74.9,76.9,68.4,75.9,67.6,74.2,0,0,6,35.2,76.3,68.1,72.2,Average
+ENG1196,Mechanical Engineering,5,21,Male,66.7,3.8,79.3,74.0,69.6,76.8,77.7,76.9,80.5,61.2,79.0,0,0,6,76.0,79.1,70.2,70.7,Average
+ENG1197,Computer Science and Engineering,3,21,Female,70.7,3.4,77.6,79.0,67.8,69.8,78.3,69.0,89.3,65.2,82.3,0,0,6,23.0,77.6,72.2,71.3,Average
+ENG1198,Civil Engineering,4,19,Male,81.2,3.9,79.5,75.6,66.9,71.2,74.9,69.4,71.8,59.8,78.7,0,0,6,78.5,75.6,68.4,77.5,High
+ENG1199,Electrical and Electronics Engineering,5,20,Male,71.9,5.3,77.9,71.4,64.6,80.5,79.0,70.2,59.0,75.2,72.1,0,0,7,32.4,76.4,65.9,64.0,Average
+ENG1200,Electrical and Electronics Engineering,8,22,Male,71.5,3.5,74.2,72.5,62.8,65.5,70.9,70.9,67.8,62.6,85.3,0,0,5,82.1,74.5,65.4,64.9,Average
+ENG1201,Electronics and Communication Engineering,5,21,Female,85.2,6.3,82.7,78.1,70.6,90.7,83.3,79.8,67.2,87.1,69.6,0,0,9,83.1,81.2,75.8,82.6,High
+ENG1202,Civil Engineering,7,19,Male,80.9,7.0,82.2,79.8,73.1,90.5,85.7,79.6,76.4,57.4,77.4,0,0,9,72.6,83.4,74.5,75.7,High
+ENG1203,Civil Engineering,7,21,Female,65.2,3.0,63.7,61.9,47.2,58.4,66.2,61.1,60.3,86.6,69.2,0,0,4,66.0,64.1,54.8,55.2,Low
+ENG1204,Mechanical Engineering,4,20,Male,68.8,3.8,66.3,62.9,48.5,65.9,66.2,59.2,60.8,64.9,68.9,0,0,6,22.2,67.5,52.7,55.9,Low
+ENG1205,Computer Science and Engineering,3,20,Male,76.4,5.5,80.9,74.4,65.5,75.8,78.6,70.5,81.8,58.3,80.9,0,0,7,70.5,77.6,70.0,75.9,High
+ENG1206,Mechanical Engineering,6,21,Male,69.3,3.4,66.5,63.9,52.8,69.2,68.9,64.4,62.5,84.7,70.2,0,0,6,92.0,68.4,60.3,62.0,Average
+ENG1207,Electrical and Electronics Engineering,4,20,Female,71.4,4.1,64.9,66.8,59.5,71.8,71.9,62.0,57.9,66.1,62.4,0,0,7,62.6,68.5,66.7,61.8,Average
+ENG1208,Computer Science and Engineering,7,20,Male,62.7,3.4,74.4,75.1,58.0,69.1,75.9,66.8,79.7,74.1,74.6,0,0,5,76.7,73.9,65.5,73.3,Average
+ENG1209,Artificial Intelligence and Data Science,3,19,Female,62.7,2.3,66.2,64.6,54.9,61.6,67.7,64.4,71.5,76.4,75.2,0,0,5,56.3,66.8,58.3,61.4,Average
+ENG1210,Electronics and Communication Engineering,6,19,Female,66.1,4.9,76.6,70.7,60.2,74.2,75.3,73.5,57.4,83.4,68.7,0,0,6,27.0,74.5,66.2,69.8,Average
+ENG1211,Information Technology,7,21,Other,69.3,4.9,68.1,65.6,52.9,70.3,73.1,68.0,70.2,87.7,63.1,1,1,6,46.3,70.9,60.6,58.5,Average
+ENG1212,Electronics and Communication Engineering,7,21,Male,85.4,4.4,78.9,74.3,64.7,80.6,80.0,73.1,62.3,76.1,70.0,0,0,8,74.0,78.3,70.2,72.1,Average
+ENG1213,Civil Engineering,4,21,Male,78.2,4.8,69.6,66.5,61.9,74.2,72.3,69.8,54.6,75.6,63.9,1,1,7,50.4,71.2,66.9,65.5,Average
+ENG1214,Computer Science and Engineering,3,21,Male,65.6,2.9,75.6,69.8,53.1,66.8,72.1,62.3,76.5,61.6,78.9,0,0,5,58.7,71.5,59.8,64.0,Average
+ENG1215,Computer Science and Engineering,3,20,Female,82.7,4.8,84.3,78.5,70.6,81.2,83.0,79.8,83.7,75.1,84.5,0,0,8,36.5,82.5,70.6,75.5,High
+ENG1216,Information Technology,4,21,Female,78.2,4.4,68.7,62.4,51.3,72.2,69.8,66.1,67.0,85.5,62.6,0,0,7,21.9,68.9,56.5,64.7,Average
+ENG1217,Electronics and Communication Engineering,8,22,Female,65.4,4.5,80.0,72.6,63.7,73.1,74.8,76.2,78.0,68.2,85.7,0,0,6,68.7,77.0,66.4,68.0,Average
+ENG1218,Computer Science and Engineering,5,20,Female,69.7,2.6,74.2,72.7,58.7,63.6,71.2,65.5,94.9,81.4,82.3,0,0,5,65.0,73.7,66.4,66.7,Average
+ENG1219,Mechanical Engineering,7,22,Female,70.7,4.4,75.5,68.1,62.7,76.7,74.0,73.5,57.7,77.9,76.6,0,0,7,55.7,74.9,68.2,75.7,High
+ENG1220,Electronics and Communication Engineering,5,20,Male,77.0,2.9,78.5,75.3,62.8,67.6,74.7,70.9,78.5,66.3,91.7,0,0,6,56.4,76.5,67.0,69.4,Average
+ENG1221,Mechanical Engineering,6,20,Male,77.5,4.7,64.6,60.1,55.4,72.1,65.6,57.3,48.3,89.1,58.7,0,0,7,54.9,65.8,55.7,59.0,Average
+ENG1222,Computer Science and Engineering,7,20,Male,79.5,5.2,75.1,72.9,63.2,75.4,76.5,66.8,83.2,79.7,73.1,0,0,7,33.4,74.3,66.2,71.4,Average
+ENG1223,Computer Science and Engineering,4,20,Female,68.0,5.3,64.2,63.2,53.9,75.0,67.9,58.5,64.1,75.3,58.3,0,0,7,31.8,67.5,62.4,65.7,Average
+ENG1224,Civil Engineering,6,22,Male,74.5,5.1,72.5,70.2,56.2,72.0,70.2,69.1,56.4,85.4,74.3,0,1,7,89.1,72.3,65.7,69.0,Average
+ENG1225,Mechanical Engineering,7,21,Female,74.3,4.8,70.7,67.7,54.1,75.0,70.1,64.9,62.8,85.4,60.2,1,2,7,68.2,71.1,59.0,63.3,Average
+ENG1226,Electrical and Electronics Engineering,5,20,Female,73.0,5.6,79.4,79.3,72.6,79.7,81.1,74.7,76.4,75.7,79.0,0,0,7,94.4,80.0,78.9,78.9,High
+ENG1227,Electrical and Electronics Engineering,6,21,Female,83.9,4.2,69.6,68.0,59.2,78.7,75.4,68.1,57.6,57.4,67.9,0,0,8,82.5,72.1,64.5,70.4,Average
+ENG1228,Information Technology,4,21,Female,69.6,2.9,64.9,65.5,46.2,59.8,65.8,62.3,74.4,55.0,75.2,2,2,5,25.4,66.6,55.8,57.5,Low
+ENG1229,Information Technology,5,20,Female,67.0,4.7,78.5,75.6,62.7,72.1,78.1,77.5,87.7,73.1,87.0,0,0,6,79.7,78.9,69.1,62.3,Average
+ENG1230,Electronics and Communication Engineering,5,21,Female,81.1,3.4,83.9,77.9,65.0,73.0,76.9,80.5,77.4,70.2,85.2,0,1,6,34.1,80.4,71.6,75.8,High
+ENG1231,Civil Engineering,3,21,Male,83.2,5.5,78.3,74.3,62.1,75.0,76.8,75.9,68.8,71.0,80.2,0,0,7,85.6,76.9,68.0,68.1,Average
+ENG1232,Mechanical Engineering,5,21,Male,82.1,4.1,66.5,62.7,49.0,72.9,66.7,57.9,53.4,76.0,55.8,0,1,7,34.0,66.2,54.6,62.0,Average
+ENG1233,Electrical and Electronics Engineering,4,21,Male,63.8,2.3,61.1,59.4,47.8,58.6,63.5,59.9,55.6,73.3,56.3,1,1,4,91.8,62.0,57.3,51.8,Low
+ENG1234,Artificial Intelligence and Data Science,7,22,Female,85.9,4.3,82.3,76.7,70.6,76.7,78.6,80.1,82.0,71.1,82.7,0,0,7,25.3,79.8,69.8,75.2,High
+ENG1235,Artificial Intelligence and Machine Learning,4,20,Female,74.1,5.1,82.3,78.0,67.6,77.6,77.6,73.0,94.4,59.8,80.7,0,0,7,37.9,79.8,75.7,76.5,High
+ENG1236,Computer Science and Engineering,5,21,Male,86.3,5.2,72.7,69.4,66.9,84.9,76.3,66.4,72.5,61.6,59.6,0,0,9,88.3,74.3,69.0,75.3,High
+ENG1237,Mechanical Engineering,6,20,Male,86.1,4.0,72.9,67.8,62.6,75.8,71.4,71.8,64.6,66.0,64.3,0,0,8,78.0,72.7,69.1,72.1,Average
+ENG1238,Electrical and Electronics Engineering,6,21,Male,83.2,5.0,85.4,83.2,75.4,88.0,83.0,81.5,69.7,87.3,81.3,0,0,8,92.6,84.5,75.6,78.1,High
+ENG1239,Mechanical Engineering,3,19,Female,77.5,4.0,72.1,66.5,54.5,65.6,69.2,61.2,58.9,85.8,72.6,0,0,6,88.0,69.8,60.9,62.4,Average
+ENG1240,Civil Engineering,8,20,Male,67.7,3.5,69.8,64.3,53.3,69.6,67.3,64.2,60.2,81.0,65.9,0,0,6,70.1,68.7,56.6,65.3,Average
+ENG1241,Artificial Intelligence and Data Science,4,21,Male,70.7,4.8,64.7,66.0,58.5,72.3,70.4,62.9,67.0,64.7,67.8,2,2,6,84.3,68.6,65.4,60.6,Low
+ENG1242,Computer Science and Engineering,8,20,Male,71.6,4.4,69.5,69.6,55.3,74.1,71.8,70.6,66.7,85.8,71.2,0,0,7,64.2,72.1,61.4,67.3,Average
+ENG1243,Artificial Intelligence and Machine Learning,5,19,Male,79.4,5.4,68.6,65.1,56.9,74.9,74.4,64.8,68.6,74.8,62.0,1,1,7,91.7,71.1,64.7,63.5,Average
+ENG1244,Computer Science and Engineering,4,20,Female,75.2,4.4,64.5,60.9,56.5,74.1,67.6,66.7,68.0,56.4,51.6,2,2,7,56.3,67.4,60.3,55.4,Low
+ENG1245,Electronics and Communication Engineering,4,20,Male,77.2,3.6,71.3,71.9,62.8,70.1,73.8,66.0,61.7,71.1,80.7,0,0,6,59.2,72.4,63.9,67.2,Average
+ENG1246,Computer Science and Engineering,7,23,Male,63.9,2.9,61.1,62.5,48.7,57.8,63.5,56.6,65.7,81.6,62.0,0,1,4,94.7,63.4,56.0,58.4,Average
+ENG1247,Artificial Intelligence and Machine Learning,7,21,Male,66.0,4.1,82.2,75.4,62.7,70.3,76.3,75.3,91.9,84.1,82.8,0,0,5,83.4,78.5,67.4,74.6,High
+ENG1248,Computer Science and Engineering,3,21,Male,78.2,5.4,72.7,72.4,63.6,81.5,76.7,76.7,77.4,58.4,67.4,0,0,8,43.3,76.6,70.2,69.9,Average
+ENG1249,Information Technology,6,21,Female,75.5,5.2,75.8,71.5,68.5,79.2,75.1,76.5,69.1,67.9,76.7,0,0,7,61.6,76.3,66.8,73.4,Average
+ENG1250,Artificial Intelligence and Machine Learning,8,21,Male,73.9,6.0,62.9,56.6,45.0,76.5,66.5,61.9,52.7,56.8,54.8,0,0,7,27.8,65.0,49.2,59.2,Average

@@ -1,0 +1,238 @@
+{% extends "base.html" %}
+
+{% block title %}Edit Student - {{ student.name }} ({{ student.student_id }}){% endblock %}
+
+{% block content %}
+<div class="mb-4">
+  <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+    <div class="d-flex align-items-center gap-2">
+      <a href="{{ url_for('student_detail', student_id=student.student_id) }}" class="btn btn-sm btn-outline-secondary">
+        <i class="bi bi-arrow-left me-1"></i> Back to Profile
+      </a>
+      <a href="{{ url_for('students') }}" class="btn btn-sm btn-outline-secondary">
+        <i class="bi bi-people me-1"></i> Student Directory
+      </a>
+    </div>
+    <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 fw-semibold">
+      <i class="bi bi-shield-lock-fill me-1"></i> Faculty & Administrative Edit Mode
+    </span>
+  </div>
+
+  <h2 class="h3 fw-bold text-dark mb-1">
+    Edit Student Record: <span class="text-primary">{{ student.name }}</span>
+    <span class="badge bg-light text-secondary border ms-2 fs-6 fw-normal">{{ student.student_id }}</span>
+  </h2>
+  <p class="text-secondary mb-0">Update academic marks, semester, standing arrears, and student credentials. The AI model will automatically recalculate the risk tier and performance forecast upon saving.</p>
+</div>
+
+<form method="POST" action="{{ url_for('edit_student', student_id=student.student_id) }}">
+  
+  <!-- Section 1: Student Profile & Demographics -->
+  <div class="card mb-4 shadow-sm border">
+    <div class="card-header bg-light border-bottom py-3">
+      <h5 class="card-title mb-0 fw-bold text-dark d-flex align-items-center gap-2">
+        <i class="bi bi-person-badge-fill text-primary fs-5"></i>
+        1. Student Identification & Demographics
+      </h5>
+    </div>
+    <div class="card-body p-4">
+      <div class="row g-3">
+        <div class="col-md-3">
+          <label class="form-label fw-semibold text-dark">Student ID (Read-Only)</label>
+          <input type="text" class="form-control bg-light border" value="{{ student.student_id }}" disabled readonly>
+          <div class="form-text small text-muted">Permanent institutional key</div>
+        </div>
+
+        <div class="col-md-5">
+          <label for="name" class="form-label fw-semibold text-dark">Full Student Name <span class="text-danger">*</span></label>
+          <input type="text" class="form-control" id="name" name="name" value="{{ student.name }}" required>
+        </div>
+
+        <div class="col-md-4">
+          <label for="parent_email" class="form-label fw-semibold text-dark">Parent / Guardian Email <span class="text-danger">*</span></label>
+          <div class="input-group">
+            <span class="input-group-text bg-light"><i class="bi bi-envelope-at text-secondary"></i></span>
+            <input type="email" class="form-control" id="parent_email" name="parent_email" value="{{ student.parent_email }}" required>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <label for="department" class="form-label fw-semibold text-dark">Engineering Department <span class="text-danger">*</span></label>
+          <select class="form-select" id="department" name="department" required>
+            {% for dept in departments %}
+              <option value="{{ dept }}" {% if student.department == dept %}selected{% endif %}>{{ dept }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="col-md-3">
+          <label for="semester" class="form-label fw-semibold text-dark">Current Semester <span class="text-danger">*</span></label>
+          <select class="form-select" id="semester" name="semester" required>
+            {% for s in range(1, 9) %}
+              <option value="{{ s }}" {% if student.semester == s %}selected{% endif %}>Semester {{ s }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="col-md-2">
+          <label for="age" class="form-label fw-semibold text-dark">Age</label>
+          <input type="number" class="form-control" id="age" name="age" value="{{ student.age }}" min="16" max="35" required>
+        </div>
+
+        <div class="col-md-2">
+          <label for="gender" class="form-label fw-semibold text-dark">Gender</label>
+          <select class="form-select" id="gender" name="gender" required>
+            <option value="Male" {% if student.gender == 'Male' %}selected{% endif %}>Male</option>
+            <option value="Female" {% if student.gender == 'Female' %}selected{% endif %}>Female</option>
+            <option value="Other" {% if student.gender == 'Other' %}selected{% endif %}>Other</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2: Continuous Academic Assessments & Marks -->
+  <div class="card mb-4 shadow-sm border">
+    <div class="card-header bg-light border-bottom py-3">
+      <h5 class="card-title mb-0 fw-bold text-dark d-flex align-items-center gap-2">
+        <i class="bi bi-journal-check text-primary fs-5"></i>
+        2. Academic Assessments & Continuous Internal Marks
+      </h5>
+    </div>
+    <div class="card-body p-4">
+      <div class="row g-3">
+        <div class="col-md-3">
+          <label for="internal_exam_1" class="form-label fw-semibold text-dark">Internal Assessment 1 (0 - 100) <span class="text-danger">*</span></label>
+          <input type="number" class="form-control" id="internal_exam_1" name="internal_exam_1" value="{{ student.internal_exam_1|round(1) }}" min="0" max="100" step="0.1" required>
+          <div class="form-text small text-muted">First cycle evaluation</div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="internal_exam_2" class="form-label fw-semibold text-dark">Internal Assessment 2 (0 - 100) <span class="text-danger">*</span></label>
+          <input type="number" class="form-control" id="internal_exam_2" name="internal_exam_2" value="{{ student.internal_exam_2|round(1) }}" min="0" max="100" step="0.1" required>
+          <div class="form-text small text-muted">Second cycle evaluation</div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="prev_sem_cgpa" class="form-label fw-semibold text-dark">Prev Sem CGPA (0.0 - 10.0) <span class="text-danger">*</span></label>
+          <input type="number" class="form-control" id="prev_sem_cgpa" name="prev_sem_cgpa" value="{{ (student.previous_semester_percentage / 9.5)|round(2) }}" min="0.0" max="10.0" step="0.01" required>
+          <div class="form-text small text-muted">Cumulative Grade Point</div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="attendance_percentage" class="form-label fw-semibold text-dark">Class Attendance % (0 - 100) <span class="text-danger">*</span></label>
+          <input type="number" class="form-control" id="attendance_percentage" name="attendance_percentage" value="{{ student.attendance_percentage|round(1) }}" min="0" max="100" step="0.1" required>
+          <div class="form-text small text-muted">Mandatory threshold: 75%</div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="assignment_average" class="form-label fw-semibold text-dark">Assignment Average (0 - 100)</label>
+          <input type="number" class="form-control" id="assignment_average" name="assignment_average" value="{{ student.assignment_average|round(1) }}" min="0" max="100" step="0.1" required>
+        </div>
+
+        <div class="col-md-3">
+          <label for="lab_score" class="form-label fw-semibold text-dark">Lab & Practical Score (0 - 100)</label>
+          <input type="number" class="form-control" id="lab_score" name="lab_score" value="{{ student.lab_score|round(1) }}" min="0" max="100" step="0.1" required>
+        </div>
+
+        <div class="col-md-3">
+          <label for="project_score" class="form-label fw-semibold text-dark">Project / Capstone Score (0 - 100)</label>
+          <input type="number" class="form-control" id="project_score" name="project_score" value="{{ student.project_score|round(1) }}" min="0" max="100" step="0.1" required>
+        </div>
+
+        <div class="col-md-3">
+          <label for="study_hours_per_day" class="form-label fw-semibold text-dark">Self Study Hours / Day (0 - 16)</label>
+          <input type="number" class="form-control" id="study_hours_per_day" name="study_hours_per_day" value="{{ student.study_hours_per_day|round(1) }}" min="0" max="16" step="0.5" required>
+        </div>
+
+        <div class="col-md-3">
+          <label for="class_participation" class="form-label fw-semibold text-dark">Class Participation (1 - 10)</label>
+          <input type="number" class="form-control" id="class_participation" name="class_participation" value="{{ student.class_participation }}" min="1" max="10" required>
+        </div>
+
+        <div class="col-md-3">
+          <label for="extracurricular_score" class="form-label fw-semibold text-dark">Extracurricular Score (0 - 100)</label>
+          <input type="number" class="form-control" id="extracurricular_score" name="extracurricular_score" value="{{ student.extracurricular_score|round(1) }}" min="0" max="100" step="0.1" required>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3: Academic Arrear Section -->
+  <div class="card mb-4 shadow-sm border">
+    <div class="card-header bg-light border-bottom py-3">
+      <h5 class="card-title mb-0 fw-bold text-dark d-flex align-items-center gap-2">
+        <i class="bi bi-exclamation-triangle-fill text-warning fs-5"></i>
+        3. Academic Arrear Section (Standing Arrears & History)
+      </h5>
+    </div>
+    <div class="card-body p-4">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-4">
+          <label for="backlogs" class="form-label fw-semibold text-dark">Current Standing Arrears (0 - 15) <span class="text-danger">*</span></label>
+          <input type="number" class="form-control" id="backlogs" name="backlogs" value="{{ student.backlogs }}" min="0" max="15" required>
+          <div class="form-text small text-muted"><strong>0</strong> = Regular / All Clear status</div>
+        </div>
+
+        <div class="col-md-4">
+          <label for="previous_failures" class="form-label fw-semibold text-dark">Previous Semester Arrears / History (0 - 15)</label>
+          <input type="number" class="form-control" id="previous_failures" name="previous_failures" value="{{ student.previous_failures }}" min="0" max="15" required>
+          <div class="form-text small text-muted">Cumulative historical arrear papers</div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="p-3 bg-light rounded-3 border">
+            <div class="fw-semibold text-dark small mb-1"><i class="bi bi-info-circle-fill text-primary me-1"></i> Arrear Criteria</div>
+            <div class="small text-secondary">
+              Students with &gt; 0 standing arrears are flagged for remedial tutorial assistance and placement counseling.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4: Engineering Skills & Aptitude -->
+  <div class="card mb-4 shadow-sm border">
+    <div class="card-header bg-light border-bottom py-3">
+      <h5 class="card-title mb-0 fw-bold text-dark d-flex align-items-center gap-2">
+        <i class="bi bi-cpu-fill text-primary fs-5"></i>
+        4. Technical, Programming & Aptitude Skills
+      </h5>
+    </div>
+    <div class="card-body p-4">
+      <div class="row g-3">
+        <div class="col-md-3">
+          <label for="technical_skill_score" class="form-label fw-semibold text-dark">Technical Skill Score (0 - 100)</label>
+          <input type="number" class="form-control" id="technical_skill_score" name="technical_skill_score" value="{{ student.technical_skill_score|round(1) }}" min="0" max="100" step="0.1" required>
+        </div>
+
+        <div class="col-md-3">
+          <label for="coding_skill_score" class="form-label fw-semibold text-dark">Coding & Programming (0 - 100)</label>
+          <input type="number" class="form-control" id="coding_skill_score" name="coding_skill_score" value="{{ student.coding_skill_score|round(1) }}" min="0" max="100" step="0.1" required>
+        </div>
+
+        <div class="col-md-3">
+          <label for="communication_skill_score" class="form-label fw-semibold text-dark">Communication Skill (0 - 100)</label>
+          <input type="number" class="form-control" id="communication_skill_score" name="communication_skill_score" value="{{ student.communication_skill_score|round(1) }}" min="0" max="100" step="0.1" required>
+        </div>
+
+        <div class="col-md-3">
+          <label for="aptitude_score" class="form-label fw-semibold text-dark">Logical Aptitude Score (0 - 100)</label>
+          <input type="number" class="form-control" id="aptitude_score" name="aptitude_score" value="{{ student.aptitude_score|round(1) }}" min="0" max="100" step="0.1" required>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Submit Buttons -->
+  <div class="d-flex align-items-center justify-content-end gap-2 pb-5">
+    <a href="{{ url_for('student_detail', student_id=student.student_id) }}" class="btn btn-outline-secondary px-4 py-2">
+      Cancel
+    </a>
+    <button type="submit" class="btn btn-primary-gradient px-4 py-2">
+      <i class="bi bi-check2-circle me-1"></i> Save Changes & Recalculate Prediction
+    </button>
+  </div>
+</form>
+{% endblock %}
