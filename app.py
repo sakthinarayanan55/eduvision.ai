@@ -887,7 +887,8 @@ app = create_app()
 
 if __name__ == "__main__":
     init_db(app)
+    debug_mode = os.environ.get("FLASK_DEBUG", "0").lower() in {"1", "true", "yes", "on"}
     print("\n* AI-Based Engineering Student Performance Prediction & Early Intervention System")
     print("* Application running on: http://127.0.0.1:5000")
     print("* Default logins: admin/admin123, faculty/faculty123, student/student123 (or Student ID e.g. ENG0001)\n")
-    app.run(debug=True, host="127.0.0.1", port=5000)
+    app.run(debug=debug_mode, host="127.0.0.1", port=5000)
