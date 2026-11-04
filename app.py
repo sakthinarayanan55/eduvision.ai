@@ -57,6 +57,18 @@ def create_app(config_class=Config):
     # Initialize database
     db.init_app(app)
     
+    with app.app_context():
+        try:
+            from database.models import User, Student
+            db.create_all()
+            if User.query.count() == 0 or Student.query.count() == 0:
+                init_db(app)
+        except Exception:
+            try:
+                init_db(app)
+            except Exception as e:
+                print(f"Warning: Database startup auto-init error: {e}")
+    
     # Context processor to expose logged in user and roles to all templates
     @app.context_processor
     def inject_user():

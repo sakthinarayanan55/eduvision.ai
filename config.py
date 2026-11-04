@@ -23,11 +23,13 @@ def get_database_uri():
         tmp_db = os.path.join(tmp_dir, "student_performance.db")
         bundled_db = os.path.join(BASE_DIR, "student_performance.db")
         
-        if not os.path.exists(tmp_db) and os.path.exists(bundled_db):
-            try:
-                shutil.copy2(bundled_db, tmp_db)
-            except Exception as e:
-                print(f"Warning: could not copy bundled database to {tmp_db}: {e}")
+        if os.path.exists(bundled_db):
+            # If tmp_db doesn't exist or is empty/smaller than bundled_db, copy the seeded database
+            if not os.path.exists(tmp_db) or os.path.getsize(tmp_db) < os.path.getsize(bundled_db):
+                try:
+                    shutil.copy2(bundled_db, tmp_db)
+                except Exception as e:
+                    print(f"Warning: could not copy bundled database to {tmp_db}: {e}")
         return f"sqlite:///{tmp_db}"
         
     return f"sqlite:///{os.path.join(BASE_DIR, 'student_performance.db')}"

@@ -125,7 +125,7 @@ def seed_data(app):
                 student = Student(
                     student_id=row_dict["student_id"],
                     name=row_dict.get("name", f"Student {row_dict['student_id']}"),
-                    parent_email=row_dict.get("parent_email", f"parent.{row_dict['student_id'].lower()}@example.edu"),
+                    parent_email=row_dict.get("parent_email", f"parent.{str(row_dict['student_id']).lower()}@example.edu"),
                     department=row_dict["department"],
                     semester=int(row_dict["semester"]),
                     age=int(row_dict["age"]),
@@ -153,13 +153,12 @@ def seed_data(app):
                 
                 # Precompute ML prediction for initial state
                 try:
-                    res = predict_student_performance(row_dict)
-                    student.latest_prediction = res["predicted_category"]
-                    student.latest_risk_level = res["risk_level"]
-                    student.latest_confidence = res["confidence"]
-                    
-                    # Also log prediction in table for sample records
-                    if idx < 300: # Store initial prediction records
+                    if idx < 60:
+                        res = predict_student_performance(row_dict)
+                        student.latest_prediction = res["predicted_category"]
+                        student.latest_risk_level = res["risk_level"]
+                        student.latest_confidence = res["confidence"]
+                        
                         pred = Prediction(
                             student_id=student.student_id,
                             prediction=res["predicted_category"],
@@ -170,21 +169,40 @@ def seed_data(app):
                         )
                         predictions_to_add.append(pred)
                         
-                    # Create starter intervention for High Risk students
-                    if res["risk_level"] == "HIGH RISK" and len(interventions_to_add) < 25:
-                        recom_text = res["interventions"][0]["recommendation"] if res["interventions"] else "Attendance and backlog review needed."
-                        interv = Intervention(
-                            student_id=student.student_id,
-                            risk_level=res["risk_level"],
-                            recommendation=recom_text,
-                            faculty_note="Scheduled initial advisory discussion with departmental mentor.",
-                            action_taken="Mentor meeting conducted; revision timetable drafted.",
-                            status="In Progress" if idx % 2 == 0 else "Pending",
-                            follow_up_date="2026-10-15"
-                        )
-                        interventions_to_add.append(interv)
+                        if res["risk_level"] == "HIGH RISK" and len(interventions_to_add) < 25:
+                            recom_text = res["interventions"][0]["recommendation"] if res["interventions"] else "Attendance and backlog review needed."
+                            interv = Intervention(
+                                student_id=student.student_id,
+                                risk_level=res["risk_level"],
+                                recommendation=recom_text,
+                                faculty_note="Scheduled initial advisory discussion with departmental mentor.",
+                                action_taken="Mentor meeting conducted; revision timetable drafted.",
+                                status="In Progress" if idx % 2 == 0 else "Pending",
+                                follow_up_date="2026-10-15"
+                            )
+                            interventions_to_add.append(interv)
+                    else:
+                        perf_cat = str(row_dict.get("performance_category", "Average"))
+                        att = float(row_dict.get("attendance_percentage", 75.0))
+                        backlogs = int(row_dict.get("backlogs", 0))
+                        
+                        if perf_cat == "Low" or backlogs >= 2 or att < 65.0:
+                            risk_level = "HIGH RISK"
+                            confidence = 0.88
+                        elif perf_cat == "Average" or att < 75.0 or backlogs == 1:
+                            risk_level = "MEDIUM RISK"
+                            confidence = 0.84
+                        else:
+                            risk_level = "LOW RISK"
+                            confidence = 0.92
+                            
+                        student.latest_prediction = perf_cat
+                        student.latest_risk_level = risk_level
+                        student.latest_confidence = confidence
                 except Exception as e:
-                    pass
+                    student.latest_prediction = str(row_dict.get("performance_category", "Average"))
+                    student.latest_risk_level = "LOW RISK"
+                    student.latest_confidence = 0.85
                     
                 students_to_add.append(student)
                 

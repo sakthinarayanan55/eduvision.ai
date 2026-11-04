@@ -25,16 +25,18 @@ app.wsgi_app = ProxyFix(
     x_prefix=1
 )
 
-# Ensure database tables exist if running on a fresh environment
+# Ensure database tables and initial dataset exist
 with app.app_context():
     try:
-        from database.models import User
-        User.query.first()
-    except Exception:
+        from database.models import User, Student, db
+        db.create_all()
+        if User.query.count() == 0 or Student.query.count() == 0:
+            init_db(app)
+    except Exception as e:
         try:
             init_db(app)
-        except Exception as e:
-            print(f"Warning: Database initialization error: {e}")
+        except Exception as e2:
+            print(f"Warning: Database initialization error: {e2}")
 
 if __name__ == "__main__":
     app.run()
