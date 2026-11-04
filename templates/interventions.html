@@ -21,7 +21,7 @@
 <div class="row g-3 mb-4">
   <div class="col-md-4">
     <a href="{{ url_for('interventions', status='Pending') }}" class="text-decoration-none">
-      <div class="card border-0 shadow-sm rounded-3 p-3 bg-white {% if current_status == 'Pending' %}border-start border-4 border-secondary{% endif %}">
+      <div class="metric-card p-3 {% if current_status == 'Pending' %}border-start border-4 border-secondary{% endif %}">
         <div class="d-flex justify-content-between align-items-center">
           <div>
             <div class="small text-muted fw-semibold text-uppercase">Pending Actions</div>
@@ -37,7 +37,7 @@
 
   <div class="col-md-4">
     <a href="{{ url_for('interventions', status='In Progress') }}" class="text-decoration-none">
-      <div class="card border-0 shadow-sm rounded-3 p-3 bg-white {% if current_status == 'In Progress' %}border-start border-4 border-warning{% endif %}">
+      <div class="metric-card p-3 {% if current_status == 'In Progress' %}border-start border-4 border-warning{% endif %}">
         <div class="d-flex justify-content-between align-items-center">
           <div>
             <div class="small text-muted fw-semibold text-uppercase">In Remediation / Progress</div>
@@ -53,7 +53,7 @@
 
   <div class="col-md-4">
     <a href="{{ url_for('interventions', status='Completed') }}" class="text-decoration-none">
-      <div class="card border-0 shadow-sm rounded-3 p-3 bg-white {% if current_status == 'Completed' %}border-start border-4 border-success{% endif %}">
+      <div class="metric-card p-3 {% if current_status == 'Completed' %}border-start border-4 border-success{% endif %}">
         <div class="d-flex justify-content-between align-items-center">
           <div>
             <div class="small text-muted fw-semibold text-uppercase">Successfully Resolved</div>

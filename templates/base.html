@@ -140,7 +140,7 @@
         </form>
         {% endif %}
 
-        <span class="badge bg-primary-subtle text-primary border border-primary-subtle text-capitalize px-2 py-1">
+        <span class="badge bg-primary-subtle text-primary border border-primary-subtle text-capitalize px-2.5 py-1.5 rounded-pill">
           <i class="bi bi-person-check-fill me-1"></i> {{ session.get('role') }}
         </span>
       </div>
@@ -152,21 +152,22 @@
         </button>
 
         {% if session.get('role') == 'admin' %}
-        <a href="{{ url_for('faculty_management') }}" class="btn btn-sm btn-outline-warning d-none d-lg-inline-flex align-items-center gap-1">
+        <a href="{{ url_for('faculty_management') }}" class="btn btn-sm btn-outline-warning d-none d-lg-inline-flex align-items-center gap-1 rounded-pill px-3">
           <i class="bi bi-shield-lock-fill"></i> Faculty Admin
         </a>
         {% endif %}
 
         {% if session.get('role') in ['admin', 'faculty'] %}
-        <a href="{{ url_for('import_csv') }}" class="btn btn-sm btn-outline-interactive d-none d-xl-inline-flex align-items-center gap-1">
+        <a href="{{ url_for('import_csv') }}" class="btn btn-sm btn-action-import d-none d-xl-inline-flex align-items-center gap-1 py-1 px-3">
           <i class="bi bi-upload text-cyan"></i> Import CSV
         </a>
         {% endif %}
-        <div class="text-muted small d-none d-md-block">
-          <i class="bi bi-cpu text-info me-1"></i> AI Active
+        <div class="d-none d-md-flex align-items-center gap-1.5 text-muted small px-2.5 py-1 rounded-pill border border-subtle" style="background: var(--bg-subtle);">
+          <span class="live-dot-pulse" style="width: 7px; height: 7px;"></span>
+          <span class="fw-semibold">AI Active</span>
         </div>
-        <a href="{{ url_for('logout') }}" class="btn btn-sm btn-outline-danger">
-          <i class="bi bi-box-arrow-right me-1"></i> Logout
+        <a href="{{ url_for('logout') }}" class="btn btn-sm btn-action-risk py-1 px-2.5" title="Sign Out">
+          <i class="bi bi-box-arrow-right"></i> <span class="d-none d-sm-inline">Logout</span>
         </a>
       </div>
     </header>
