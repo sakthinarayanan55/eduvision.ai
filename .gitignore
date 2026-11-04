@@ -37,5 +37,8 @@ ENV/
 *.swp
 
 # SQLite DB (optional: keep demo db or ignore local temp)
+*.db
+*.sqlite
+*.sqlite3
 *.db-journal
 instance/

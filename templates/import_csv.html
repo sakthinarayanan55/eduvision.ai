@@ -1,119 +1,363 @@
 {% extends "base.html" %}
 
-{% block title %}Import Student CSV - Engineering Student Performance AI{% endblock %}
+{% block title %}Import Student CSV - Batch Ingestion & Analytics - EduVision AI{% endblock %}
 
 {% block content %}
-<div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
+<!-- Page Header (Top Aligned) -->
+<div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-3">
   <div>
-    <h2 class="h3 fw-bold mb-1"><i class="bi bi-file-earmark-spreadsheet text-info me-2"></i>Batch Student CSV Ingestion</h2>
-    <p class="text-secondary small mb-0">Upload official department cohort CSV files to automatically update academic records and generate real-time AI performance projections.</p>
+    <div class="d-flex align-items-center gap-2 mb-1">
+      <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-2 py-1">
+        <i class="bi bi-file-earmark-spreadsheet-fill me-1"></i> Data Pipeline
+      </span>
+      <span class="text-muted small">Batch Cohort Ingestion Engine</span>
+    </div>
+    <h2 class="h4 fw-bold mb-0 text-dark">Batch Student CSV Ingestion</h2>
   </div>
-  <a href="{{ url_for('download_sample_csv') }}" class="btn btn-outline-interactive">
-    <i class="bi bi-download me-1 text-cyan"></i> Download Sample CSV Template
-  </a>
+  <div class="d-flex gap-2 flex-wrap">
+    <a href="{{ url_for('download_sample_csv') }}" class="btn btn-sm btn-outline-interactive">
+      <i class="bi bi-download me-1 text-cyan"></i> Download Sample CSV
+    </a>
+    <a href="{{ url_for('students') }}" class="btn btn-sm btn-outline-interactive">
+      <i class="bi bi-people me-1"></i> Students Directory
+    </a>
+    <a href="{{ url_for('dashboard') }}" class="btn btn-sm btn-outline-interactive">
+      <i class="bi bi-grid-1x2 me-1"></i> Dashboard
+    </a>
+  </div>
 </div>
 
-<div class="row g-4">
-  <!-- Upload Card -->
-  <div class="col-lg-7">
-    <div class="chart-card">
-      <div class="card-header-clean">
-        <h3 class="chart-title"><i class="bi bi-cloud-arrow-up text-primary me-2"></i>Upload Dataset (.csv)</h3>
-        <span class="badge bg-primary-subtle text-primary border border-primary-subtle">Faculty & Admin Portal</span>
+<!-- Pipeline Metrics Banner Grid (4 Symmetrical Horizontal KPI Cards) -->
+<div class="row g-3 mb-4">
+  <div class="col-sm-6 col-lg-3">
+    <div class="metric-card">
+      <div class="d-flex justify-content-between align-items-start">
+        <div>
+          <div class="metric-label">Batch Ingestion Limit</div>
+          <div class="metric-value text-primary">5,000</div>
+        </div>
+        <div class="metric-icon-box bg-primary-subtle text-primary">
+          <i class="bi bi-files"></i>
+        </div>
       </div>
-
-      <form method="POST" action="{{ url_for('import_csv') }}" enctype="multipart/form-data" id="csvUploadForm">
-        <div class="csv-dropzone mb-4" id="dropzoneBox" onclick="document.getElementById('fileInput').click()">
-          <i class="bi bi-cloud-upload display-4 text-cyan mb-3 d-block"></i>
-          <h5 class="fw-bold mb-1">Drag & Drop CSV File Here</h5>
-          <p class="text-secondary small mb-3">or click anywhere in this box to browse local files</p>
-          <input type="file" name="csv_file" id="fileInput" accept=".csv" class="d-none" onchange="handleFileSelected(this)">
-          <div id="selectedFileName" class="badge bg-info-subtle text-info fs-6 px-3 py-2 d-none">
-            <i class="bi bi-check-circle me-1"></i> <span id="fileNameText"></span>
-          </div>
-        </div>
-
-        <div class="d-flex justify-content-between align-items-center">
-          <span class="text-muted small">
-            <i class="bi bi-info-circle me-1"></i> Maximum recommended batch: 5,000 students per file
-          </span>
-          <button type="submit" class="btn btn-primary-gradient px-4" id="submitBtn">
-            <i class="bi bi-cpu-fill me-1"></i> Upload & Run AI Predictions
-          </button>
-        </div>
-      </form>
+      <div class="small text-muted mt-2">
+        <i class="bi bi-check-circle-fill text-success me-1"></i>Records per batch upload
+      </div>
     </div>
   </div>
 
-  <!-- Guidelines Card -->
-  <div class="col-lg-5">
-    <div class="chart-card">
-      <div class="card-header-clean">
-        <h3 class="chart-title"><i class="bi bi-card-checklist text-warning me-2"></i>CSV Format Guidelines</h3>
+  <div class="col-sm-6 col-lg-3">
+    <div class="metric-card">
+      <div class="d-flex justify-content-between align-items-start">
+        <div>
+          <div class="metric-label">Pipeline Inference</div>
+          <div class="metric-value text-info">Real-Time</div>
+        </div>
+        <div class="metric-icon-box bg-info-subtle text-info">
+          <i class="bi bi-cpu-fill"></i>
+        </div>
       </div>
-
-      <div class="small text-secondary mb-3">
-        The uploaded file must be formatted in CSV syntax. The system automatically computes missing fields, converts CGPA to percentage, and maps columns:
+      <div class="small text-muted mt-2">
+        <i class="bi bi-lightning-charge-fill text-warning me-1"></i>Instant risk scoring & category
       </div>
+    </div>
+  </div>
 
-      <div class="table-responsive">
-        <table class="table table-custom table-sm small">
-          <thead>
-            <tr>
-              <th>Column Name</th>
-              <th>Type</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><code>student_id</code></td>
-              <td><span class="badge bg-danger-subtle text-danger">Required</span></td>
-              <td>Unique Student ID (e.g. ENG2001)</td>
-            </tr>
-            <tr>
-              <td><code>name</code></td>
-              <td><span class="badge bg-success-subtle text-success">Recommended</span></td>
-              <td>Student Full Name</td>
-            </tr>
-            <tr>
-              <td><code>parent_email</code></td>
-              <td><span class="badge bg-success-subtle text-success">Recommended</span></td>
-              <td>Parent / Guardian contact email</td>
-            </tr>
-            <tr>
-              <td><code>prev_sem_cgpa</code></td>
-              <td><span class="badge bg-success-subtle text-success">Recommended</span></td>
-              <td>Cumulative GPA (0 - 10 scale)</td>
-            </tr>
-            <tr>
-              <td><code>internal_exam_1</code></td>
-              <td><span class="badge bg-info-subtle text-info">Optional</span></td>
-              <td>Internal Assessment 1 (0 - 100)</td>
-            </tr>
-            <tr>
-              <td><code>internal_exam_2</code></td>
-              <td><span class="badge bg-primary-subtle text-primary">Optional</span></td>
-              <td>Internal Assessment 2 (0 - 100)</td>
-            </tr>
-            <tr>
-              <td><code>attendance_percentage</code></td>
-              <td><span class="badge bg-primary-subtle text-primary">Optional</span></td>
-              <td>Classroom Attendance %</td>
-            </tr>
-            <tr>
-              <td><code>backlogs</code></td>
-              <td><span class="badge bg-primary-subtle text-primary">Optional</span></td>
-              <td>Standing Arrears Count (default: 0)</td>
-            </tr>
-          </tbody>
-        </table>
+  <div class="col-sm-6 col-lg-3">
+    <div class="metric-card">
+      <div class="d-flex justify-content-between align-items-start">
+        <div>
+          <div class="metric-label">Format Mapping</div>
+          <div class="metric-value text-success">Auto</div>
+        </div>
+        <div class="metric-icon-box bg-success-subtle text-success">
+          <i class="bi bi-diagram-3-fill"></i>
+        </div>
       </div>
+      <div class="small text-muted mt-2">
+        <i class="bi bi-arrow-repeat text-success me-1"></i>CGPA to % auto-conversion
+      </div>
+    </div>
+  </div>
 
-      <div class="mt-3 pt-3 border-top d-flex gap-2">
-        <a href="{{ url_for('download_sample_csv') }}" class="btn btn-sm btn-outline-primary w-100">
-          <i class="bi bi-file-earmark-arrow-down me-1"></i> Download Ready-to-Use Template
+  <div class="col-sm-6 col-lg-3">
+    <div class="metric-card">
+      <div class="d-flex justify-content-between align-items-start">
+        <div>
+          <div class="metric-label">Target Safeguards</div>
+          <div class="metric-value text-warning">Strict</div>
+        </div>
+        <div class="metric-icon-box bg-warning-subtle text-warning">
+          <i class="bi bi-shield-check"></i>
+        </div>
+      </div>
+      <div class="small text-muted mt-2">
+        <i class="bi bi-shield-lock text-warning me-1"></i>Zero target leakage validation
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================================================================
+     TOP-TO-BOTTOM SEQUENTIAL INGESTION WORKFLOW
+     ========================================================================= -->
+
+<!-- STEP 1: Upload Dataset File (.csv) -->
+<div class="card mb-4 p-3 p-md-4">
+  <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom flex-wrap gap-2">
+    <div class="d-flex align-items-center gap-2">
+      <span class="badge bg-primary text-white px-2 py-1 fs-6 fw-bold">STEP 1</span>
+      <h3 class="h5 fw-bold mb-0 text-dark">
+        <i class="bi bi-cloud-arrow-up-fill text-primary me-1"></i> Upload Dataset File (.csv)
+      </h3>
+    </div>
+    <span class="badge bg-primary-subtle text-primary border border-primary-subtle">
+      <i class="bi bi-arrow-repeat me-1"></i> Ingestion & AI Scoring Pipeline
+    </span>
+  </div>
+
+  <p class="small text-muted mb-3">
+    Select or drag-and-drop your departmental semester cohort CSV file. Existing student profiles are refreshed in-place, while newly enrolled students are automatically provisioned.
+  </p>
+
+  <form method="POST" action="{{ url_for('import_csv') }}" enctype="multipart/form-data" id="csvUploadForm">
+    <div class="csv-dropzone mb-3" id="dropzoneBox" onclick="document.getElementById('fileInput').click()">
+      <i class="bi bi-cloud-upload display-5 text-primary mb-2 d-block"></i>
+      <h5 class="fw-bold mb-1 text-dark">Drag & Drop CSV File Here</h5>
+      <p class="text-muted small mb-3">or click anywhere inside this dropzone to browse your local device</p>
+      <input type="file" name="csv_file" id="fileInput" accept=".csv" class="d-none" onchange="handleFileSelected(this)" required>
+      
+      <div id="selectedFileName" class="badge bg-primary-subtle text-primary fs-6 px-3 py-2 d-none">
+        <i class="bi bi-check-circle-fill me-1"></i> <span id="fileNameText"></span>
+      </div>
+    </div>
+
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 pt-3 border-top">
+      <div class="d-flex align-items-center gap-2 text-muted small">
+        <i class="bi bi-info-circle text-primary"></i>
+        <span>Supported: Standard comma-separated UTF-8 encoded CSV files (Max 5,000 records per upload).</span>
+      </div>
+      <div class="d-flex align-items-center gap-2 flex-wrap">
+        <a href="{{ url_for('download_sample_csv') }}" class="btn btn-sm btn-outline-interactive">
+          <i class="bi bi-file-earmark-arrow-down me-1 text-cyan"></i> Download Template (.csv)
         </a>
+        <button type="submit" class="btn btn-primary-gradient px-4" id="submitBtn">
+          <i class="bi bi-cpu-fill me-1"></i> Ingest & Run AI Predictions
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- STEP 2: CSV Schema & Column Specifications -->
+<div class="card mb-4 p-3 p-md-4">
+  <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom flex-wrap gap-2">
+    <div class="d-flex align-items-center gap-2">
+      <span class="badge bg-secondary-subtle text-cyan border border-info-subtle px-2 py-1 fs-6 fw-bold">STEP 2</span>
+      <h3 class="h5 fw-bold mb-0 text-dark">
+        <i class="bi bi-card-checklist text-warning me-1"></i> CSV Schema & Column Specifications
+      </h3>
+    </div>
+    <span class="badge bg-secondary-subtle">
+      <i class="bi bi-check2-all me-1"></i> Automatic Normalization & Imputation
+    </span>
+  </div>
+
+  <p class="small text-muted mb-3">
+    The ingestion engine automatically maps columns, converts 10-point scale CGPA into percentages, and imputes missing optional values with robust statistical defaults.
+  </p>
+
+  <div class="table-responsive mb-3">
+    <table class="table table-custom align-middle">
+      <thead>
+        <tr>
+          <th style="min-width: 170px;">Column Header</th>
+          <th style="min-width: 120px;">Requirement</th>
+          <th style="min-width: 120px;">Data Type</th>
+          <th>Description & Validation Rules</th>
+          <th style="min-width: 180px;">Sample Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>student_id</code></td>
+          <td><span class="badge bg-danger-subtle text-danger">Required</span></td>
+          <td><span class="badge bg-secondary-subtle">String</span></td>
+          <td>Unique alphanumeric student registration ID. Used as database primary key.</td>
+          <td><code>ENG2001</code></td>
+        </tr>
+        <tr>
+          <td><code>name</code></td>
+          <td><span class="badge bg-success-subtle text-success">Recommended</span></td>
+          <td><span class="badge bg-secondary-subtle">String</span></td>
+          <td>Full name of the student for roster display and individualized reports.</td>
+          <td><code>Aarav Sharma</code></td>
+        </tr>
+        <tr>
+          <td><code>parent_email</code></td>
+          <td><span class="badge bg-success-subtle text-success">Recommended</span></td>
+          <td><span class="badge bg-secondary-subtle">Email</span></td>
+          <td>Primary guardian contact email for automated early academic alerts.</td>
+          <td><code>parent.aarav@college.edu</code></td>
+        </tr>
+        <tr>
+          <td><code>department</code></td>
+          <td><span class="badge bg-primary-subtle text-primary">Recommended</span></td>
+          <td><span class="badge bg-secondary-subtle">String</span></td>
+          <td>Engineering discipline branch (e.g., Computer Science, IT, ECE, EEE, Mechanical).</td>
+          <td><code>Computer Science and Engineering</code></td>
+        </tr>
+        <tr>
+          <td><code>semester</code></td>
+          <td><span class="badge bg-primary-subtle text-primary">Recommended</span></td>
+          <td><span class="badge bg-secondary-subtle">Integer (1 - 8)</span></td>
+          <td>Current academic semester of study.</td>
+          <td><code>5</code></td>
+        </tr>
+        <tr>
+          <td><code>prev_sem_cgpa</code></td>
+          <td><span class="badge bg-primary-subtle text-primary">Recommended</span></td>
+          <td><span class="badge bg-secondary-subtle">Float (0 - 10)</span></td>
+          <td>Previous semester CGPA. Automatically multiplied by 9.5 to compute percentage.</td>
+          <td><code>8.40</code></td>
+        </tr>
+        <tr>
+          <td><code>attendance_percentage</code></td>
+          <td><span class="badge bg-info-subtle text-info">Optional</span></td>
+          <td><span class="badge bg-secondary-subtle">Float (0 - 100)</span></td>
+          <td>Cumulative classroom attendance rate across all subjects (default: 75%).</td>
+          <td><code>88.5</code></td>
+        </tr>
+        <tr>
+          <td><code>internal_exam_1</code></td>
+          <td><span class="badge bg-info-subtle text-info">Optional</span></td>
+          <td><span class="badge bg-secondary-subtle">Float (0 - 100)</span></td>
+          <td>Continuous Assessment Examination 1 marks (default: 65.0).</td>
+          <td><code>78.0</code></td>
+        </tr>
+        <tr>
+          <td><code>internal_exam_2</code></td>
+          <td><span class="badge bg-info-subtle text-info">Optional</span></td>
+          <td><span class="badge bg-secondary-subtle">Float (0 - 100)</span></td>
+          <td>Continuous Assessment Examination 2 marks (default: 65.0).</td>
+          <td><code>82.5</code></td>
+        </tr>
+        <tr>
+          <td><code>assignment_average</code></td>
+          <td><span class="badge bg-info-subtle text-info">Optional</span></td>
+          <td><span class="badge bg-secondary-subtle">Float (0 - 100)</span></td>
+          <td>Average score obtained across semester course assignments (default: 70.0).</td>
+          <td><code>85.0</code></td>
+        </tr>
+        <tr>
+          <td><code>lab_score</code></td>
+          <td><span class="badge bg-info-subtle text-info">Optional</span></td>
+          <td><span class="badge bg-secondary-subtle">Float (0 - 100)</span></td>
+          <td>Laboratory continuous practical assessment marks (default: 70.0).</td>
+          <td><code>80.0</code></td>
+        </tr>
+        <tr>
+          <td><code>backlogs</code></td>
+          <td><span class="badge bg-info-subtle text-info">Optional</span></td>
+          <td><span class="badge bg-secondary-subtle">Integer (≥ 0)</span></td>
+          <td>Number of current active backlogs / arrear subjects (default: 0).</td>
+          <td><code>0</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="pt-2 border-top d-flex justify-content-between align-items-center flex-wrap gap-2">
+    <div class="small text-muted">
+      <i class="bi bi-shield-check text-success me-1"></i> Missing optional fields receive statistical median defaults automatically during ingestion.
+    </div>
+    <a href="{{ url_for('download_sample_csv') }}" class="btn btn-sm btn-outline-interactive">
+      <i class="bi bi-file-earmark-arrow-down me-1 text-primary"></i> Download Official CSV Template
+    </a>
+  </div>
+</div>
+
+<!-- STEP 3: Sample CSV Preview & Rapid Template Access -->
+<div class="card mb-4 p-3 p-md-4">
+  <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom flex-wrap gap-2">
+    <div class="d-flex align-items-center gap-2">
+      <span class="badge bg-info-subtle text-info px-2 py-1 fs-6 fw-bold">STEP 3</span>
+      <h3 class="h5 fw-bold mb-0 text-dark">
+        <i class="bi bi-file-earmark-code text-cyan me-1"></i> Verified Sample CSV Data Preview
+      </h3>
+    </div>
+    <div class="d-flex gap-2">
+      <button type="button" class="btn btn-sm btn-outline-interactive" id="copyHeadersBtn" onclick="copyCsvSample()">
+        <i class="bi bi-clipboard me-1 text-cyan"></i> Copy CSV Headers
+      </button>
+      <a href="{{ url_for('download_sample_csv') }}" class="btn btn-sm btn-outline-interactive">
+        <i class="bi bi-download me-1 text-primary"></i> Download Sample CSV
+      </a>
+    </div>
+  </div>
+
+  <p class="small text-muted mb-2">
+    Review the sample CSV file structure below to ensure column alignments match your institutional dataset:
+  </p>
+
+  <div class="csv-code-box mb-3" id="sampleCsvCodeBlock">student_id,name,parent_email,department,semester,age,gender,attendance_percentage,prev_sem_cgpa,internal_exam_1,internal_exam_2,assignment_average,lab_score,backlogs
+ENG2001,Aarav Sharma,parent.aarav@college.edu,Computer Science and Engineering,5,20,Male,88.5,8.4,78.0,82.5,85.0,80.0,0
+ENG2002,Priya Patel,parent.priya@college.edu,Information Technology,5,20,Female,68.0,6.2,54.0,58.0,62.0,65.0,2
+ENG2003,Karthik Iyer,parent.karthik@college.edu,Electronics and Communication Engineering,6,21,Male,92.0,9.1,88.0,90.0,90.0,88.0,0
+ENG2004,Sneha Reddy,parent.sneha@college.edu,Electrical and Electronics Engineering,4,19,Female,74.0,7.0,64.0,62.0,70.0,72.0,0
+ENG2005,Vikram Singh,parent.vikram@college.edu,Mechanical Engineering,6,21,Male,62.5,5.8,48.0,52.0,58.0,60.0,3</div>
+
+  <div id="copyToast" class="badge bg-success-subtle text-success py-2 px-3 d-none">
+    <i class="bi bi-check2-circle me-1"></i> CSV header format copied to clipboard!
+  </div>
+</div>
+
+<!-- STEP 4: Machine Learning Pipeline Guarantees -->
+<div class="card p-3 p-md-4">
+  <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom flex-wrap gap-2">
+    <div class="d-flex align-items-center gap-2">
+      <span class="badge bg-success-subtle text-success px-2 py-1 fs-6 fw-bold">STEP 4</span>
+      <h3 class="h5 fw-bold mb-0 text-dark">
+        <i class="bi bi-shield-check text-success me-1"></i> Data Quality & Ingestion Pipeline Guarantees
+      </h3>
+    </div>
+    <span class="badge bg-success-subtle text-success">Institutional Grade Security</span>
+  </div>
+
+  <div class="row g-3">
+    <div class="col-md-4">
+      <div class="p-3 rounded border border-subtle h-100" style="background-color: var(--bg-subtle);">
+        <div class="d-flex align-items-center gap-2 mb-2">
+          <i class="bi bi-shield-lock-fill text-primary fs-5"></i>
+          <h6 class="fw-bold mb-0 text-dark">Zero Target Leakage</h6>
+        </div>
+        <p class="small text-muted mb-0">
+          The outcome label <code>risk_category</code> is strictly excluded from the CSV ingestion template. Performance predictions are computed objectively by the AI engine.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="p-3 rounded border border-subtle h-100" style="background-color: var(--bg-subtle);">
+        <div class="d-flex align-items-center gap-2 mb-2">
+          <i class="bi bi-cpu-fill text-cyan fs-5"></i>
+          <h6 class="fw-bold mb-0 text-dark">Multi-Model Ensemble</h6>
+        </div>
+        <p class="small text-muted mb-0">
+          Uploaded rows pass through pre-trained Random Forest and Gradient Boosting ensembles, generating instantaneous risk classifications and confidence scores.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="p-3 rounded border border-subtle h-100" style="background-color: var(--bg-subtle);">
+        <div class="d-flex align-items-center gap-2 mb-2">
+          <i class="bi bi-envelope-check-fill text-success fs-5"></i>
+          <h6 class="fw-bold mb-0 text-dark">Instant Advisor Sync</h6>
+        </div>
+        <p class="small text-muted mb-0">
+          Students flagged as At-Risk or High-Risk are updated immediately across directories, enabling fast mentor intervention logging and automated parent email advisories.
+        </p>
       </div>
     </div>
   </div>
@@ -129,25 +373,49 @@ function handleFileSelected(input) {
 }
 
 const dropzone = document.getElementById("dropzoneBox");
-['dragenter', 'dragover'].forEach(eventName => {
-  dropzone.addEventListener(eventName, (e) => {
-    e.preventDefault();
-    dropzone.classList.add('dragover');
-  }, false);
-});
-['dragleave', 'drop'].forEach(eventName => {
-  dropzone.addEventListener(eventName, (e) => {
+if (dropzone) {
+  ['dragenter', 'dragover'].forEach(eventName => {
+    dropzone.addEventListener(eventName, (e) => {
+      e.preventDefault();
+      dropzone.classList.add('dragover');
+    }, false);
+  });
+  ['dragleave', 'drop'].forEach(eventName => {
+    dropzone.addEventListener(eventName, (e) => {
+      e.preventDefault();
+      dropzone.classList.remove('dragover');
+    }, false);
+  });
+  dropzone.addEventListener('drop', (e) => {
     e.preventDefault();
     dropzone.classList.remove('dragover');
-  }, false);
-});
-dropzone.addEventListener('drop', (e) => {
-  const dt = e.dataTransfer;
-  const files = dt.files;
-  if (files.length > 0) {
-    document.getElementById('fileInput').files = files;
-    handleFileSelected(document.getElementById('fileInput'));
-  }
-});
+    const dt = e.dataTransfer;
+    const files = dt.files;
+    if (files.length > 0) {
+      document.getElementById('fileInput').files = files;
+      handleFileSelected(document.getElementById('fileInput'));
+    }
+  });
+}
+
+function copyCsvSample() {
+  const text = document.getElementById("sampleCsvCodeBlock").innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const toast = document.getElementById("copyToast");
+    if (toast) {
+      toast.classList.remove("d-none");
+      setTimeout(() => {
+        toast.classList.add("d-none");
+      }, 3000);
+    }
+    const btn = document.getElementById("copyHeadersBtn");
+    if (btn) {
+      btn.innerHTML = '<i class="bi bi-check-lg me-1 text-success"></i> Copied!';
+      setTimeout(() => {
+        btn.innerHTML = '<i class="bi bi-clipboard me-1 text-cyan"></i> Copy CSV Headers';
+      }, 2500);
+    }
+  });
+}
 </script>
 {% endblock %}

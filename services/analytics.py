@@ -10,18 +10,18 @@ import plotly.express as px
 import pandas as pd
 from database.models import Student
 
-# Academic light theme palette with clear visual contrast
+# Premium AI Dashboard Theme Palette
 THEME_COLORS = {
-    "primary": "#2563eb",    # Royal Blue
-    "secondary": "#0284c7",  # Cyan
-    "success": "#059669",    # Emerald
-    "warning": "#d97706",    # Amber
-    "danger": "#dc2626",     # Rose
-    "neutral": "#334155",    # Slate
-    "dark": "#000000",       # Jet Black
+    "primary": "#3978F6",    # Electric Blue
+    "secondary": "#22D3EE",  # Cyan (Highlights / AI accents)
+    "success": "#10b981",    # Emerald
+    "warning": "#f59e0b",    # Amber Gold
+    "danger": "#f43f5e",     # Rose
+    "neutral": "#94A3B8",    # Soft Gray
+    "dark": "#F8FAFC",       # Cloud White
     "card_bg": "rgba(0,0,0,0)",
-    "grid": "#8ca4bd",       # Visible clear grid lines
-    "text": "#000000"        # Pure Black high-contrast font
+    "grid": "rgba(148, 163, 184, 0.12)", # Soft subtle grid
+    "text": "#F8FAFC"        # Cloud White
 }
 
 def get_dashboard_kpis():
@@ -267,8 +267,8 @@ def get_student_profile_charts(student):
         r=values_closed,
         theta=skills_closed,
         fill="toself",
-        fillcolor="rgba(37, 99, 235, 0.15)",
-        line=dict(color="#2563eb", width=2.5),
+        fillcolor="rgba(57, 120, 246, 0.2)",
+        line=dict(color="#3978F6", width=2.5),
         name="Skill Score"
     ))
     fig_radar.update_layout(
@@ -299,8 +299,8 @@ def get_student_profile_charts(student):
         mode="lines+markers+text",
         text=[f"{v:.1f}" for v in ia_values],
         textposition="top center",
-        line=dict(color="#2563eb", width=3),
-        marker=dict(size=9, color="#3b82f6")
+        line=dict(color="#3978F6", width=3),
+        marker=dict(size=9, color="#22D3EE", line=dict(color="#ffffff", width=1.5))
     )])
     fig_trajectory.update_layout(
         margin=dict(t=25, b=25, l=35, r=25),
@@ -317,39 +317,137 @@ def get_student_profile_charts(student):
     }
 
 def get_model_performance_charts(metrics_data):
-    """Generates comparison bar chart and confusion matrix heatmaps."""
-    models_summary = metrics_data.get("models_summary", {})
-    if not models_summary:
-        return {}
+    """Generates comparison bar chart, confusion matrix heatmap, and feature importance bar chart."""
+    charts = {}
+    if not metrics_data:
+        return charts
         
-    model_names = list(models_summary.keys())
-    accuracies = [models_summary[m].get("accuracy", 0) * 100 for m in model_names]
-    f1_scores = [models_summary[m].get("f1_macro", 0) * 100 for m in model_names]
-    
-    fig_comp = go.Figure()
-    fig_comp.add_trace(go.Bar(
-        name="Accuracy (%)",
-        x=model_names,
-        y=accuracies,
-        marker_color="#6366f1"
-    ))
-    fig_comp.add_trace(go.Bar(
-        name="F1-Score (%)",
-        x=model_names,
-        y=f1_scores,
-        marker_color="#06b6d4"
-    ))
-    fig_comp.update_layout(
-        barmode="group",
-        margin=dict(t=25, b=25, l=35, r=20),
-        yaxis=dict(range=[0, 105], gridcolor=THEME_COLORS["grid"]),
-        xaxis=dict(gridcolor=THEME_COLORS["grid"]),
-        paper_bgcolor=THEME_COLORS["card_bg"],
-        plot_bgcolor=THEME_COLORS["card_bg"],
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-        font=dict(family="Inter, sans-serif", size=12, color=THEME_COLORS["text"])
-    )
-    
-    return {
-        "comparison": json.dumps(fig_comp, cls=plotly.utils.PlotlyJSONEncoder)
-    }
+    # 1. Multi-Model Benchmark Comparison Chart
+    comparison_table = metrics_data.get("comparison_table", [])
+    if not comparison_table and "models_evaluation" in metrics_data:
+        comparison_table = []
+        for m_name, m_eval in metrics_data["models_evaluation"].items():
+            comparison_table.append({
+                "model": m_name,
+                "accuracy": m_eval.get("accuracy", 0),
+                "precision": m_eval.get("precision_weighted", 0),
+                "recall": m_eval.get("recall_weighted", 0),
+                "f1_score": m_eval.get("f1_weighted", 0),
+                "is_selected": (m_name == metrics_data.get("selected_model"))
+            })
+            
+    if comparison_table:
+        model_names = [m["model"] for m in comparison_table]
+        accuracies = [round(m.get("accuracy", 0) * 100, 1) for m in comparison_table]
+        precisions = [round(m.get("precision", 0) * 100, 1) for m in comparison_table]
+        recalls = [round(m.get("recall", 0) * 100, 1) for m in comparison_table]
+        f1_scores = [round(m.get("f1_score", 0) * 100, 1) for m in comparison_table]
+        
+        fig_comp = go.Figure()
+        fig_comp.add_trace(go.Bar(
+            name="Accuracy (%)",
+            x=model_names,
+            y=accuracies,
+            marker_color="#3978F6",
+            text=[f"{v}%" for v in accuracies],
+            textposition="auto"
+        ))
+        fig_comp.add_trace(go.Bar(
+            name="Precision (%)",
+            x=model_names,
+            y=precisions,
+            marker_color="#22D3EE",
+            text=[f"{v}%" for v in precisions],
+            textposition="auto"
+        ))
+        fig_comp.add_trace(go.Bar(
+            name="Recall (%)",
+            x=model_names,
+            y=recalls,
+            marker_color="#10b981",
+            text=[f"{v}%" for v in recalls],
+            textposition="auto"
+        ))
+        fig_comp.add_trace(go.Bar(
+            name="F1-Score (%)",
+            x=model_names,
+            y=f1_scores,
+            marker_color="#f59e0b",
+            text=[f"{v}%" for v in f1_scores],
+            textposition="auto"
+        ))
+        fig_comp.update_layout(
+            barmode="group",
+            margin=dict(t=25, b=25, l=45, r=20),
+            yaxis=dict(range=[50, 105], title="Score (%)", gridcolor=THEME_COLORS["grid"]),
+            xaxis=dict(gridcolor=THEME_COLORS["grid"]),
+            paper_bgcolor=THEME_COLORS["card_bg"],
+            plot_bgcolor=THEME_COLORS["card_bg"],
+            legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+            font=dict(family="Inter, sans-serif", size=12, color=THEME_COLORS["text"])
+        )
+        comp_json = json.dumps(fig_comp, cls=plotly.utils.PlotlyJSONEncoder)
+        charts["model_comparison_chart"] = comp_json
+        charts["comparison"] = comp_json
+
+    # 2. Confusion Matrix Heatmap for Selected Model
+    selected_model = metrics_data.get("selected_model", "Random Forest")
+    models_eval = metrics_data.get("models_evaluation", {})
+    model_eval = models_eval.get(selected_model) or (list(models_eval.values())[0] if models_eval else None)
+
+    if model_eval and "confusion_matrix" in model_eval:
+        cm = model_eval["confusion_matrix"]
+        classes = model_eval.get("classes", ["High", "Average", "Low"])
+        z_text = [[str(val) for val in row] for row in cm]
+
+        fig_cm = go.Figure(data=go.Heatmap(
+            z=cm,
+            x=classes,
+            y=classes,
+            text=z_text,
+            texttemplate="%{text}",
+            textfont=dict(size=16, color="#ffffff", family="Inter, sans-serif"),
+            colorscale=[[0, "#101828"], [0.35, "#18263D"], [0.75, "#3978F6"], [1.0, "#22D3EE"]],
+            showscale=True,
+            hoverongaps=False
+        ))
+        fig_cm.update_layout(
+            margin=dict(t=30, b=45, l=65, r=20),
+            xaxis=dict(title="Predicted Category", side="bottom", gridcolor=THEME_COLORS["grid"]),
+            yaxis=dict(title="Actual Class", autorange="reversed", gridcolor=THEME_COLORS["grid"]),
+            paper_bgcolor=THEME_COLORS["card_bg"],
+            plot_bgcolor=THEME_COLORS["card_bg"],
+            font=dict(family="Inter, sans-serif", size=12, color=THEME_COLORS["text"])
+        )
+        charts["confusion_matrix"] = json.dumps(fig_cm, cls=plotly.utils.PlotlyJSONEncoder)
+
+    # 3. Feature Importance Bar Chart
+    feat_imps = metrics_data.get("feature_importances", [])
+    if feat_imps:
+        top_feats = feat_imps[:10][::-1]
+        feat_labels = [f["feature"].replace("_", " ").title() for f in top_feats]
+        feat_values = [round(f["importance"] * 100, 2) for f in top_feats]
+
+        fig_fi = go.Figure(go.Bar(
+            x=feat_values,
+            y=feat_labels,
+            orientation="h",
+            marker=dict(
+                color=feat_values,
+                colorscale=[[0, "#3978F6"], [1.0, "#22D3EE"]],
+                line=dict(color="#22D3EE", width=1)
+            ),
+            text=[f"{v}%" for v in feat_values],
+            textposition="outside"
+        ))
+        fig_fi.update_layout(
+            margin=dict(t=25, b=25, l=150, r=40),
+            xaxis=dict(title="Contribution to Prediction (%)", gridcolor=THEME_COLORS["grid"]),
+            yaxis=dict(gridcolor=THEME_COLORS["grid"]),
+            paper_bgcolor=THEME_COLORS["card_bg"],
+            plot_bgcolor=THEME_COLORS["card_bg"],
+            font=dict(family="Inter, sans-serif", size=12, color=THEME_COLORS["text"])
+        )
+        charts["feature_importance"] = json.dumps(fig_fi, cls=plotly.utils.PlotlyJSONEncoder)
+
+    return charts

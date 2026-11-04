@@ -5,6 +5,18 @@ File: ml/predict.py
 
 import os
 import sys
+import types
+
+# Windows Python 3.14 Application Control compatibility shim for unused hist_gradient_boosting DLL
+if "sklearn.ensemble._hist_gradient_boosting.gradient_boosting" not in sys.modules:
+    try:
+        from sklearn.ensemble._hist_gradient_boosting.gradient_boosting import HistGradientBoostingClassifier
+    except Exception:
+        dummy = types.ModuleType("sklearn.ensemble._hist_gradient_boosting.gradient_boosting")
+        dummy.HistGradientBoostingClassifier = None
+        dummy.HistGradientBoostingRegressor = None
+        sys.modules["sklearn.ensemble._hist_gradient_boosting.gradient_boosting"] = dummy
+
 import joblib
 import pandas as pd
 import numpy as np

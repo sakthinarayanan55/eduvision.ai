@@ -17,6 +17,10 @@ class User(db.Model):
     password_hash = db.Column(db.String(255), nullable=False)
     role = db.Column(db.String(20), nullable=False, default="faculty") # 'admin', 'faculty', 'student'
     student_id = db.Column(db.String(20), nullable=True) # Linked student ID if role == 'student'
+    full_name = db.Column(db.String(120), nullable=True) # Faculty or user full name
+    email = db.Column(db.String(120), nullable=True) # Institutional email
+    department = db.Column(db.String(100), nullable=True) # Academic department (e.g. Computer Science)
+    designation = db.Column(db.String(100), nullable=True, default="Faculty Mentor") # Academic designation
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     
     def set_password(self, password):
@@ -31,6 +35,10 @@ class User(db.Model):
             "username": self.username,
             "role": self.role,
             "student_id": self.student_id,
+            "full_name": self.full_name or self.username,
+            "email": self.email,
+            "department": self.department or "General Engineering",
+            "designation": self.designation or "Faculty Mentor",
             "created_at": self.created_at.strftime("%Y-%m-%d %H:%M:%S") if self.created_at else None
         }
 

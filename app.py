@@ -6,11 +6,22 @@ File: app.py
 
 import os
 import sys
+import types
 import io
 import csv
 import json
 from functools import wraps
 from datetime import datetime
+
+# Windows Python 3.14 Application Control compatibility shim for unused hist_gradient_boosting DLL
+if "sklearn.ensemble._hist_gradient_boosting.gradient_boosting" not in sys.modules:
+    try:
+        from sklearn.ensemble._hist_gradient_boosting.gradient_boosting import HistGradientBoostingClassifier
+    except Exception:
+        dummy = types.ModuleType("sklearn.ensemble._hist_gradient_boosting.gradient_boosting")
+        dummy.HistGradientBoostingClassifier = None
+        dummy.HistGradientBoostingRegressor = None
+        sys.modules["sklearn.ensemble._hist_gradient_boosting.gradient_boosting"] = dummy
 
 import pandas as pd
 from sqlalchemy import or_
@@ -75,7 +86,7 @@ def create_app(config_class=Config):
                     flash("Please log in first.", "warning")
                     return redirect(url_for("login"))
                 user_role = session.get("role", "")
-                if user_role not in roles and "admin" not in roles:
+                if user_role not in roles and user_role != "admin":
                     if user_role == "student" and session.get("student_id"):
                         flash("Students are authorized to access their personal academic portal only.", "warning")
                         return redirect(url_for("student_detail", student_id=session.get("student_id")))
@@ -879,6 +890,141 @@ def create_app(config_class=Config):
             metrics=metrics_data,
             charts=charts
         )
+
+    # ------------------ Admin Faculty Management ------------------ #
+    @app.route("/admin/faculty", methods=["GET"])
+    @login_required
+    @role_required("admin")
+    def faculty_management():
+        # Search & filter support
+        search_query = request.args.get("search", "").strip()
+        dept_filter = request.args.get("department", "").strip()
+        
+        query = User.query.filter_by(role="faculty")
+        if search_query:
+            query = query.filter(
+                or_(
+                    User.username.ilike(f"%{search_query}%"),
+                    User.full_name.ilike(f"%{search_query}%"),
+                    User.email.ilike(f"%{search_query}%")
+                )
+            )
+        if dept_filter:
+            query = query.filter(User.department == dept_filter)
+            
+        faculty_members = query.order_by(User.created_at.desc()).all()
+        
+        # System Stats
+        total_faculty = User.query.filter_by(role="faculty").count()
+        total_admins = User.query.filter_by(role="admin").count()
+        total_students = Student.query.count()
+        
+        # Available academic departments
+        departments = [d[0] for d in db.session.query(Student.department).distinct().order_by(Student.department).all() if d[0]]
+        if not departments:
+            departments = ["Computer Science", "Information Technology", "Mechanical Engineering", "Electrical Engineering", "Civil Engineering", "Electronics & Communication"]
+            
+        return render_template(
+            "admin_faculty.html",
+            faculty_members=faculty_members,
+            total_faculty=total_faculty,
+            total_admins=total_admins,
+            total_students=total_students,
+            departments=departments,
+            search_query=search_query,
+            dept_filter=dept_filter
+        )
+
+    @app.route("/admin/faculty/create", methods=["POST"])
+    @login_required
+    @role_required("admin")
+    def admin_create_faculty():
+        username = request.form.get("username", "").strip()
+        password = request.form.get("password", "").strip()
+        full_name = request.form.get("full_name", "").strip()
+        email = request.form.get("email", "").strip()
+        department = request.form.get("department", "").strip()
+        designation = request.form.get("designation", "").strip() or "Faculty Mentor"
+        
+        if not username:
+            flash("Username / Faculty ID is required.", "danger")
+            return redirect(url_for("faculty_management"))
+            
+        if not password or len(password) < 4:
+            flash("Password must be at least 4 characters long.", "danger")
+            return redirect(url_for("faculty_management"))
+            
+        # Check if username already exists
+        existing_user = User.query.filter(User.username.ilike(username)).first()
+        if existing_user:
+            flash(f"An account with username '{username}' already exists. Please choose a unique username.", "danger")
+            return redirect(url_for("faculty_management"))
+            
+        # Default email if not supplied
+        if not email:
+            clean_user = username.lower().replace(" ", "")
+            email = f"{clean_user}@eduvision.edu"
+            
+        new_faculty = User(
+            username=username,
+            role="faculty",
+            full_name=full_name or f"Prof. {username.title()}",
+            email=email,
+            department=department or "Computer Science",
+            designation=designation
+        )
+        new_faculty.set_password(password)
+        
+        db.session.add(new_faculty)
+        db.session.commit()
+        
+        flash(f"Faculty mentor '{new_faculty.full_name}' ({new_faculty.username}) successfully created! Login credentials are now active.", "success")
+        return redirect(url_for("faculty_management"))
+
+    @app.route("/admin/faculty/<int:user_id>/reset-password", methods=["POST"])
+    @login_required
+    @role_required("admin")
+    def admin_reset_faculty_password(user_id):
+        target_user = db.session.get(User, user_id)
+        if not target_user:
+            flash("Faculty account not found.", "danger")
+            return redirect(url_for("faculty_management"))
+            
+        new_password = request.form.get("new_password", "").strip()
+        if not new_password or len(new_password) < 4:
+            flash("New password must be at least 4 characters long.", "danger")
+            return redirect(url_for("faculty_management"))
+            
+        target_user.set_password(new_password)
+        db.session.commit()
+        
+        flash(f"Password for faculty '{target_user.username}' successfully updated.", "success")
+        return redirect(url_for("faculty_management"))
+
+    @app.route("/admin/faculty/<int:user_id>/delete", methods=["POST"])
+    @login_required
+    @role_required("admin")
+    def admin_delete_faculty(user_id):
+        if session.get("user_id") == user_id:
+            flash("Action forbidden: You cannot delete your own administrative session.", "danger")
+            return redirect(url_for("faculty_management"))
+            
+        target_user = db.session.get(User, user_id)
+        if not target_user:
+            flash("Faculty account not found.", "danger")
+            return redirect(url_for("faculty_management"))
+            
+        if target_user.role == "admin":
+            flash("Action forbidden: Administrator accounts cannot be deleted from this interface.", "danger")
+            return redirect(url_for("faculty_management"))
+            
+        username = target_user.username
+        full_name = target_user.full_name or username
+        db.session.delete(target_user)
+        db.session.commit()
+        
+        flash(f"Faculty record for '{full_name}' ({username}) was permanently removed.", "info")
+        return redirect(url_for("faculty_management"))
 
     return app
 

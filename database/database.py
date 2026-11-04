@@ -5,14 +5,44 @@ File: database/database.py
 
 import os
 import json
+import sqlite3
 import pandas as pd
 from database.models import db, User, Student, Prediction, Intervention
 from ml.predict import predict_student_performance
+
+def migrate_user_columns(app):
+    """Ensures newly added user columns exist in SQLite database without losing data."""
+    try:
+        db_uri = app.config.get("SQLALCHEMY_DATABASE_URI", "")
+        if "sqlite:///" in db_uri:
+            db_path = db_uri.replace("sqlite:///", "")
+            if os.path.exists(db_path):
+                conn = sqlite3.connect(db_path)
+                cursor = conn.cursor()
+                cursor.execute("PRAGMA table_info(users)")
+                existing_cols = [row[1] for row in cursor.fetchall()]
+                
+                new_columns = [
+                    ("full_name", "VARCHAR(120)"),
+                    ("email", "VARCHAR(120)"),
+                    ("department", "VARCHAR(100)"),
+                    ("designation", "VARCHAR(100) DEFAULT 'Faculty Mentor'")
+                ]
+                
+                for col_name, col_type in new_columns:
+                    if col_name not in existing_cols:
+                        cursor.execute(f"ALTER TABLE users ADD COLUMN {col_name} {col_type}")
+                
+                conn.commit()
+                conn.close()
+    except Exception as e:
+        print(f"User column migration note: {e}")
 
 def init_db(app):
     """Initializes the database schema with the Flask application context."""
     with app.app_context():
         db.create_all()
+        migrate_user_columns(app)
         seed_data(app)
 
 def seed_data(app):
@@ -25,18 +55,55 @@ def seed_data(app):
         # 1. Seed Users if not present
         if User.query.count() == 0:
             print("Seeding default authentication credentials...")
-            admin_user = User(username="admin", role="admin")
+            admin_user = User(
+                username="admin", 
+                role="admin", 
+                full_name="Chief Academic Administrator",
+                email="admin@eduvision.edu",
+                department="Academic Administration",
+                designation="System Director"
+            )
             admin_user.set_password("admin123")
             
-            faculty_user = User(username="faculty", role="faculty")
+            faculty_user = User(
+                username="faculty", 
+                role="faculty",
+                full_name="Dr. Eleanor Vance",
+                email="faculty@eduvision.edu",
+                department="Computer Science",
+                designation="Associate Professor & Academic Mentor"
+            )
             faculty_user.set_password("faculty123")
             
-            student_user = User(username="student", role="student", student_id="ENG0001")
+            student_user = User(
+                username="student", 
+                role="student", 
+                student_id="ENG0001",
+                full_name="Aarav Sharma",
+                email="aarav.sharma@eduvision.edu",
+                department="Computer Science"
+            )
             student_user.set_password("student123")
             
             db.session.add_all([admin_user, faculty_user, student_user])
             db.session.commit()
             print("Users seeded: admin (admin/admin123), faculty (faculty/faculty123), student (student/student123)")
+        else:
+            # Update existing faculty/admin records with default display names if missing
+            admin_rec = User.query.filter_by(username="admin").first()
+            if admin_rec and not admin_rec.full_name:
+                admin_rec.full_name = "Chief Academic Administrator"
+                admin_rec.email = "admin@eduvision.edu"
+                admin_rec.department = "Academic Administration"
+                admin_rec.designation = "System Director"
+                
+            fac_rec = User.query.filter_by(username="faculty").first()
+            if fac_rec and not fac_rec.full_name:
+                fac_rec.full_name = "Dr. Eleanor Vance"
+                fac_rec.email = "faculty@eduvision.edu"
+                fac_rec.department = "Computer Science"
+                fac_rec.designation = "Associate Professor & Academic Mentor"
+            db.session.commit()
             
         # 2. Seed Students if empty
         if Student.query.count() == 0:

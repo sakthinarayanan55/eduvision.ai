@@ -115,8 +115,23 @@ function initSidebarToggle() {
   }
 }
 
+function getThemeTextColor() {
+  const isDark = (document.documentElement.getAttribute('data-theme') || 'dark') === 'dark';
+  return isDark ? '#F8FAFC' : '#101828';
+}
+
+function getThemeMutedTextColor() {
+  const isDark = (document.documentElement.getAttribute('data-theme') || 'dark') === 'dark';
+  return isDark ? '#94A3B8' : '#475569';
+}
+
+function getThemeGridColor() {
+  const isDark = (document.documentElement.getAttribute('data-theme') || 'dark') === 'dark';
+  return isDark ? 'rgba(148, 163, 184, 0.12)' : 'rgba(16, 24, 40, 0.1)';
+}
+
 /**
- * Utility to render Plotly charts safely with dark theme aesthetics
+ * Utility to render Plotly charts safely with luxury theme aesthetics
  */
 function renderPlotlyChart(elementId, figureData) {
   const container = document.getElementById(elementId);
@@ -129,12 +144,50 @@ function renderPlotlyChart(elementId, figureData) {
       displayModeBar: false
     };
 
-    // Ensure light-theme transparency and modern font
+    const textColor = getThemeTextColor();
+    const mutedTextColor = getThemeMutedTextColor();
+    const gridColor = getThemeGridColor();
+
     if (!data.layout) data.layout = {};
     data.layout.paper_bgcolor = "rgba(0,0,0,0)";
     data.layout.plot_bgcolor = "rgba(0,0,0,0)";
-    if (!data.layout.font) {
-      data.layout.font = { family: "Inter, sans-serif", color: "#334155" };
+    data.layout.font = { family: "Inter, sans-serif", color: textColor, size: 11 };
+
+    // Update cartesian axes if present
+    if (data.layout.xaxis) {
+      data.layout.xaxis.gridcolor = gridColor;
+      if (!data.layout.xaxis.tickfont) data.layout.xaxis.tickfont = {};
+      data.layout.xaxis.tickfont.color = mutedTextColor;
+      if (data.layout.xaxis.title && data.layout.xaxis.title.font) {
+        data.layout.xaxis.title.font.color = textColor;
+      }
+    }
+    if (data.layout.yaxis) {
+      data.layout.yaxis.gridcolor = gridColor;
+      if (!data.layout.yaxis.tickfont) data.layout.yaxis.tickfont = {};
+      data.layout.yaxis.tickfont.color = mutedTextColor;
+      if (data.layout.yaxis.title && data.layout.yaxis.title.font) {
+        data.layout.yaxis.title.font.color = textColor;
+      }
+    }
+    // Update polar axes for radar charts
+    if (data.layout.polar) {
+      data.layout.polar.bgcolor = "rgba(0,0,0,0)";
+      if (data.layout.polar.radialaxis) {
+        data.layout.polar.radialaxis.gridcolor = gridColor;
+        data.layout.polar.radialaxis.linecolor = gridColor;
+        if (!data.layout.polar.radialaxis.tickfont) data.layout.polar.radialaxis.tickfont = {};
+        data.layout.polar.radialaxis.tickfont.color = mutedTextColor;
+      }
+      if (data.layout.polar.angularaxis) {
+        data.layout.polar.angularaxis.gridcolor = gridColor;
+        data.layout.polar.angularaxis.linecolor = gridColor;
+        if (!data.layout.polar.angularaxis.tickfont) data.layout.polar.angularaxis.tickfont = {};
+        data.layout.polar.angularaxis.tickfont.color = textColor;
+      }
+    }
+    if (data.layout.legend && data.layout.legend.font) {
+      data.layout.legend.font.color = textColor;
     }
 
     Plotly.newPlot(elementId, data.data, data.layout, config);
@@ -157,10 +210,13 @@ function switchChartType(chartId, type, btnElement) {
     btnElement.classList.add("active");
   }
 
+  const textColor = getThemeTextColor();
+  const gridColor = getThemeGridColor();
+
   const commonLayout = {
     paper_bgcolor: "rgba(0,0,0,0)",
     plot_bgcolor: "rgba(0,0,0,0)",
-    font: { family: "Inter, sans-serif", size: 12, color: "#000000", weight: 700 },
+    font: { family: "Inter, sans-serif", size: 12, color: textColor, weight: 600 },
     margin: { t: 25, b: 25, l: 35, r: 20 }
   };
 
@@ -184,7 +240,7 @@ function switchChartType(chartId, type, btnElement) {
       const layout = {
         ...commonLayout,
         showlegend: true,
-        legend: { orientation: "h", yanchor: "bottom", y: -0.2, xanchor: "center", x: 0.5, font: { color: "#000000", size: 12 } }
+        legend: { orientation: "h", yanchor: "bottom", y: -0.2, xanchor: "center", x: 0.5, font: { color: textColor, size: 12 } }
       };
       Plotly.react(chartId, [trace], layout, config);
     } else if (type === "bar") {
@@ -201,8 +257,8 @@ function switchChartType(chartId, type, btnElement) {
       const layout = {
         ...commonLayout,
         showlegend: false,
-        xaxis: { gridcolor: "#8ca4bd", tickfont: { color: "#000000", size: 11 }, title: { text: "Predicted Category", font: { color: "#000000", size: 12 } } },
-        yaxis: { gridcolor: "#8ca4bd", tickfont: { color: "#000000", size: 11 }, title: { text: "Student Count", font: { color: "#000000", size: 12 } } }
+        xaxis: { gridcolor: gridColor, tickfont: { color: textColor, size: 11 }, title: { text: "Predicted Category", font: { color: textColor, size: 12 } } },
+        yaxis: { gridcolor: gridColor, tickfont: { color: textColor, size: 11 }, title: { text: "Student Count", font: { color: textColor, size: 12 } } }
       };
       Plotly.react(chartId, [trace], layout, config);
     }
@@ -224,8 +280,8 @@ function switchChartType(chartId, type, btnElement) {
       const layout = {
         ...commonLayout,
         showlegend: false,
-        xaxis: { gridcolor: "#8ca4bd", tickfont: { color: "#000000", size: 11 }, title: { text: "Risk Classification", font: { color: "#000000", size: 12 } } },
-        yaxis: { gridcolor: "#8ca4bd", tickfont: { color: "#000000", size: 11 }, title: { text: "Student Count", font: { color: "#000000", size: 12 } } }
+        xaxis: { gridcolor: gridColor, tickfont: { color: textColor, size: 11 }, title: { text: "Risk Classification", font: { color: textColor, size: 12 } } },
+        yaxis: { gridcolor: gridColor, tickfont: { color: textColor, size: 11 }, title: { text: "Student Count", font: { color: textColor, size: 12 } } }
       };
       Plotly.react(chartId, [trace], layout, config);
     } else if (type === "pie" || type === "donut") {
@@ -243,7 +299,7 @@ function switchChartType(chartId, type, btnElement) {
       const layout = {
         ...commonLayout,
         showlegend: true,
-        legend: { orientation: "h", yanchor: "bottom", y: -0.2, xanchor: "center", x: 0.5, font: { color: "#000000", size: 12 } }
+        legend: { orientation: "h", yanchor: "bottom", y: -0.2, xanchor: "center", x: 0.5, font: { color: textColor, size: 12 } }
       };
       Plotly.react(chartId, [trace], layout, config);
     }
@@ -263,9 +319,9 @@ function switchChartType(chartId, type, btnElement) {
     const layout = {
       ...commonLayout,
       barmode: barmodeVal,
-      xaxis: { gridcolor: "#8ca4bd", tickfont: { color: "#000000", size: 11 }, title: { text: "Department", font: { color: "#000000", size: 12 } } },
-      yaxis: { gridcolor: "#8ca4bd", tickfont: { color: "#000000", size: 11 }, title: { text: "Students", font: { color: "#000000", size: 12 } } },
-      legend: { orientation: "h", yanchor: "bottom", y: 1.02, xanchor: "right", x: 1, font: { color: "#000000", size: 12 } }
+      xaxis: { gridcolor: gridColor, tickfont: { color: textColor, size: 11 }, title: { text: "Department", font: { color: textColor, size: 12 } } },
+      yaxis: { gridcolor: gridColor, tickfont: { color: textColor, size: 11 }, title: { text: "Students", font: { color: textColor, size: 12 } } },
+      legend: { orientation: "h", yanchor: "bottom", y: 1.02, xanchor: "right", x: 1, font: { color: textColor, size: 12 } }
     };
     Plotly.react(chartId, traces, layout, config);
   }
